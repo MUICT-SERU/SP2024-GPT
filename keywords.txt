@@ -1,0 +1,53 @@
+policy
+policies
+guideline
+guidelines
+rule
+rules
+regulation
+regulations
+compliance
+governance
+terms
+agreement
+license
+licenses
+licensing
+copyright
+patents
+trademarks
+intellectual property
+open source
+proprietary
+commercial
+legal
+law
+laws
+code of conduct
+coc
+community guidelines
+contributing
+contribution
+security
+privacy
+confidentiality
+data protection
+gdpr
+accessibility
+diversity
+inclusion
+ethics
+responsible
+sustainability
+environment
+health
+safety
+quality
+standards
+certification
+audit
+risk
+liability
+warranty
+disclaimer
+disclaimer of warranties
