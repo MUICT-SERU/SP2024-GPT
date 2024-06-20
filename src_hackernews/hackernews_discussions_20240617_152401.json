@@ -1,0 +1,309 @@
+[
+    {
+        "by": "samber",
+        "descendants": 53,
+        "id": 40700586,
+        "kids": [
+            40700896,
+            40701305,
+            40701084,
+            40701173,
+            40701209,
+            40701369,
+            40701671,
+            40701257,
+            40701596
+        ],
+        "score": 88,
+        "time": 1718576299,
+        "title": "Maintaining large-scale AI capacity at Meta",
+        "type": "story",
+        "url": "https://engineering.fb.com/2024/06/12/production-engineering/maintaining-large-scale-ai-capacity-meta/",
+        "kids_texts": [
+            "Even if this scale is massive and second-to-none, it\u2019s funny how some issues are the same for all of us. In particular \u201cBad hosts are very bad\u201d aka \u201ca chain is only as strong as its weakest link\u201d can happen with as little as a few (4) machines, and then ruin your day.",
+            "Meta is going hard into AI (both hardware and software), which is great to see. Something that&#x27;s not super obvious is what specific features of existing apps require AI, that is, how will Meta get return on investment?<p>Two uses I can think of are i) text and image content moderation on fb and instagram (won&#x27;t need as many human reviewers if bots are as&#x2F;more effective), and ii) chatbots for businesses (businesses could provide their business documentation to a meta LLM which could handle customer inquiries via messenger and whatsapp).<p>Anything else?",
+            "I\u2019m old enough to remember when companies were eager to claim that their data centers (or some aspect) were finally \u201ccarbon neutral\u201d.<p>Now, with the enormous data center growth for AI purposes, companies don\u2019t even bother pretending that any of this is sustainable.<p>At best, they might delude themselves into believing that a glorified text autocomplete program will magically solve the world\u2019s problems, including the unsustainability of the machines running the program.",
+            "So I was pondering, NVidia quarterly datacenter revenue is around 18.4 billion. Meaning that the raw cost input to the AI industry is somewhere around 14-24 billion dollars per year post depreciation. This is against known revenues of ~3.8 Billion at OpenAI and ~800 Million at Anthropic. Based on reported revenue at cohere of 20 MM - I think it&#x27;s a fair assumption that the only other material revenue in the industry is in the applications side either at megacaps or smaller startups targeting various back office tasks.<p>One could make a bearish claim on NVidia, that their revenue&#x2F;valuation is unsustainable unless the AI industry grows 100x over the next few years.",
+            "Maintenance trains, interesting takeaway from this. There&#x27;s a trolley problem joke in there somewhere.",
+            "Sounds like this opsplanner software has a fair bit of autonomy",
+            "[flagged]",
+            "They make people into slaves. I\u2019d be extremely happy when Facebook gets shutdown."
+        ]
+    },
+    {
+        "by": "Thevet",
+        "descendants": 3,
+        "id": 40698415,
+        "kids": [
+            40701392
+        ],
+        "score": 10,
+        "time": 1718556648,
+        "title": "The Unending Allure of High Mountains",
+        "type": "story",
+        "url": "https://www.noemamag.com/the-unending-allure-of-high-mountains/",
+        "kids_texts": [
+            "I read some studies a few years ago that suggest going that high can cause brain damage. Does anyone know the state of the research?"
+        ]
+    },
+    {
+        "by": "zdw",
+        "descendants": 15,
+        "id": 40698952,
+        "kids": [
+            40701857,
+            40701955,
+            40701586,
+            40701847,
+            40701045,
+            40701548
+        ],
+        "score": 28,
+        "time": 1718561430,
+        "title": "Wikipedia Pain",
+        "type": "story",
+        "url": "https://www.tbray.org/ongoing/When/202x/2024/06/15/Wikipedia-Pain",
+        "kids_texts": [
+            "&gt; Wikipedia not only respects but requires expert support for its content. However, it uses a very specific definition of \u201cexpert\u201d: Someone who can get their assertions published in one or more Reliable Sources.<p>Yes exactly, &quot;it gets cited&quot; is not &quot;expertise&quot;. And &quot;it has not been cited much&quot; is not a lack of expertise. That is what people are complaining about. And no, vague hand-waving about &quot;Reliable Sources&quot; doesn&#x27;t help.<p>You can&#x27;t just redefine &quot;expert&quot; to an very specific non-standard meaning and then use that for your argument. This is playing word-games and doesn&#x27;t engage with the substance of the criticism.<p>And look, I&#x27;m not even saying Wikipedia is wrong to have the policies that it has. But <i>any</i> policy on this matter will have real limitations and trade-offs, and the current one is no exception. Being dismissive of that and playing word-games around it is not going to change that.<p>The article then continues to defend Wikipedia against some of the allegations entirely without any knowledge of the conflicts or facts involved. It&#x27;s just speculating in thin air.",
+            "&gt; Somebody spoke up on the Fediverse, saying \u201cI wonder if reporters know that Wikipedia hallucinates too?&quot;<p>This recent xAI chat on SpaceX is way better and more revealing than anything I&#x27;ve read on Wikipedia: <a href=\"https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;ChatGPT&#x2F;comments&#x2F;1dgyujd&#x2F;comment&#x2F;l8tgf79&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;ChatGPT&#x2F;comments&#x2F;1dgyujd&#x2F;comment&#x2F;l8...</a><p>The fact that AI is allowed to connect the dots (banned as WP:OR in wiki) can be an advantage over Wikipedia...",
+            "Wikipedia has the same problem that the DMV has.\nWorking there is extremely low status, so the workers take out their pathologies on everyone and everything around them. There is no incentive to professionalize the service, because you&#x27;d need to pay professionals.",
+            "I&#x27;ve made a decent chunk of edits especially in the area of reliable sources, so I might as well extend on what the article is saying.<p>First off, Wikipedia is pseudonymous. You can&#x27;t cite yourself because anyone could easily claim to be a domain expert and lie.[1] Rather than verify credentials, it&#x27;s generally expected that content be cited to a reliable source other than the user.<p>And it&#x27;s also not just about being a domain expert, because experts frequently disagree. The ideal source isn&#x27;t &quot;domain expert says x&quot;,[2] it&#x27;s &quot;academic article says major views in domain include x,y,z&quot;.[3] The goal of this isn&#x27;t to entrench a cabal, it&#x27;s to ensure that Wikipedia doesn&#x27;t spotlight fringe perspectives only seen by a few experts in a field. So, re; &quot;Wikipedia specifically rejects domain experts until someone who knows nothing cites them elsewhere&quot;, that&#x27;s a feature and not a bug.<p>Anyways, to add some more context, Wikipedia has a big problem with people citing their own content to boost SEO.[4][5] Even academics publishing peer-reviewed content do this because Wikipedia cites are now a tracked metric. I can&#x27;t verify whether that&#x27;s what happened in the original blogpost. But the average editor seeing someone that isn&#x27;t very active come on and repeatedly cite a single book is going to get alarm bells in their head.<p>About citing a company on itself, I wrote a lengthy comment on that below.[6]<p>Probably the single piece of advice I&#x27;d give to someone wanting to edit Wikipedia is to understand that someone reverting your edit is supposed to start a discussion, not end one. This is called the &quot;bold, revert, discuss cycle&quot;.[7] You&#x27;re entitled to ask for reasons why your edit is reverted, and if you can&#x27;t reach an agreement, you can get input from other people in the community. The main place for discussing whether a source is reliable is the reliable sources noticeboard,[8] but you can also get help editing at the Teahouse.[9]<p>Also, if you&#x27;re a grieving widow trying to get your husband&#x27;s article updated, I would recommend contacting the volunteer response team at info-en-o@wikimedia.org. This is a private email (instead of the publicly visible Teahouse), one of the purposes of which is to help people who are the subjects of articles to get errors about themselves fixed.[10] You can also use photosubmission@wikimedia.org to submit photos of yourself for articles.<p>[1] <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Essjay_controversy\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Essjay_controversy</a><p>[2] <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wikipedia:Verifiability#Self-published_sources\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wikipedia:Verifiability#Self-p...</a><p>[3] <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wikipedia:No_original_research#Secondary\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wikipedia:No_original_research...</a><p>[4] <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wikipedia:Conflict_of_interest#Citing_yourself\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wikipedia:Conflict_of_interest...</a><p>[5] <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Special:Search?fulltext=Search&amp;fulltext=Search&amp;prefix=Wikipedia%3AConflict+of+interest%2FNoticeboard%2F&amp;search=selfcite&amp;ns0=1\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Special:Search?fulltext=Search...</a><p>[6] <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=40698952#40701045\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=40698952#40701045</a><p>[7] <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wikipedia:BOLD,_revert,_discuss_cycle\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wikipedia:BOLD,_revert,_discus...</a><p>[8] <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wikipedia:Reliable_sources&#x2F;Noticeboard\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wikipedia:Reliable_sources&#x2F;Not...</a><p>[9] <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wikipedia:Teahouse\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wikipedia:Teahouse</a><p>[10] <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wikipedia:Volunteer_Response_Team\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wikipedia:Volunteer_Response_T...</a>",
+            "&quot;As for Mr O\u2019Neill\u2019s complaint (&#x27;An editor argued with me about the history of my own company&#x27;), no sympathy. Given the social structure of capitalism, the employees and leadership of a company are the last people who should be considered Reliable Sources on that company. Particularly on anything that\u2019s remotely controversial.&quot;<p>Wow.  I mean, how do you even begin to argue with someone who holds an opinion like this?<p>The &quot;social structure of capitalism&quot; justifies dismissing input from a founder of the company in question.  Really?",
+            "The author described the frustration of drafting and publishing <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Heartland_(Smarsh_book)\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Heartland_(Smarsh_book)</a> against concerns about notability. Reading more, I think the notability concerns may not be unfounded.  The article feels inflated and its book received mixed feedback in Goodreads <a href=\"https:&#x2F;&#x2F;www.goodreads.com&#x2F;book&#x2F;show&#x2F;38532119-heartland\" rel=\"nofollow\">https:&#x2F;&#x2F;www.goodreads.com&#x2F;book&#x2F;show&#x2F;38532119-heartland</a>"
+        ]
+    },
+    {
+        "by": "tomrod",
+        "descendants": 61,
+        "id": 40694909,
+        "kids": [
+            40696468,
+            40696120,
+            40696274,
+            40697400,
+            40697213,
+            40697967,
+            40695797,
+            40698999,
+            40695420
+        ],
+        "score": 100,
+        "time": 1718515992,
+        "title": "Harvard Railroad Economics Exam (1906)",
+        "type": "story",
+        "url": "https://www.irwincollier.com/harvard-enrollment-and-final-exam-for-railroad-practice-daggett-1906-1907/",
+        "kids_texts": [
+            "Based test. There is this mix of practical knowledge (different types or cars, terminals, etc), but also theory and history or how other country&#x27;s rail system worked at the time and why they developed in that way. The last question is incredibly good:<p>&gt; Compare the experience of France with state railroad operation with that of Germany. What, in each case were the causes which led to state operation, the extent of the lines operated, the results from state operation, and the reasons for those results?",
+            "Wow.  Looks like Harvard&#x27;s Class of 1906-ish was expected to understand and operate parts of the real-world economy.<p>In America.<p>How times have changed!",
+            "&gt; Answer 1, 2, 3, and five other questions<p>Where\u2019s 2 and 3? The question numbered 4 seems to be referred to as (2) in the question numbered 5",
+            "Here\u2019s an excellent history of american economics and the role the railroads played in it:<p><a href=\"https:&#x2F;&#x2F;nyupress.org&#x2F;9781583671351&#x2F;railroading-economics\" rel=\"nofollow\">https:&#x2F;&#x2F;nyupress.org&#x2F;9781583671351&#x2F;railroading-economics</a>",
+            "&gt;The shipment to be sent \u201ccollect,\u201d and the Chicago &amp; Northwestern to get one-third of the total rate<p>Makes me think of \u201ccall collect\u201d - might be a borrowed term from railroad payment terminology since phone company history if very strongly connected to railroad networks.",
+            "Sure, it works in the real world but does it work in theory?\n(an old economics joke)",
+            "That is very different from what &quot;economics&quot; is today.",
+            "is there an answers sheet somewhere as well?",
+            "Amusing to me that Minneapolis was important enough at the time that Harvard put it on an exam."
+        ]
+    },
+    {
+        "by": "olalonde",
+        "descendants": 8,
+        "id": 40701617,
+        "kids": [
+            40702532,
+            40702432,
+            40702068,
+            40702510,
+            40701817
+        ],
+        "score": 21,
+        "time": 1718588764,
+        "title": "ChatGPT has caused a drop in demand for online digital freelancers",
+        "type": "story",
+        "url": "https://www.techradar.com/pro/chatgpt-has-caused-a-massive-drop-in-demand-for-online-digital-freelancers-here-is-what-you-can-do-to-protect-yourself",
+        "kids_texts": [
+            "Not sure I buy this. There was a massive drop in demand for these jobs due to layoffs but we (Ritza, a technical writing agency) have noticed a reverse of that since July last year which is where their data goes up to. I wonder if they can easily rerun with more recent data and see if the hypothesis holds<p>&gt; We analyze data from a leading global\nonline freelancing platform consisting of 1,386,642 job posts from July 2021 to July 2023.\nUsing a network clustering algorithm and leveraging detailed job post descriptions on skill\nand software requirements, we categorize job posts into distinct clusters. These clusters\ncan then be classified into three main categories: manual-intensive jobs (e.g., data entry,\nvideo services, and audio services), automation-prone jobs (e.g., writing, engineering, soft-\nware, app, and web development), and image-generating jobs (e.g., graphic design and 3D\nmodeling). Based on the AI Occupational Exposure (AIOE) Index constructed by Felten\net al. (2021, 2023), these types of jobs show distinct susceptibilities to large language model\nAI tools.2 Manual-intensive jobs have notably smaller AIOE compared to automation-prone\njobs, indicating lower exposure to Large Language Models (LLMs). We study the differential\nimpacts of the introduction of GenAI tools on demand across these different types of job\nclusters",
+            "Tangential, who knows serious facts about job losses from AI? That research is rare IME and is drowned by headlines about, say, MS boasting of AI powered layoffs.",
+            "Already seeing content writing freelancers struggling to secure work on Facebook. Improvements to Gen AI will only exacerbate this problem going forward.",
+            "&quot;Automation-prone fields like [...] software&quot;<p>I wonder where is this idea coming from?",
+            "Just remember, most of us are simply increasing the ROI of our millionaire&#x2F;billionaire class overlords while we make modest gains in the ever shrinking middle class.<p>Had technology induced productivity gains been distributed as they were proportionally in the 60s, the average wage in the US would be 6 figures."
+        ]
+    },
+    {
+        "by": "fletchr",
+        "descendants": 13,
+        "id": 40701416,
+        "kids": [
+            40702812,
+            40702728,
+            40702734,
+            40701555
+        ],
+        "score": 15,
+        "time": 1718586227,
+        "title": "In AI we trust, part II: Wherein AI adjudicates every Supreme Court case",
+        "type": "story",
+        "url": "https://adamunikowsky.substack.com/p/in-ai-we-trust-part-ii",
+        "kids_texts": [
+            "Those are impressive results. Supreme Court briefs tend to be fairly thorough, so I suppose this is where we&#x27;d expect the AI&#x27;s best output.<p>I&#x27;d be curious if you can influence the output by changing the order you feed the briefs to it.",
+            "Does anyone else here listen to the podcast \u201c5-4\u201d aka Five Four Pod?<p>I see the article saying:<p>&gt;Claude is fully capable of acting as a Supreme Court Justice right now.<p>And I just can\u2019t imagine what the hosts of that show would say to that (aside from \u201cBut how is Harlan Crow going to take Claude on a superyacht vacation??\u201d).",
+            "The first article in this series (link is to the second) has the author asking Claude to answer questions based on its ability to reflect on and introspect its own training data. Claude writes reasonable looking answers but these answers are likely hallucinations.",
+            "&gt;Claude is fully capable of acting as a Supreme Court Justice right now.<p>I didn&#x27;t read the whole article, but I don&#x27;t believe this could be true.  If it is true there would be an enormous market for it to act as a mediator in any payment dispute and then decide whether to reverse a transaction.  (Each side could offer whatever arguments and evidence it wanted.)<p>This would solve the huge problem with crypto currencies that there is no repudiation for fraudulent transactions (they can&#x27;t be reversed if they turn out to be fraudulent.) But an AI can&#x27;t actually do this and back up a currency with a dispute process around it, that&#x27;s why it isn&#x27;t being done.<p>Here I roleplay a dispute between a merchant and a buyer:<p><a href=\"https:&#x2F;&#x2F;chatgpt.com&#x2F;share&#x2F;6a420d3f-9469-4234-8283-6daf18e90b12\" rel=\"nofollow\">https:&#x2F;&#x2F;chatgpt.com&#x2F;share&#x2F;6a420d3f-9469-4234-8283-6daf18e90b...</a><p>As you can see, it finds in favor of the person who wants to reverse the charge, but this means the buyer can just rip off any business, get anything they want for free and literally never pay for anything by just reversing every transaction.  What the AI judge should have done is look at the total amount of business that the business does and whether it has any other disputes, because if the total amount of business is high without any disputes then it is a legitimate business, but if everyone is disputing it or it tried to inflate its ratings with a bunch of low-value items and then shipped rocks instead of a high-value item then it is a scam merchant.  Besides this, changes of ownership also matter (a scam merchant who will ship rocks can buy an existing long-standing merchant for their credibility).<p>Overall, a blanket reversal without looking at the merchant to verify that it is fraudulent is not really good adjudication in my opinion and if the AI were judging all these cases then consumers could just defraud every business and no business would use that form of payment and dispute process since consumers would abuse it to get everything for free.<p>This shows that AI really isn&#x27;t ready to adjudicate real cases, and this case is far simpler than cases that make it to the Supreme Court."
+        ]
+    },
+    {
+        "by": "trott",
+        "descendants": 1,
+        "id": 40700880,
+        "kids": [
+            40702314
+        ],
+        "score": 16,
+        "time": 1718579501,
+        "title": "AI Agents: too early, too expensive, too unreliable",
+        "type": "story",
+        "url": "https://old.reddit.com/r/MachineLearning/comments/1cy1kn9/d_ai_agents_too_early_too_expensive_too_unreliable/",
+        "kids_texts": [
+            "This is specifically about web browsing agents, which is a pretty specialized subset of \u201cAI agents.\u201d"
+        ]
+    },
+    {
+        "by": "tosh",
+        "descendants": 60,
+        "id": 40698990,
+        "kids": [
+            40699273,
+            40699061,
+            40699381,
+            40699025,
+            40699255,
+            40699070,
+            40699410
+        ],
+        "score": 71,
+        "time": 1718561818,
+        "title": "OpenAI and Microsoft Azure to deprecate GPT-4 32K",
+        "type": "story",
+        "url": "https://twitter.com/headinthebox/status/1802404482174820398",
+        "kids_texts": [
+            "A lot of people here haven&#x27;t integrated GPT into a customer facing production system, and it shows<p>gpt-4, gpt-4-turbo, and gpt-4o are not the same models. They are mostly close enough when you have a human in the loop, and loose constraints. But if you are building systems off of the (already fragile) prompt based output, you will have to go through a very manual process of tuning your prompts to get the same&#x2F;similar output out of the new model. It will break in weird ways that makes you feel like you are trying to nail Jello to a tree<p>There are software tools&#x2F;services that help with this, and a ton more that merely promise to, but most of the tooling around LLMs these days gives the illusion of a reliable tool rather than results of one. It&#x27;s the early days of the gold rush still, and every one wants to be seen as one of the first",
+            "One of the decent parts about open weights models is that you can&#x27;t have this happen to you. You get to keep access to any model you want. This is essential for continuity of products.",
+            "Looks like they are just cleaning house of lesser-used models? This came via mail last week.<p><pre><code>  Back in June 2023 and November 2023, we announced the following models will be deprecated on June 13th, 2024:\n   gpt-3.5-turbo-0301 \n   gpt-3.5-turbo-0613\n   gpt-3.5-turbo-16k-0613\n  We noticed that your organization recently used at least one of these models. To help minimize any disruption, we are extending your access to these models for an additional 3 month grace period until September 13th, 2024. After this date, these models will be fully decommissioned.</code></pre>",
+            "So much for code migrations! Although most examples are about summarization or needle in a haystack search, applications whose output should be the size of input are probably more important although less advertised.<p>Curious if that is a business decision or a technical decision aka if optimizations for cheap and fast 128k gpt4o work only for small outputs",
+            "I&#x27;m confused here. What&#x27;s an &quot;output context&quot;? My assumption was that the context window was shared across input and (prior) output. You put everything into the model at once, and then at the end the first unused context vector becomes a vector you can decode for a single token of output. With multiple token output meaning you repeatedly inference, decode, sample, append, and repeat until you sample an end token. Is this just a limit of OpenAI APIs or something I&#x27;m forgetting?",
+            "I am having trouble understanding what the complaint is here.<p>The docs still mention bigger models with 128k tokens and smaller models with 8k tokens. It seems reasonable to optimize for big and small use cases differently? I don&#x27;t see how we are being &quot;robbed&quot;.",
+            "Ah I see, taking a page from the Google playbook and aggressively culling less popular products. I wonder how many sales Google&#x27;s reputation for capricious culling has cost them."
+        ]
+    },
+    {
+        "by": "lalaland1125",
+        "descendants": 222,
+        "id": 40696992,
+        "kids": [
+            40697622,
+            40697119,
+            40697576,
+            40697999,
+            40697255,
+            40697162,
+            40697984,
+            40698531,
+            40697743,
+            40697852,
+            40698833,
+            40697365,
+            40697619,
+            40699075,
+            40698210,
+            40697523,
+            40697129
+        ],
+        "score": 355,
+        "time": 1718545226,
+        "title": "NLRB judge declares non-compete clause is an unfair labor practice",
+        "type": "story",
+        "url": "https://www.nlrbedge.com/p/in-first-case-of-its-kind-nlrb-judge",
+        "kids_texts": [
+            "That non-solicitation clause is interesting. My company forbids managers from providing references for employees. I wonder if that could also be considered an unfair labor practice since it negatively affect your ability to get a different job.<p>Honestly, I&#x27;m starting to see that my company is doing a lot of shady employment things. I guess most companies do.",
+            "&gt; Salting is protected activity, lying about your employment history to salt is also protected activity, and firing someone for salting is an unfair labor practice.<p>Huh... TIL",
+            "Nice. Here\u2019s hoping the extra freedom causes wages to rise and employers work to keep employees with benefits instead of handcuffs.",
+            "No need to ban it. Just automaticly award full salary for 2x the noncompete period they put in your contract, payable in full a week after contract termination.",
+            "There&#x27;s been moves by the FTC to ban non-competes as well.<p>I work in financial services so am often covered by these clauses.  Firstly, it seems insane that unpaid non-competes are legal at all, to start with.  Also, seeing them applied to very junior level and even hourly paid roles is overly onerous.<p>While my industry pays your base salary during your &quot;garden leave&quot; even this can be misleading in more senior roles where 50% or more of your compensation is bonus, plus some firms cut your healthcare coverage on resignation as well.  Some companies have also extended the terms as long as 18 months or longer.<p>Further, I have been under non-solicitations with terms as long as 5 years which is frankly insane.<p>So all that is to say the free market is not exactly working here, and seeing some legal guardrails put in place would be good - pay required, terms limited, benefits defined, etc.",
+            "How much authority&#x2F;jurisdiction does this judge&#x2F;ruling have? It seems like the kind of thing that might easily get appealed and lost.",
+            "This sounds reasonable. If you train as a plumber, work for ACME Plumbing Inc. and then leave, being told you can&#x27;t work anywhere else in your trade for 24 months means you should do what exactly - become an uber driver for a couple of years?",
+            "If non-compete is must, you can always make garden leave contract.<p>Employee must stay away from work during the notice period, while still remaining on the payroll. 6 or 12 month garden leave is common in financial sector.",
+            "Of course it is. Non-competes are unenforceable in the UK as you can\u2019t stop someone earning a living and if their skill or knowledge is that specific or valuable that they may not be able to get a job anywhere not covered in the non-compete.<p>Want someone to not work for a competitor until their secret knowledge is out of date? Pay them gardening leave.",
+            "The Supremes have been on a tear vs administrative judges, so expect this to get swatted down. There are other agencies in the non-compete mix that are better suited to make these sorts of policy decisions. This court would rather have agencies and politicians do their jobs when it comes to this stuff."
+        ]
+    },
+    {
+        "by": "msephton",
+        "descendants": 47,
+        "id": 40688921,
+        "kids": [
+            40695847,
+            40695193,
+            40695173,
+            40688922,
+            40701230,
+            40695444,
+            40695802,
+            40694911,
+            40696137,
+            40695963,
+            40696123,
+            40696233
+        ],
+        "score": 83,
+        "time": 1718448977,
+        "title": "Hokusai's 'Great Wave' features on new Japanese banknotes (2019)",
+        "type": "story",
+        "url": "https://www.cnn.com/style/article/japan-new-banknotes-great-wave/index.html",
+        "kids_texts": [
+            "<i>Mokuhankan</i> in Tokyo made a limited woodblock print run of <i>The</i> <i>Great</i> <i>Wave</i> <i>of</i> <i>Kanagawa</i> a couple years ago. It was printed using traditional methods but the templates were made on a computer, using high-res scans of multiple vintage prints as source material. The long process was documented on YouTube. \n&lt;<a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;playlist?list=PLK-Wicsj5rAasS2g7e-Z9eFUdG6I7ZqED\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;playlist?list=PLK-Wicsj5rAasS2g7e-Z9...</a>&gt;<p>One interesting fact that came up is that: No known existing print has been identified as being from an original print run! All known antique prints in existence are reproductions from back in the day. Japan did not have any copyright law, so copying of prints was common. This has been seen by every print having artefacts that have been recognised as some that can happen while copying, and then those artefacts were copied and so on...\nThe British Museum has an article about it: &lt;<a href=\"https:&#x2F;&#x2F;www.britishmuseum.org&#x2F;blog&#x2F;great-wave-spot-difference\" rel=\"nofollow\">https:&#x2F;&#x2F;www.britishmuseum.org&#x2F;blog&#x2F;great-wave-spot-differenc...</a>&gt;",
+            "Could we add [2019] to the title?<p>More context:<p>&gt; On April 9, 2019, Finance Minister Tar\u014d As\u014d announced new designs for the \u00a51000, \u00a55000, and \u00a510,000 notes, for use beginning on July 3, 2024.<p>&gt; The \u00a51000 bill will feature Kitasato Shibasabur\u014d and The Great Wave off Kanagawa, the \u00a55000 bill will feature Tsuda Umeko and wisteria flowers, and the \u00a510,000 bill will feature Shibusawa Eiichi and Tokyo Station.<p><a href=\"https:&#x2F;&#x2F;en.m.wikipedia.org&#x2F;wiki&#x2F;Banknotes_of_the_Japanese_yen\" rel=\"nofollow\">https:&#x2F;&#x2F;en.m.wikipedia.org&#x2F;wiki&#x2F;Banknotes_of_the_Japanese_ye...</a>",
+            "I&#x27;m curious: Is the Great Wave as iconic within Japan as it is to the West et al? For me it&#x27;s one of the first pieces of Japanese art I think of, but I&#x27;ve always wondered if that&#x27;s just because it&#x27;s closer to the intersection of, say, American and Japanese sensibilities&#x2F;artistic palate, rather than because it&#x27;s actually the biggest deal in Japanese art.",
+            "This summer is the perfect time to see Hokusai\u2019s \u201cGreat Wave\u201d in person around the world!<p>3 impressions go on view this month in Japan (Kawasaki, Okayama, Tokyo)<p>This coincides with its inclusion on the new \u00a51000 bank note from July 2024.<p>And impressions are still on view in UK, Italy, and USA: <a href=\"https:&#x2F;&#x2F;greatwavetoday.com\" rel=\"nofollow\">https:&#x2F;&#x2F;greatwavetoday.com</a>",
+            "My Japanese partner was saying that small businesses are complaining about these because apparently some machines that process banknotes are unable to detect them.",
+            "I wonder if they will ever feature anime&#x2F;manga art on their paper money.",
+            "Think they&#x27;ll do &#x27;dream of the fisherman&#x27;s wife&#x27; next?",
+            "Article from five years ago",
+            "The Great Wave is fantastic art and I&#x27;m getting a bit tired of seeing it overused everywhere. This is going to make that even worse.<p>It&#x27;s good to celebrate outstanding artwork but having it in everyone&#x27;s face all the time is antithetical to that."
+        ]
+    },
+    {
+        "by": "miles",
+        "descendants": 3,
+        "id": 40700030,
+        "kids": [
+            40700387
+        ],
+        "score": 17,
+        "time": 1718571306,
+        "title": "Snowden eviscerates OpenAI's decision to put a former NSA director on its board",
+        "type": "story",
+        "url": "https://fortune.com/2024/06/14/edward-snowden-eviscerates-openai-paul-nakasone-board-directors-decision/",
+        "kids_texts": [
+            "Evidcerate is a cringey headline word"
+        ]
+    },
+    {
+        "by": "peutetre",
+        "descendants": 7,
+        "id": 40695642,
+        "kids": [
+            40698897,
+            40700500,
+            40699078
+        ],
+        "score": 19,
+        "time": 1718527730,
+        "title": "Volvo's Battery Passport Traces the Supply Chain",
+        "type": "story",
+        "url": "https://spectrum.ieee.org/volvo-ex90-battery-passport",
+        "kids_texts": [
+            "&gt;The AI-based system can track the Volvo\u2019s battery life cycle, prove the origin of battery materials, and show its carbon footprint and recycled content.<p>Can someone <i>please</i> tell me how &quot;AI&quot; made it into that? Seriously I can&#x27;t fathom the idea. You want trustworthy, accurate information about measurable, objective quantities, why is AI involved?",
+            "&gt; \u201cWe are working alongside our main suppliers at all tiers of the supply chain to improve data quality.\u201d<p>But you&#x27;re using the blockchain? We shouldn&#x27;t need to trust any third parties, including Circulor, no?",
+            "&gt; Volvo and the London-based tech startup Circulor have designed a \u201cbattery passport\u201d<p>What exactly is there to &quot;design&quot;, and that on top requires a partnership with a startup? Shouldn&#x27;t this basically be an audit of the parts in the battery and their sources? A report from the company ERP, mostly."
+        ]
+    }
+]
