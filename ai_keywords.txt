@@ -1,20 +1,17 @@
+Open Source
+License
+GitHub
 Artificial Intelligence
+LLama
 AI
 Machine Learning
 ML
-Deep Learning
-Neural Networks
-NLP
-Natural Language Processing
 Large Language Models
 LLM
-Codex
 Chatbot
 OpenAI
 ChatGPT
 DALL-E
 GPT
-Finetuning
 Prompt
 Generative AI
-XLNet
