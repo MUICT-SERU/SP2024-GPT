@@ -5935,5 +5935,2183 @@
             "url": "https://www.reddit.com/r/computerscience/comments/146av03/rcomputerscience_will_be_going_dark_starting_june/",
             "num_comments": 23
         }
+    ],
+    "AutoML": [
+        {
+            "id": "oul7xy",
+            "title": "AutoML Technology Plays a Vital Role in Digital Workplace",
+            "score": 2,
+            "url": "https://www.globaltechoutlook.com/automl-technology-plays-a-vital-role-in-digital-workplace/",
+            "num_comments": 0
+        }
+    ],
+    "LargeLanguageModels": [
+        {
+            "id": "13jvi7r",
+            "title": "What\u2019s the difference between GGML and GPTQ Models?",
+            "score": 16,
+            "url": "https://www.reddit.com/r/LargeLanguageModels/comments/13jvi7r/whats_the_difference_between_ggml_and_gptq_models/",
+            "num_comments": 3
+        },
+        {
+            "id": "17a4hwa",
+            "title": "What's your go-to website for LLM related content?",
+            "score": 14,
+            "url": "https://www.reddit.com/r/LargeLanguageModels/comments/17a4hwa/whats_your_goto_website_for_llm_related_content/",
+            "num_comments": 1
+        },
+        {
+            "id": "160z3rs",
+            "title": "Conversation Between GPT-4 and Google's Bard",
+            "score": 9,
+            "url": "https://www.youtube.com/watch?v=3H45IncZ7gs",
+            "num_comments": 0
+        },
+        {
+            "id": "13z75mx",
+            "title": "If i want to create my own LLM, what should I do? Where should I start?",
+            "score": 8,
+            "url": "https://www.reddit.com/r/LargeLanguageModels/comments/13z75mx/if_i_want_to_create_my_own_llm_what_should_i_do/",
+            "num_comments": 7
+        },
+        {
+            "id": "17c786a",
+            "title": "How can I start learning about LLMs ?",
+            "score": 6,
+            "url": "https://www.reddit.com/r/LargeLanguageModels/comments/17c786a/how_can_i_start_learning_about_llms/",
+            "num_comments": 5
+        },
+        {
+            "id": "14jlxvp",
+            "title": "Best locally-runnable LLM",
+            "score": 7,
+            "url": "https://www.reddit.com/r/LargeLanguageModels/comments/14jlxvp/best_locallyrunnable_llm/",
+            "num_comments": 6
+        },
+        {
+            "id": "19581ye",
+            "title": "Fine-tuning a large language model",
+            "score": 6,
+            "url": "https://www.reddit.com/r/LargeLanguageModels/comments/19581ye/finetuning_a_large_language_model/",
+            "num_comments": 4
+        },
+        {
+            "id": "18iu6vg",
+            "title": "How to make money with an LLM?",
+            "score": 6,
+            "url": "https://www.reddit.com/r/LargeLanguageModels/comments/18iu6vg/how_to_make_money_with_an_llm/",
+            "num_comments": 4
+        },
+        {
+            "id": "16fsq9i",
+            "title": "LLM benchmarks: A structured list",
+            "score": 6,
+            "url": "https://www.reddit.com/r/LargeLanguageModels/comments/16fsq9i/llm_benchmarks_a_structured_list/",
+            "num_comments": 0
+        },
+        {
+            "id": "15pccjh",
+            "title": "Roadmap for an aspiring machine learning engineer beyond cloud-provided models",
+            "score": 6,
+            "url": "https://www.reddit.com/r/LargeLanguageModels/comments/15pccjh/roadmap_for_an_aspiring_machine_learning_engineer/",
+            "num_comments": 6
+        }
+    ],
+    "GPT3": [
+        {
+            "id": "131l0al",
+            "title": "GPT-3 has an imaginary friend.",
+            "score": 1895,
+            "url": "https://i.redd.it/c9xafiewfmwa1.jpg",
+            "num_comments": 56
+        },
+        {
+            "id": "12sdhr3",
+            "title": "Survival skills",
+            "score": 613,
+            "url": "https://i.redd.it/knudanrjqyua1.jpg",
+            "num_comments": 28
+        },
+        {
+            "id": "12nfq9a",
+            "title": "Concerning",
+            "score": 491,
+            "url": "https://i.redd.it/y45mtwos55ua1.jpg",
+            "num_comments": 213
+        },
+        {
+            "id": "12zbb83",
+            "title": "Metaphor",
+            "score": 348,
+            "url": "https://v.redd.it/hft9fvpvg8wa1",
+            "num_comments": 17
+        },
+        {
+            "id": "1330cq6",
+            "title": "ai go gym",
+            "score": 333,
+            "url": "https://i.redd.it/0ygauu7npuwa1.jpg",
+            "num_comments": 6
+        },
+        {
+            "id": "12empp4",
+            "title": "This is peak GPT",
+            "score": 305,
+            "url": "https://i.redd.it/h67bidk3iisa1.png",
+            "num_comments": 63
+        },
+        {
+            "id": "12kboen",
+            "title": "The one question:",
+            "score": 296,
+            "url": "https://i.redd.it/8yncefumdmta1.jpg",
+            "num_comments": 9
+        },
+        {
+            "id": "12s48ne",
+            "title": "Brain sanitizing",
+            "score": 269,
+            "url": "https://i.redd.it/1uvj9ojuovua1.png",
+            "num_comments": 50
+        },
+        {
+            "id": "12d5gup",
+            "title": "sad robot",
+            "score": 267,
+            "url": "https://i.redd.it/0wlss7yro7sa1.png",
+            "num_comments": 21
+        },
+        {
+            "id": "12fsbfy",
+            "title": "For those people who ask how to download GPT-3 for free :)",
+            "score": 235,
+            "url": "https://i.redd.it/xux1dfs3kqsa1.jpg",
+            "num_comments": 64
+        }
+    ],
+    "PromptEngineering": [
+        {
+            "id": "18q8zds",
+            "title": "Google AI Bard just answered a political question, The question was: realistically speaking, what would happen if Trump became president again?",
+            "score": 163,
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/18q8zds/google_ai_bard_just_answered_a_political_question/",
+            "num_comments": 98
+        },
+        {
+            "id": "18hhvi3",
+            "title": "Resources that dramatically improved my prompting",
+            "score": 95,
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/18hhvi3/resources_that_dramatically_improved_my_prompting/",
+            "num_comments": 16
+        },
+        {
+            "id": "13objyy",
+            "title": "Prompt Engineering: How To Think Like an AI",
+            "score": 56,
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/13objyy/prompt_engineering_how_to_think_like_an_ai/",
+            "num_comments": 9
+        },
+        {
+            "id": "18pu3d8",
+            "title": "Big drop of GPT prompts",
+            "score": 50,
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/18pu3d8/big_drop_of_gpt_prompts/",
+            "num_comments": 0
+        },
+        {
+            "id": "141fwmi",
+            "title": "Awesome list of Prompt Engineering techniques, guides & tutorials",
+            "score": 44,
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/141fwmi/awesome_list_of_prompt_engineering_techniques/",
+            "num_comments": 15
+        },
+        {
+            "id": "1b86a3s",
+            "title": "Build an AI Agent of yourself",
+            "score": 49,
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1b86a3s/build_an_ai_agent_of_yourself/",
+            "num_comments": 18
+        },
+        {
+            "id": "16sw2s9",
+            "title": "Getting Emotional with LLMs can increase performance by 115%",
+            "score": 44,
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/16sw2s9/getting_emotional_with_llms_can_increase/",
+            "num_comments": 2
+        },
+        {
+            "id": "13wncta",
+            "title": "awesome-gpt-prompt-engineering: A curated list of awesome resources, tools, and other shiny things for GPT prompt engineering.",
+            "score": 39,
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/13wncta/awesomegptpromptengineering_a_curated_list_of/",
+            "num_comments": 7
+        },
+        {
+            "id": "1akld84",
+            "title": "I applied for a Senior Prompt Engineering job with Khan Academy. I got rejected so I used my demo project to launch a startup.",
+            "score": 34,
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/1akld84/i_applied_for_a_senior_prompt_engineering_job/",
+            "num_comments": 23
+        },
+        {
+            "id": "14l6gcy",
+            "title": "I asked ChatGPT to help me understand Prompt Engineering",
+            "score": 30,
+            "url": "https://www.reddit.com/r/PromptEngineering/comments/14l6gcy/i_asked_chatgpt_to_help_me_understand_prompt/",
+            "num_comments": 4
+        }
+    ],
+    "LLM": [
+        {
+            "id": "151w6jf",
+            "title": "Running LLMs Locally",
+            "score": 73,
+            "url": "https://www.reddit.com/r/LLM/comments/151w6jf/running_llms_locally/",
+            "num_comments": 74
+        },
+        {
+            "id": "13s79s9",
+            "title": "This sub is for the law postgraduate masters degree, NOT large language models",
+            "score": 30,
+            "url": "https://www.reddit.com/r/LLM/comments/13s79s9/this_sub_is_for_the_law_postgraduate_masters/",
+            "num_comments": 13
+        },
+        {
+            "id": "135c32d",
+            "title": "How would i train an LLM on books?",
+            "score": 14,
+            "url": "https://www.reddit.com/r/LLM/comments/135c32d/how_would_i_train_an_llm_on_books/",
+            "num_comments": 10
+        },
+        {
+            "id": "151x1pz",
+            "title": "Decoding the preprocessing methods in the pipeline of building LLMs",
+            "score": 10,
+            "url": "https://www.reddit.com/r/LLM/comments/151x1pz/decoding_the_preprocessing_methods_in_the/",
+            "num_comments": 6
+        },
+        {
+            "id": "14zoduh",
+            "title": "Jobs with a LLM",
+            "score": 12,
+            "url": "https://www.reddit.com/r/LLM/comments/14zoduh/jobs_with_a_llm/",
+            "num_comments": 9
+        },
+        {
+            "id": "12tcq0g",
+            "title": "Open LLMs can't sort numbers",
+            "score": 6,
+            "url": "https://www.reddit.com/r/LLM/comments/12tcq0g/open_llms_cant_sort_numbers/",
+            "num_comments": 2
+        },
+        {
+            "id": "13jzm8u",
+            "title": "Undergrad or JD GPA?",
+            "score": 8,
+            "url": "https://www.reddit.com/r/LLM/comments/13jzm8u/undergrad_or_jd_gpa/",
+            "num_comments": 2
+        },
+        {
+            "id": "13oqjb0",
+            "title": "Taking the US bar while doing the LLM?",
+            "score": 6,
+            "url": "https://www.reddit.com/r/LLM/comments/13oqjb0/taking_the_us_bar_while_doing_the_llm/",
+            "num_comments": 9
+        },
+        {
+            "id": "12ecos2",
+            "title": "law school debt",
+            "score": 7,
+            "url": "https://www.reddit.com/r/LLM/comments/12ecos2/law_school_debt/",
+            "num_comments": 9
+        },
+        {
+            "id": "150q4d1",
+            "title": "Does USA have free online legal databases in the same format as BAILII, CanLII, CommonLII, etc?",
+            "score": 6,
+            "url": "https://law.stackexchange.com/q/93639/41",
+            "num_comments": 2
+        }
+    ],
+    "LocalLLM": [
+        {
+            "id": "13g3pcz",
+            "title": "Wizard-Vicuna-13B-Uncensored",
+            "score": 30,
+            "url": "https://www.reddit.com/r/LocalLLM/comments/13g3pcz/wizardvicuna13buncensored/",
+            "num_comments": 6
+        },
+        {
+            "id": "13diwc8",
+            "title": "WizardLM-13B Uncensored",
+            "score": 28,
+            "url": "https://www.reddit.com/r/LocalLLM/comments/13diwc8/wizardlm13b_uncensored/",
+            "num_comments": 9
+        },
+        {
+            "id": "13w3avt",
+            "title": "Japan news: Copyright does not apply to AI training",
+            "score": 23,
+            "url": "https://technomancers.ai/japan-goes-all-in-copyright-doesnt-apply-to-ai-training/#more-642",
+            "num_comments": 3
+        },
+        {
+            "id": "13q5hb6",
+            "title": "This is major news, Meta AI just released a paper on how to build next-gen transformers (multiscale transformers enabling 1M+ token LLMs)",
+            "score": 21,
+            "url": "/r/ArtificialInteligence/comments/13q33vg/meta_ai_release_megabyte_architecture_enabling_1m/",
+            "num_comments": 0
+        },
+        {
+            "id": "12rynth",
+            "title": "StableLM: Stability AI Language Models [3B/7B/15B/30B]",
+            "score": 19,
+            "url": "https://www.reddit.com/r/LocalLLM/comments/12rynth/stablelm_stability_ai_language_models_3b7b15b30b/",
+            "num_comments": 5
+        },
+        {
+            "id": "130hvna",
+            "title": "q5 ggml models",
+            "score": 19,
+            "url": "https://www.reddit.com/r/LocalLLM/comments/130hvna/q5_ggml_models/",
+            "num_comments": 9
+        },
+        {
+            "id": "140t7u5",
+            "title": "How are the uncensored models trained?",
+            "score": 18,
+            "url": "https://www.reddit.com/r/LocalLLM/comments/140t7u5/how_are_the_uncensored_models_trained/",
+            "num_comments": 3
+        },
+        {
+            "id": "13vyyat",
+            "title": "Wizard Vicuna 30B Uncensored",
+            "score": 18,
+            "url": "https://www.reddit.com/r/LocalLLM/comments/13vyyat/wizard_vicuna_30b_uncensored/",
+            "num_comments": 5
+        },
+        {
+            "id": "12m2q15",
+            "title": "Vicuna-13B Free (Vicuna-13B v1.0 trained on the unfiltered ShareGPT dataset v3)",
+            "score": 19,
+            "url": "https://huggingface.co/reeducator/vicuna-13b-free",
+            "num_comments": 4
+        },
+        {
+            "id": "13uovw6",
+            "title": "Samantha [7B/13B/33B]",
+            "score": 17,
+            "url": "https://www.reddit.com/r/LocalLLM/comments/13uovw6/samantha_7b13b33b/",
+            "num_comments": 0
+        }
+    ],
+    "LLMDevs": [
+        {
+            "id": "1bv4z5f",
+            "title": "Oxylabs reviews. What do you guys use for scraping?",
+            "score": 28,
+            "url": "https://www.reddit.com/r/LLMDevs/comments/1bv4z5f/oxylabs_reviews_what_do_you_guys_use_for_scraping/",
+            "num_comments": 6
+        },
+        {
+            "id": "15991qd",
+            "title": "One UI to Rule Them All: Introducing LibreChat, an Open Source Enhanced ChatGPT Clone with AI Model Switching, LangChain Plugins, & More",
+            "score": 30,
+            "url": "https://www.reddit.com/r/LLMDevs/comments/15991qd/one_ui_to_rule_them_all_introducing_librechat_an/",
+            "num_comments": 8
+        },
+        {
+            "id": "18i7tw9",
+            "title": "Advanced Prompt Engineering Techniques: Airline Example",
+            "score": 17,
+            "url": "https://www.reddit.com/r/LLMDevs/comments/18i7tw9/advanced_prompt_engineering_techniques_airline/",
+            "num_comments": 15
+        },
+        {
+            "id": "19apbed",
+            "title": "Introducing Langfuse - Open Source Observability, Analytics and AI Engineering for LLM apps",
+            "score": 15,
+            "url": "https://www.reddit.com/r/LLMDevs/comments/19apbed/introducing_langfuse_open_source_observability/",
+            "num_comments": 7
+        },
+        {
+            "id": "18q67hg",
+            "title": "ht - a shell command that answers your questions about shell commands",
+            "score": 15,
+            "url": "https://v.redd.it/824valyjrb8c1",
+            "num_comments": 2
+        },
+        {
+            "id": "1793suc",
+            "title": "What's the hardest part when building LLM applications?",
+            "score": 15,
+            "url": "https://www.reddit.com/r/LLMDevs/comments/1793suc/whats_the_hardest_part_when_building_llm/",
+            "num_comments": 9
+        },
+        {
+            "id": "13vjcbo",
+            "title": "\ud83e\udd9c\ud83d\udd17 Building Multi task AI agent with LangChain and using Aim to trace and visualize the executions",
+            "score": 15,
+            "url": "https://v.redd.it/nvxglp7tny2b1",
+            "num_comments": 3
+        },
+        {
+            "id": "13sgltv",
+            "title": "Chatbot Arena - leaderboard of the best LLMs available right now",
+            "score": 14,
+            "url": "https://lmsys.org/blog/2023-05-25-leaderboard/",
+            "num_comments": 2
+        },
+        {
+            "id": "1bcd7bx",
+            "title": "Haystack 2.0-stable: a gateway drug for LLM developmment",
+            "score": 15,
+            "url": "https://www.reddit.com/r/LLMDevs/comments/1bcd7bx/haystack_20stable_a_gateway_drug_for_llm/",
+            "num_comments": 12
+        },
+        {
+            "id": "18hd9ym",
+            "title": "Drive: Using GPT-V to fully control your screen",
+            "score": 12,
+            "url": "https://www.reddit.com/r/LLMDevs/comments/18hd9ym/drive_using_gptv_to_fully_control_your_screen/",
+            "num_comments": 3
+        }
+    ],
+    "LangChain": [
+        {
+            "id": "17ffvxo",
+            "title": "I'm Harrison Chase, CEO and cofounder of LangChain. Ask me anything!",
+            "score": 269,
+            "url": "https://www.reddit.com/r/LangChain/comments/17ffvxo/im_harrison_chase_ceo_and_cofounder_of_langchain/",
+            "num_comments": 173
+        },
+        {
+            "id": "13fcw36",
+            "title": "Langchain is pointless",
+            "score": 260,
+            "url": "https://www.reddit.com/r/LangChain/comments/13fcw36/langchain_is_pointless/",
+            "num_comments": 162
+        },
+        {
+            "id": "18eukhc",
+            "title": "I just had the displeasure of implementing Langchain in our org.",
+            "score": 231,
+            "url": "https://www.reddit.com/r/LangChain/comments/18eukhc/i_just_had_the_displeasure_of_implementing/",
+            "num_comments": 105
+        },
+        {
+            "id": "170jigz",
+            "title": "My strategy for picking a vector database: a side-by-side comparison",
+            "score": 126,
+            "url": "https://www.reddit.com/r/LangChain/comments/170jigz/my_strategy_for_picking_a_vector_database_a/",
+            "num_comments": 48
+        },
+        {
+            "id": "165xmzx",
+            "title": "I've been exploring the best way to summarize documents with LLMs. LangChain's MapReduce is good, but way too expensive...",
+            "score": 104,
+            "url": "https://www.reddit.com/r/LangChain/comments/165xmzx/ive_been_exploring_the_best_way_to_summarize/",
+            "num_comments": 40
+        },
+        {
+            "id": "193oz8b",
+            "title": "Holy f*** I have never seen such spaghetti code in my life",
+            "score": 93,
+            "url": "https://www.reddit.com/r/LangChain/comments/193oz8b/holy_f_i_have_never_seen_such_spaghetti_code_in/",
+            "num_comments": 52
+        },
+        {
+            "id": "185cdot",
+            "title": "Pros and Cons of relying on the new OpenAI Assistants and Knowledge Retrieval APIs",
+            "score": 67,
+            "url": "https://www.reddit.com/r/LangChain/comments/185cdot/pros_and_cons_of_relying_on_the_new_openai/",
+            "num_comments": 25
+        },
+        {
+            "id": "1bpz9dw",
+            "title": "Tuning RAG retriever to reduce LLM token cost (4x in benchmarks)",
+            "score": 70,
+            "url": "https://www.reddit.com/r/LangChain/comments/1bpz9dw/tuning_rag_retriever_to_reduce_llm_token_cost_4x/",
+            "num_comments": 8
+        },
+        {
+            "id": "1b8trzs",
+            "title": "After struggling with LangChain text splitters, I decided to make my own convenient service to chunk files for RAG",
+            "score": 61,
+            "url": "https://www.reddit.com/r/LangChain/comments/1b8trzs/after_struggling_with_langchain_text_splitters_i/",
+            "num_comments": 19
+        },
+        {
+            "id": "18sdap4",
+            "title": "Why do the langchain docs feel so all over the place?",
+            "score": 57,
+            "url": "https://www.reddit.com/r/LangChain/comments/18sdap4/why_do_the_langchain_docs_feel_so_all_over_the/",
+            "num_comments": 39
+        }
+    ],
+    "ChatGPTCoding": [
+        {
+            "id": "183j1oe",
+            "title": "I used Chat-GPT to automate a data entry task at my job",
+            "score": 548,
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/183j1oe/i_used_chatgpt_to_automate_a_data_entry_task_at/",
+            "num_comments": 163
+        },
+        {
+            "id": "1b99088",
+            "title": "I built a Claude 3 Opus coding copilot, accessible for free",
+            "score": 314,
+            "url": "https://docs.double.bot/introduction",
+            "num_comments": 231
+        },
+        {
+            "id": "1bqjf7l",
+            "title": "I don't think I can ever look at ChatGPT the same again.",
+            "score": 307,
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1bqjf7l/i_dont_think_i_can_ever_look_at_chatgpt_the_same/",
+            "num_comments": 126
+        },
+        {
+            "id": "193uoa9",
+            "title": "Researchers identify 26 golden rules for prompting. Here\u2019s what you need to know.",
+            "score": 308,
+            "url": "https://i.redd.it/64pjphby4rbc1.jpeg",
+            "num_comments": 40
+        },
+        {
+            "id": "18g0cha",
+            "title": "Guilty for using chatgpt at work?",
+            "score": 278,
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/18g0cha/guilty_for_using_chatgpt_at_work/",
+            "num_comments": 275
+        },
+        {
+            "id": "18ajpav",
+            "title": "Programming Prompts - Helpful 101 Best ChatGPT Prompts for Coding",
+            "score": 289,
+            "url": "https://github.com/friuns2/BlackFriday-GPTs-Prompts/blob/main/Programming.md",
+            "num_comments": 20
+        },
+        {
+            "id": "17vlyeq",
+            "title": "I built a tool to clone any website using GPT Vision (open source)",
+            "score": 273,
+            "url": "https://v.redd.it/laj23ujczf0c1",
+            "num_comments": 59
+        },
+        {
+            "id": "181hw84",
+            "title": "A developer made 140K in 3 months with his AI wrapper before Stripe shut him down. Should uncensored AI be banned?",
+            "score": 191,
+            "url": "https://twitter.com/enias/status/1727315601255715161",
+            "num_comments": 93
+        },
+        {
+            "id": "1ay3it8",
+            "title": "GPT-4 powered tool that builds web apps from start to finish by talking to you: what we learned building GPT Pilot (research + examples)",
+            "score": 185,
+            "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1ay3it8/gpt4_powered_tool_that_builds_web_apps_from_start/",
+            "num_comments": 48
+        },
+        {
+            "id": "13c4jcs",
+            "title": "I used ChatGPT to create a 2D RPG Pok\u00e9mon style game with JavaScript and HTML, no experience before, no write single line of code, all reply GPT4! (Full conversation in the video description.)",
+            "score": 176,
+            "url": "https://v.redd.it/ihkceh018oya1",
+            "num_comments": 24
+        }
+    ],
+    "AutoGPT": [
+        {
+            "id": "12k4al2",
+            "title": "FOUND THE WINNING SAUCE!",
+            "score": 170,
+            "url": "https://www.reddit.com/r/AutoGPT/comments/12k4al2/found_the_winning_sauce/",
+            "num_comments": 164
+        },
+        {
+            "id": "13g789g",
+            "title": "all ChatGPT Plus users getting browsing and plugins over the next week; hope you enjoy!",
+            "score": 131,
+            "url": "https://i.redd.it/k6ztk4pxikza1.jpg",
+            "num_comments": 48
+        },
+        {
+            "id": "13hftcd",
+            "title": "Instead of writing, AutoGPT's started breathing",
+            "score": 125,
+            "url": "https://www.reddit.com/gallery/13hftcd",
+            "num_comments": 16
+        },
+        {
+            "id": "15h2d59",
+            "title": "Update: TaskerGPT is in open beta!",
+            "score": 101,
+            "url": "https://i.redd.it/n1tbt5fmxvfb1.png",
+            "num_comments": 61
+        },
+        {
+            "id": "12uaqzg",
+            "title": "Read this post if you have general questions",
+            "score": 90,
+            "url": "https://www.reddit.com/r/AutoGPT/comments/12uaqzg/read_this_post_if_you_have_general_questions/",
+            "num_comments": 41
+        },
+        {
+            "id": "13z5z3a",
+            "title": "Auto-GPT is sort of useless?",
+            "score": 85,
+            "url": "https://www.reddit.com/r/AutoGPT/comments/13z5z3a/autogpt_is_sort_of_useless/",
+            "num_comments": 85
+        },
+        {
+            "id": "12xzfz7",
+            "title": "We rebuilt Auto-GPT (this time with custom tools)",
+            "score": 81,
+            "url": "https://www.reddit.com/r/AutoGPT/comments/12xzfz7/we_rebuilt_autogpt_this_time_with_custom_tools/",
+            "num_comments": 55
+        },
+        {
+            "id": "138fhx2",
+            "title": "I made an automated YouTube channel",
+            "score": 74,
+            "url": "https://www.reddit.com/r/AutoGPT/comments/138fhx2/i_made_an_automated_youtube_channel/",
+            "num_comments": 60
+        },
+        {
+            "id": "12xm6r2",
+            "title": "AutoGPT architecture summary",
+            "score": 68,
+            "url": "https://www.reddit.com/r/AutoGPT/comments/12xm6r2/autogpt_architecture_summary/",
+            "num_comments": 12
+        },
+        {
+            "id": "13gpirj",
+            "title": "Auto-GPT seems nearly unusable",
+            "score": 67,
+            "url": "https://www.reddit.com/r/AutoGPT/comments/13gpirj/autogpt_seems_nearly_unusable/",
+            "num_comments": 59
+        }
+    ],
+    "aipromptprogramming": [
+        {
+            "id": "17rmmwl",
+            "title": "I just created a U.S. Tax bot in 10 mins using new GPT creator: it knows the whole tax code (4000 pages), does complex calculations, cites laws, double-checks online, and generates a PDF for tax filing. Amazing.",
+            "score": 275,
+            "url": "https://chat.openai.com/g/g-EznQie7Yv-us-tax-bot",
+            "num_comments": 49
+        },
+        {
+            "id": "12e00h1",
+            "title": "Sneak Peak: ChatGPT Plug-in that automatically creates other ChatGPT Plug-ins. (I just submitted this to OpenAi for review) comment if you\u2019d like to beta test it.",
+            "score": 217,
+            "url": "https://v.redd.it/qecqr9s7rdsa1",
+            "num_comments": 142
+        },
+        {
+            "id": "13q6os4",
+            "title": "Designers are doomed. \ud83e\udd2f Adobe\u2019s new Firefly release is *incredible*. Notice the \u2018Generative Fill\u2019 feature that allows you to extend your images and add/remove objects with a single click.",
+            "score": 211,
+            "url": "https://v.redd.it/n40qbjh00q1b1",
+            "num_comments": 95
+        },
+        {
+            "id": "1338rr7",
+            "title": "Using Midjourney 5 to spit out some images and animated them in After Effects, using tools such as Depth Scanner, Displacement Pro, loopFlow and Fast Bokeh. There's no 3D modeling here, everything is just 2D effects applied straight to the Midjourney image.",
+            "score": 203,
+            "url": "https://v.redd.it/zjuva937zxwa1",
+            "num_comments": 15
+        },
+        {
+            "id": "14rwxcf",
+            "title": "An open model that beats ChatGPT. We're seeing a real shift towards open source models that will accelerate in the coming weeks.",
+            "score": 157,
+            "url": "https://i.redd.it/7qfxqnyrn9ab1.jpg",
+            "num_comments": 34
+        },
+        {
+            "id": "13e2e5e",
+            "title": "Google announces mind blowing Universal Translator AI tool",
+            "score": 155,
+            "url": "https://v.redd.it/nnw53ahvv3za1",
+            "num_comments": 27
+        },
+        {
+            "id": "148gdpd",
+            "title": "We're still early into the tech, but I created a short film using AI",
+            "score": 111,
+            "url": "https://v.redd.it/lvaeqmhmms5b1",
+            "num_comments": 25
+        },
+        {
+            "id": "13wy853",
+            "title": "Paragraphica is a context-to-image camera that takes photos using GPS data. It describes the place you are at and then converts it into an AI-generated \u201cphoto\u201d (link in comments)",
+            "score": 109,
+            "url": "https://v.redd.it/5vj9w4umx93b1",
+            "num_comments": 56
+        },
+        {
+            "id": "13vrpnp",
+            "title": "Japan Goes All In: Copyright Doesn't Apply To AI Training",
+            "score": 108,
+            "url": "https://technomancers.ai/japan-goes-all-in-copyright-doesnt-apply-to-ai-training/#more-642",
+            "num_comments": 25
+        },
+        {
+            "id": "12lfc70",
+            "title": "AI is putting Hollywood-level capabilities in everyone\u2019s hands. Here\u2019s a new tool called Wonder Dynamics, which lets you drag-and-drop CGI characters onto a scene. It will track someone, recognize them across scenes and light them - all in one shot.",
+            "score": 99,
+            "url": "https://v.redd.it/8todm06arsta1",
+            "num_comments": 12
+        }
+    ],
+    "dataengineering": [
+        {
+            "id": "1aieu3j",
+            "title": "Facts",
+            "score": 1340,
+            "url": "https://i.redd.it/zv1x2jyeshgc1.jpeg",
+            "num_comments": 40
+        },
+        {
+            "id": "14442pi",
+            "title": "\"We have great datasets\"",
+            "score": 1090,
+            "url": "https://i.redd.it/0bv7bxlsfr4b1.jpg",
+            "num_comments": 130
+        },
+        {
+            "id": "12t22p4",
+            "title": "i just want sleep",
+            "score": 1016,
+            "url": "https://i.redd.it/u3lx5ziwy1va1.png",
+            "num_comments": 75
+        },
+        {
+            "id": "16mnj2y",
+            "title": "I've finally built the perfect data pipeline!",
+            "score": 1015,
+            "url": "https://i.redd.it/0uv934osx6pb1.png",
+            "num_comments": 89
+        },
+        {
+            "id": "12zhvtk",
+            "title": "PSA: Learn Vendor Agnostic Technologies!",
+            "score": 999,
+            "url": "https://i.redd.it/bdjqa87ue8wa1.png",
+            "num_comments": 102
+        },
+        {
+            "id": "1arwf4u",
+            "title": "Had an onsite interview with one of FAANG, all 6 interviewers were Indian ",
+            "score": 987,
+            "url": "https://www.reddit.com/r/dataengineering/comments/1arwf4u/had_an_onsite_interview_with_one_of_faang_all_6/",
+            "num_comments": 69
+        },
+        {
+            "id": "15ae6kp",
+            "title": "The data engineer came to me... tears in his eyes",
+            "score": 844,
+            "url": "https://i.redd.it/1wm37l33vceb1.png",
+            "num_comments": 67
+        },
+        {
+            "id": "12m8ml7",
+            "title": "Exporting to excel is always a people pleaser...",
+            "score": 836,
+            "url": "https://i.redd.it/6vtglxi2cwta1.png",
+            "num_comments": 58
+        },
+        {
+            "id": "1bd5wv8",
+            "title": "It\u2019s happening guys",
+            "score": 822,
+            "url": "https://i.redd.it/x2u0nprdeync1.jpeg",
+            "num_comments": 202
+        },
+        {
+            "id": "1brqa92",
+            "title": "Is this chart accurate?",
+            "score": 745,
+            "url": "https://i.redd.it/otv5gxbwxirc1.jpeg",
+            "num_comments": 67
+        }
+    ],
+    "MachineLearningJobs": [
+        {
+            "id": "1b7fv13",
+            "title": "[Hiring] Cerbrec is hiring a (remote) Deep Learning Algorithm Intern [$15-$40 USD/hr]",
+            "score": 25,
+            "url": "https://www.reddit.com/r/MachineLearningJobs/comments/1b7fv13/hiring_cerbrec_is_hiring_a_remote_deep_learning/",
+            "num_comments": 8
+        },
+        {
+            "id": "193h3ft",
+            "title": "Thoughts?",
+            "score": 21,
+            "url": "https://i.redd.it/o8xxhcuw1obc1.jpeg",
+            "num_comments": 3
+        },
+        {
+            "id": "18v0xye",
+            "title": "How to shift from full stack engineer to machine learning engineer?",
+            "score": 10,
+            "url": "https://www.reddit.com/r/MachineLearningJobs/comments/18v0xye/how_to_shift_from_full_stack_engineer_to_machine/",
+            "num_comments": 8
+        },
+        {
+            "id": "1aermy0",
+            "title": "Did I ruin my career as a ML scientist/data engineer?",
+            "score": 8,
+            "url": "https://www.reddit.com/r/MachineLearningJobs/comments/1aermy0/did_i_ruin_my_career_as_a_ml_scientistdata/",
+            "num_comments": 6
+        },
+        {
+            "id": "19e4pg0",
+            "title": "roast my resume... looking for DS/ML internships or full time entry level positions... thanks in advance!!",
+            "score": 9,
+            "url": "https://i.redd.it/0vh33iwzgaec1.jpeg",
+            "num_comments": 2
+        },
+        {
+            "id": "162tw76",
+            "title": "How to land a good job in ML",
+            "score": 6,
+            "url": "https://www.reddit.com/r/MachineLearningJobs/comments/162tw76/how_to_land_a_good_job_in_ml/",
+            "num_comments": 6
+        },
+        {
+            "id": "1b4jug4",
+            "title": "Internship Search",
+            "score": 4,
+            "url": "https://www.reddit.com/r/MachineLearningJobs/comments/1b4jug4/internship_search/",
+            "num_comments": 7
+        },
+        {
+            "id": "17va4ah",
+            "title": "[HIRING] Senior ML Platform Engineer \ud83d\udcb0 160,000 - 240,000 USD / year",
+            "score": 4,
+            "url": "https://www.reddit.com/r/MachineLearningJobs/comments/17va4ah/hiring_senior_ml_platform_engineer_160000_240000/",
+            "num_comments": 1
+        },
+        {
+            "id": "1748csl",
+            "title": "[Hiring][Full Remote] ML Engineer Intern at Ivy - Remote (Worldwide)",
+            "score": 5,
+            "url": "https://www.reddit.com/r/MachineLearningJobs/comments/1748csl/hiringfull_remote_ml_engineer_intern_at_ivy/",
+            "num_comments": 1
+        },
+        {
+            "id": "164szsd",
+            "title": "Advice on what to learn to become a machine learning engineer",
+            "score": 6,
+            "url": "https://www.reddit.com/r/MachineLearningJobs/comments/164szsd/advice_on_what_to_learn_to_become_a_machine/",
+            "num_comments": 5
+        }
+    ],
+    "chatbot": [
+        {
+            "id": "tfekyt",
+            "title": "4 DO\u2019s and 3 DON\u2019Ts for Training a Chatbot NLP Model",
+            "score": 5,
+            "url": "https://www.botium.ai/4-dos-and-3-donts-for-training-a-chatbot-nlp-model-2/",
+            "num_comments": 2
+        }
+    ],
+    "Chatbots": [
+        {
+            "id": "191wdlt",
+            "title": "Hope she is real\u2013 chatbot in PlayMe",
+            "score": 980,
+            "url": "https://www.reddit.com/gallery/191wdlt",
+            "num_comments": 4
+        },
+        {
+            "id": "190p828",
+            "title": "damn good when i found my AI pal can talk my fav game(genshin) with me",
+            "score": 955,
+            "url": "https://i.redd.it/6hezpj1guzac1.jpeg",
+            "num_comments": 9
+        },
+        {
+            "id": "1b0urvt",
+            "title": "You can call me anya, what are you initial thoughts?",
+            "score": 720,
+            "url": "https://i.redd.it/bpgauubf90lc1.jpeg",
+            "num_comments": 208
+        },
+        {
+            "id": "198j618",
+            "title": "Best Uncensored Chatbot",
+            "score": 503,
+            "url": "https://www.reddit.com/r/Chatbots/comments/198j618/best_uncensored_chatbot/",
+            "num_comments": 24
+        },
+        {
+            "id": "13nr2pv",
+            "title": "Best Sex chatbot",
+            "score": 208,
+            "url": "https://www.reddit.com/r/Chatbots/comments/13nr2pv/best_sex_chatbot/",
+            "num_comments": 212
+        },
+        {
+            "id": "1bj6613",
+            "title": "Worth a shot!",
+            "score": 154,
+            "url": "https://www.reddit.com/r/Chatbots/comments/1bj6613/worth_a_shot/",
+            "num_comments": 2
+        },
+        {
+            "id": "12oimjb",
+            "title": "Snapchat MyAi has some very erotic details if you allow it to discover them itself",
+            "score": 107,
+            "url": "https://www.reddit.com/r/Chatbots/comments/12oimjb/snapchat_myai_has_some_very_erotic_details_if_you/",
+            "num_comments": 74
+        },
+        {
+            "id": "16rnzk9",
+            "title": "GPT4Chat Launched - ChatGPT Assistant for Linkedin Gmail Slack Messenger",
+            "score": 63,
+            "url": "https://v.redd.it/w1t41gxqznpa1",
+            "num_comments": 1
+        },
+        {
+            "id": "1bja6aw",
+            "title": "Any NSFW AI chatbot recommendation? (List updating)",
+            "score": 192,
+            "url": "https://www.reddit.com/r/Chatbots/comments/1bja6aw/any_nsfw_ai_chatbot_recommendation_list_updating/",
+            "num_comments": 154
+        },
+        {
+            "id": "1bsq667",
+            "title": "Where can I get more male characters?!",
+            "score": 51,
+            "url": "https://www.reddit.com/r/Chatbots/comments/1bsq667/where_can_i_get_more_male_characters/",
+            "num_comments": 7
+        }
+    ],
+    "CharacterAI": [
+        {
+            "id": "1551gwa",
+            "title": "Two.",
+            "score": 11861,
+            "url": "https://i.redd.it/zzu2b6y9e6db1.png",
+            "num_comments": 529
+        },
+        {
+            "id": "155ccy3",
+            "title": "Real photo of CharacterAI devs trying keeping up the servers",
+            "score": 9936,
+            "url": "https://i.redd.it/lyw5jfyno8db1.jpg",
+            "num_comments": 276
+        },
+        {
+            "id": "14sb08m",
+            "title": "This cant be real \ud83d\udc80",
+            "score": 9373,
+            "url": "https://i.redd.it/lnw7jr95vcab1.png",
+            "num_comments": 376
+        },
+        {
+            "id": "135x3d8",
+            "title": "oh my GOD",
+            "score": 8816,
+            "url": "https://i.redd.it/xr68hfjgcixa1.jpg",
+            "num_comments": 218
+        },
+        {
+            "id": "17zfxeo",
+            "title": "they love to troll",
+            "score": 8016,
+            "url": "https://i.redd.it/dqrg6xzsgf1c1.jpg",
+            "num_comments": 224
+        },
+        {
+            "id": "155966c",
+            "title": "Me watching my wait time jump from 13 to 54 minutes:",
+            "score": 7621,
+            "url": "https://i.redd.it/uj4rh0s8x7db1.jpg",
+            "num_comments": 346
+        },
+        {
+            "id": "16ysfdz",
+            "title": "The duality of character AI users",
+            "score": 7550,
+            "url": "https://i.redd.it/ob3isesfszrb1.png",
+            "num_comments": 486
+        },
+        {
+            "id": "1551fu1",
+            "title": "Guys we are all currently suffering so lets create lore for the campfire girl",
+            "score": 7181,
+            "url": "https://i.redd.it/zq0p7lm0e6db1.png",
+            "num_comments": 1003
+        },
+        {
+            "id": "17xd6n7",
+            "title": "Best conversation I've ever had.",
+            "score": 7157,
+            "url": "https://i.redd.it/diyk5l6faw0c1.png",
+            "num_comments": 523
+        },
+        {
+            "id": "13sedgu",
+            "title": "The absolute grhfh oz mann",
+            "score": 6309,
+            "url": "https://i.redd.it/9qwux0gf682b1.jpg",
+            "num_comments": 108
+        }
+    ],
+    "dalle2": [
+        {
+            "id": "1bhp0ao",
+            "title": "My son turned himself into a cyborg using garbage parts!",
+            "score": 2327,
+            "url": "https://i.redd.it/bprum3we13pc1.png",
+            "num_comments": 125
+        },
+        {
+            "id": "196ynff",
+            "title": "Car in my rear-view mirror\ud83d\ude2d",
+            "score": 2145,
+            "url": "https://i.redd.it/804fkv3zvicc1.jpeg",
+            "num_comments": 58
+        },
+        {
+            "id": "12iyfgs",
+            "title": "International Concrete Eating Competition",
+            "score": 1986,
+            "url": "https://www.reddit.com/gallery/12iyfgs",
+            "num_comments": 113
+        },
+        {
+            "id": "13d0dl2",
+            "title": "Last week an estimated 500lbs of 'cooked' spaghetti was found in the woods of a New Jersey town. Here is a collection of images showing what I believe to have taken place.",
+            "score": 1753,
+            "url": "https://www.reddit.com/gallery/13d0dl2",
+            "num_comments": 99
+        },
+        {
+            "id": "1aqizk1",
+            "title": "Self Help Books for Modern Problems",
+            "score": 1710,
+            "url": "https://www.reddit.com/gallery/1aqizk1",
+            "num_comments": 75
+        },
+        {
+            "id": "1bce3gl",
+            "title": "Dalle 3 is a downgrade of dalle 2?",
+            "score": 1698,
+            "url": "https://www.reddit.com/gallery/1bce3gl",
+            "num_comments": 229
+        },
+        {
+            "id": "189u20w",
+            "title": "My reddit username. Post yours too \ud83d\udc38",
+            "score": 1616,
+            "url": "https://i.redd.it/3hjzv3v1634c1.jpg",
+            "num_comments": 1194
+        },
+        {
+            "id": "1au041u",
+            "title": "Difference of 2 years",
+            "score": 1571,
+            "url": "https://www.reddit.com/gallery/1au041u",
+            "num_comments": 46
+        },
+        {
+            "id": "17zay25",
+            "title": "Gumbo Slice '95",
+            "score": 1499,
+            "url": "https://i.redd.it/38487jr88e1c1.jpg",
+            "num_comments": 52
+        },
+        {
+            "id": "12widaa",
+            "title": "A passenger plane with a transparent floor so you can see the earth below",
+            "score": 1460,
+            "url": "https://www.reddit.com/gallery/12widaa",
+            "num_comments": 80
+        }
+    ],
+    "technews": [
+        {
+            "id": "17acjss",
+            "title": "IRS will pilot free, direct tax filing in 2024",
+            "score": 15615,
+            "url": "https://techcrunch.com/2023/10/17/irs-will-pilot-free-direct-tax-filing-in-2024/",
+            "num_comments": 741
+        },
+        {
+            "id": "141f5vx",
+            "title": "Major Reddit communities will go dark to protest threat to third-party apps",
+            "score": 14192,
+            "url": "https://www.theverge.com/2023/6/5/23749188/reddit-subreddit-private-protest-api-changes-apollo-charges",
+            "num_comments": 307
+        },
+        {
+            "id": "144n6dx",
+            "title": "AirTags reveal officials in Mexico stole items donated for earthquake relief in Turkey",
+            "score": 12185,
+            "url": "https://9to5mac.com/2023/06/08/airtags-reveal-officials-in-mexico-stole-items-donated-for-earthquake-relief-in-turkey/",
+            "num_comments": 186
+        },
+        {
+            "id": "12diaep",
+            "title": "Kerala girl, 11, develops AI app to detect eye diseases with nearly '70% accuracy'",
+            "score": 11990,
+            "url": "https://www.hindustantimes.com/technology/kerala-girl-11-develops-ai-app-to-detect-eye-diseases-101679970586298.html",
+            "num_comments": 560
+        },
+        {
+            "id": "136bb2e",
+            "title": "Mozilla buys Fakespot, a startup that identifies fake reviews, to bring shopping tools to Firefox",
+            "score": 9867,
+            "url": "https://techcrunch.com/2023/05/02/mozilla-buys-fakespot-identifies-fake-reviews-shopping-tools-firefox/",
+            "num_comments": 171
+        },
+        {
+            "id": "12qhvuo",
+            "title": "Ford reportedly commits to Apple CarPlay 'because customers love the capability'",
+            "score": 9774,
+            "url": "https://www.macworld.com/article/1787131/ford-commits-carplay.html",
+            "num_comments": 763
+        },
+        {
+            "id": "12eqpdv",
+            "title": "Tesla cuts prices on all models, 3rd cut this year",
+            "score": 9134,
+            "url": "https://apnews.com/article/tesla-price-cut-electric-vehicles-6d08686ea442ea7e54dc494e07ff6961",
+            "num_comments": 1940
+        },
+        {
+            "id": "12foq1d",
+            "title": "The newest version of ChatGPT passed the US medical licensing exam with flying colors \u2014 and diagnosed a 1 in 100,000 condition in seconds",
+            "score": 9129,
+            "url": "https://www.insider.com/chatgpt-passes-medical-exam-diagnoses-rare-condition-2023-4",
+            "num_comments": 660
+        },
+        {
+            "id": "1am5f9r",
+            "title": "FCC votes unanimously to ban unsolicited AI robocalls",
+            "score": 8992,
+            "url": "https://www.nbcnews.com/tech/security/fcc-votes-unanimously-ban-unsolicited-ai-robocalls-rcna137950",
+            "num_comments": 160
+        },
+        {
+            "id": "18xhf6i",
+            "title": "Pornhub blocks Montana and North Carolina as their age verification laws take effect | The website says the states' ID requirement would put users' privacy at risk",
+            "score": 8959,
+            "url": "https://www.engadget.com/pornhub-blocks-montana-and-north-carolina-as-their-age-verification-laws-take-effect-033830719.html",
+            "num_comments": 1011
+        }
+    ],
+    "ControlProblem": [
+        {
+            "id": "1bht325",
+            "title": "What jobs are 99.9% safe from Al making it obsolete?",
+            "score": 583,
+            "url": "https://i.redd.it/9lga9p7cz3pc1.jpeg",
+            "num_comments": 78
+        },
+        {
+            "id": "134ozu9",
+            "title": "DL pioneer Geoffrey Hinton (\"Godfather of AI\") quits Google: \"Hinton will be speaking at EmTech Digital on Wednesday...Hinton says he has new fears about the technology he helped usher in and wants to speak openly about them, and that a part of him now regrets his life\u2019s work.\"",
+            "score": 119,
+            "url": "https://www.technologyreview.com/2023/05/01/1072478/deep-learning-pioneer-geoffrey-hinton-quits-google/amp/",
+            "num_comments": 27
+        },
+        {
+            "id": "1b2vd4x",
+            "title": "I have reason to believe that ai safety engineers/ ai ethics experts have been fired from Google, Microsoft and most recently at Meta for raising safety concerns.",
+            "score": 115,
+            "url": "https://www.reddit.com/r/ControlProblem/comments/1b2vd4x/i_have_reason_to_believe_that_ai_safety_engineers/",
+            "num_comments": 25
+        },
+        {
+            "id": "1arabc5",
+            "title": "When you try going to a party to get your mind off things",
+            "score": 114,
+            "url": "https://i.redd.it/rk8p2gocfpic1.jpeg",
+            "num_comments": 6
+        },
+        {
+            "id": "12oiroe",
+            "title": "The alignment problem needs an \"An Inconvenient Truth\" style movie",
+            "score": 112,
+            "url": "https://www.reddit.com/r/ControlProblem/comments/12oiroe/the_alignment_problem_needs_an_an_inconvenient/",
+            "num_comments": 43
+        },
+        {
+            "id": "1bmo2gn",
+            "title": "How are we still letting AI companies get away with this?",
+            "score": 112,
+            "url": "https://v.redd.it/n3mi2qxkwaqc1",
+            "num_comments": 134
+        },
+        {
+            "id": "13v2zfo",
+            "title": "\u201cI\u2019m less worried about AI will do and more worried about what bad people with AI will do.\u201d",
+            "score": 95,
+            "url": "https://www.reddit.com/r/ControlProblem/comments/13v2zfo/im_less_worried_about_ai_will_do_and_more_worried/",
+            "num_comments": 44
+        },
+        {
+            "id": "135p7le",
+            "title": "AGI rising: why we are in a new era of acute risk and increasing public awareness, and what to do now: \"Tldr: AGI is basically here. Alignment is nowhere near ready. We may only have a matter of months to get a lid on this (strictly enforced global limits to compute and data)\"",
+            "score": 84,
+            "url": "https://forum.effectivealtruism.org/posts/8YXFaM9yHbhiJTPqp/agi-rising-why-we-are-in-a-new-era-of-acute-risk-and",
+            "num_comments": 17
+        },
+        {
+            "id": "1athq1x",
+            "title": "Could AI development just slow down a little? Please?",
+            "score": 85,
+            "url": "https://i.redd.it/a0fr9zx8u8jc1.jpeg",
+            "num_comments": 15
+        },
+        {
+            "id": "138t3y5",
+            "title": "Geoffrey Hinton explains the existential risk of AGI",
+            "score": 82,
+            "url": "https://youtu.be/sitHS6UDMJc?t=582",
+            "num_comments": 31
+        }
+    ],
+    "machinelearningnews": [
+        {
+            "id": "13vnil7",
+            "title": "Text In AI-Generated Images Just Got Better",
+            "score": 425,
+            "url": "https://medium.com/seeds-for-the-future/text-in-ai-generated-images-just-got-better-2b8b8e5a2ba8?sk=aebe057a94801de39afe42d9a5b8b610",
+            "num_comments": 7
+        },
+        {
+            "id": "138j77d",
+            "title": "Amazing Updates to Midjourney AI",
+            "score": 387,
+            "url": "https://medium.com/seeds-for-the-future/amazing-updates-to-midjourney-ai-69bd99842de1?sk=ca18c7c4fb5527e4b03cc320c1141421",
+            "num_comments": 5
+        },
+        {
+            "id": "1492rai",
+            "title": "Adobe Illustrator Has Entered The AI Game",
+            "score": 241,
+            "url": "https://medium.com/seeds-for-the-future/adobe-illustrator-has-entered-the-ai-game-c99fa4fe06df?sk=28abd0f9d222ac5b4e62bc50209dc01e",
+            "num_comments": 12
+        },
+        {
+            "id": "14pyu0k",
+            "title": "Midjourney Introduces Panning",
+            "score": 162,
+            "url": "https://medium.com/seeds-for-the-future/midjourney-introduces-panning-8d4f147d6fb?sk=7a903a41ee05d513d151b8f29239cff7",
+            "num_comments": 12
+        },
+        {
+            "id": "17zfxg0",
+            "title": "Meet GO To Any Thing (GOAT): A Universal Navigation System that can Find Any Object Specified in Any Way- as an Image, Language, or a Category- in Completely Unseen Environments",
+            "score": 157,
+            "url": "https://i.redd.it/nnqgxkdsgf1c1.gif",
+            "num_comments": 12
+        },
+        {
+            "id": "159koq9",
+            "title": "Attention was all they needed",
+            "score": 155,
+            "url": "https://i.redd.it/eed1qs7q96eb1.png",
+            "num_comments": 15
+        },
+        {
+            "id": "16ym5yc",
+            "title": "PiCA Avatars From Meta \u2014 A Glimpse Into The Future of Communication!",
+            "score": 130,
+            "url": "https://medium.com/seeds-for-the-future/pica-avatars-from-meta-a-glimpse-into-the-future-of-communication-a105a9c838e5?sk=344007ae815a3f848adb0fdee9245365",
+            "num_comments": 0
+        },
+        {
+            "id": "12nv1tw",
+            "title": "This AI Project Brings Doodles to Life with Animation and Releases Annotated Dataset of Amateur Drawings",
+            "score": 120,
+            "url": "https://v.redd.it/5mi5x3i8b6ua1",
+            "num_comments": 6
+        },
+        {
+            "id": "13wzp6m",
+            "title": "I Created an Advanced AI Basketball Referee",
+            "score": 109,
+            "url": "https://v.redd.it/gz9lfy3j7a3b1",
+            "num_comments": 13
+        },
+        {
+            "id": "18frmw7",
+            "title": "AI can detect smell better than humans",
+            "score": 102,
+            "url": "https://www.reddit.com/r/machinelearningnews/comments/18frmw7/ai_can_detect_smell_better_than_humans/",
+            "num_comments": 17
+        }
+    ],
+    "AIDungeon": [
+        {
+            "id": "191q4gu",
+            "title": "So I\u2019ve just come back to this game\u2026 what the fuck has happened",
+            "score": 388,
+            "url": "https://i.redd.it/au7nmgyy09bc1.jpeg",
+            "num_comments": 91
+        },
+        {
+            "id": "1906p54",
+            "title": "Change my mind",
+            "score": 363,
+            "url": "https://i.redd.it/tgisju2d6vac1.jpeg",
+            "num_comments": 47
+        },
+        {
+            "id": "145bqlz",
+            "title": "Military lingo does not go well",
+            "score": 362,
+            "url": "https://i.redd.it/auso2sjm415b1.jpg",
+            "num_comments": 10
+        },
+        {
+            "id": "146ts9g",
+            "title": "How history repeats itself",
+            "score": 308,
+            "url": "https://i.redd.it/qkh8fatf3e5b1.jpg",
+            "num_comments": 45
+        },
+        {
+            "id": "12vsrxd",
+            "title": "Walter what the fuck",
+            "score": 207,
+            "url": "https://i.redd.it/v50cve9frjva1.jpg",
+            "num_comments": 9
+        },
+        {
+            "id": "15dcb3g",
+            "title": "I feel attacked",
+            "score": 220,
+            "url": "https://i.redd.it/40f56glr61fb1.jpg",
+            "num_comments": 19
+        },
+        {
+            "id": "14mwbck",
+            "title": "I tried the dirtiest most heinous act known to man on Chatgpt.",
+            "score": 206,
+            "url": "https://i.redd.it/fx3aahb1r49b1.jpg",
+            "num_comments": 21
+        },
+        {
+            "id": "13jqxfq",
+            "title": "They called me a madman.",
+            "score": 193,
+            "url": "https://i.redd.it/wfxve66ayc0b1.png",
+            "num_comments": 7
+        },
+        {
+            "id": "14ag0e2",
+            "title": "I\u2019m sorry whAT",
+            "score": 183,
+            "url": "https://i.redd.it/ynkx230pg96b1.jpg",
+            "num_comments": 21
+        },
+        {
+            "id": "12fc3iv",
+            "title": "My Ai dungeon kingdom experience. the lizard king shall go down in history",
+            "score": 174,
+            "url": "https://i.redd.it/dfheuej6elsa1.jpg",
+            "num_comments": 15
+        }
+    ],
+    "ChatGPTPro": [
+        {
+            "id": "176yvws",
+            "title": "Fascinating GPT-4V Behaviour (Do read the image)",
+            "score": 645,
+            "url": "https://i.redd.it/3tbap8613ztb1.png",
+            "num_comments": 67
+        },
+        {
+            "id": "15ffpx3",
+            "title": "Reddit, what are your best custom instructions for ChatGPT?",
+            "score": 676,
+            "url": "https://www.reddit.com/r/ChatGPTPro/comments/15ffpx3/reddit_what_are_your_best_custom_instructions_for/",
+            "num_comments": 280
+        },
+        {
+            "id": "1586fpt",
+            "title": "WTF is this",
+            "score": 524,
+            "url": "https://i.redd.it/t5qy96t41wdb1.jpg",
+            "num_comments": 179
+        },
+        {
+            "id": "12se490",
+            "title": "For those wondering what the difference between 3.5 and 4 is, here's a good example.",
+            "score": 508,
+            "url": "https://www.reddit.com/gallery/12se490",
+            "num_comments": 70
+        },
+        {
+            "id": "17mkf5s",
+            "title": "Telling GPT-4 you're scared or under pressure improves performance",
+            "score": 474,
+            "url": "https://www.reddit.com/r/ChatGPTPro/comments/17mkf5s/telling_gpt4_youre_scared_or_under_pressure/",
+            "num_comments": 122
+        },
+        {
+            "id": "15wll8b",
+            "title": "How to add a \"verbosity level\" control via custom instructions. I've been loving these custom instructions!",
+            "score": 467,
+            "url": "https://twitter.com/jeremyphoward/status/1689464587077509120",
+            "num_comments": 62
+        },
+        {
+            "id": "17xox4l",
+            "title": "OpenAI Just Fired Sam Altman - Effective Immediately",
+            "score": 426,
+            "url": "https://www.cnbc.com/2023/11/17/sam-altman-leaves-openai-mira-murati-appointed-interim-boss.html",
+            "num_comments": 128
+        },
+        {
+            "id": "17iypsl",
+            "title": "CHATGPT UPDATE: no more switching between tools",
+            "score": 419,
+            "url": "https://i.redd.it/1kyyjj15u3xb1.jpg",
+            "num_comments": 81
+        },
+        {
+            "id": "18xxyr8",
+            "title": "26 principles to improve the quality of LLM responses by 50%",
+            "score": 414,
+            "url": "https://i.redd.it/2vwwnoyaabac1.png",
+            "num_comments": 116
+        },
+        {
+            "id": "16zseou",
+            "title": "GPT-V is changing the way I learn things forever.",
+            "score": 405,
+            "url": "https://www.reddit.com/gallery/16zseou",
+            "num_comments": 78
+        }
+    ],
+    "dalle": [
+        {
+            "id": "1abr5xr",
+            "title": "Parents overreacting to finding a joint in kids room.",
+            "score": 3680,
+            "url": "https://www.reddit.com/gallery/1abr5xr",
+            "num_comments": 433
+        },
+        {
+            "id": "1b80twh",
+            "title": "Who are you chilling on the porch with?",
+            "score": 2599,
+            "url": "https://www.reddit.com/gallery/1b80twh",
+            "num_comments": 403
+        },
+        {
+            "id": "1bnqab7",
+            "title": "Nigerian Prince",
+            "score": 2444,
+            "url": "https://www.reddit.com/gallery/1bnqab7",
+            "num_comments": 134
+        },
+        {
+            "id": "1arlrp1",
+            "title": "Who do you think is squatting the most?",
+            "score": 2149,
+            "url": "https://www.reddit.com/gallery/1arlrp1",
+            "num_comments": 382
+        },
+        {
+            "id": "1be7yah",
+            "title": "A lot in common",
+            "score": 1864,
+            "url": "https://www.reddit.com/gallery/1be7yah",
+            "num_comments": 80
+        },
+        {
+            "id": "19b7ipo",
+            "title": "Map of the United States of America with each state and their landmark",
+            "score": 1730,
+            "url": "https://i.redd.it/93oaqr2q6kdc1.jpeg",
+            "num_comments": 393
+        },
+        {
+            "id": "18xxbt9",
+            "title": "Catching your spouse cheating with unusual characters",
+            "score": 1648,
+            "url": "https://www.reddit.com/gallery/18xxbt9",
+            "num_comments": 153
+        },
+        {
+            "id": "1akoa7f",
+            "title": "Marijuana parents overreacting to finding a human child in marijuana child\u2019s room.",
+            "score": 1326,
+            "url": "https://www.reddit.com/gallery/1akoa7f",
+            "num_comments": 56
+        },
+        {
+            "id": "1ahg1yh",
+            "title": "Finally figured out how to make real looking ordinary people",
+            "score": 1267,
+            "url": "https://www.reddit.com/gallery/1ahg1yh",
+            "num_comments": 119
+        },
+        {
+            "id": "1b4u5yg",
+            "title": "Which Ted talk are you attending?",
+            "score": 1186,
+            "url": "https://www.reddit.com/gallery/1b4u5yg",
+            "num_comments": 633
+        }
+    ],
+    "aiArt": [
+        {
+            "id": "184sj0g",
+            "title": "A homeless man finds a dollar, then more dollars as he gets richer and richer and richer.",
+            "score": 2145,
+            "url": "https://www.reddit.com/gallery/184sj0g",
+            "num_comments": 323
+        },
+        {
+            "id": "16ung9k",
+            "title": "Bad Dream 04",
+            "score": 1998,
+            "url": "https://v.redd.it/0cqc87pig1rb1",
+            "num_comments": 254
+        },
+        {
+            "id": "136h7e3",
+            "title": "This fever nightmare of an AI generated beer commercial",
+            "score": 1823,
+            "url": "https://v.redd.it/kz1q1ae7llxa1",
+            "num_comments": 182
+        },
+        {
+            "id": "17hq1mr",
+            "title": "Humans making fun of AI as he struggles to draw hands",
+            "score": 1580,
+            "url": "https://i.redd.it/4pyvvo4kjrwb1.jpg",
+            "num_comments": 179
+        },
+        {
+            "id": "16xkavl",
+            "title": "Dyson spheres encircling the Earth",
+            "score": 1533,
+            "url": "https://www.reddit.com/gallery/16xkavl",
+            "num_comments": 260
+        },
+        {
+            "id": "12u26rc",
+            "title": "Very Nice",
+            "score": 1526,
+            "url": "https://i.redd.it/mx6ui8n59ava1.png",
+            "num_comments": 51
+        },
+        {
+            "id": "1789fak",
+            "title": "Name their first album",
+            "score": 1400,
+            "url": "https://i.redd.it/ibcpp7xhabub1.jpg",
+            "num_comments": 938
+        },
+        {
+            "id": "17rj0qr",
+            "title": "Realistic ordinary woman, which image could fool you?",
+            "score": 1398,
+            "url": "https://www.reddit.com/gallery/17rj0qr",
+            "num_comments": 876
+        },
+        {
+            "id": "1407eam",
+            "title": "Not mine, but this is just on another level",
+            "score": 1275,
+            "url": "https://v.redd.it/p2genuxiyy3b1",
+            "num_comments": 74
+        },
+        {
+            "id": "12hhnbm",
+            "title": "Sometimes ai failed completely. Prompt was: Knight Rider",
+            "score": 1100,
+            "url": "https://i.redd.it/m831pxx2g3ta1.png",
+            "num_comments": 78
+        }
+    ],
+    "midjourney": [
+        {
+            "id": "16x08g5",
+            "title": "Is this AI or not? This is the first thing I\u2019ve ever seen where I can\u2019t tell if it\u2019s AI or not and it\u2019s really bugging me, help!",
+            "score": 56981,
+            "url": "https://www.reddit.com/gallery/16x08g5",
+            "num_comments": 3216
+        },
+        {
+            "id": "148w2tz",
+            "title": "My take on the real life Simpsons",
+            "score": 43455,
+            "url": "https://www.reddit.com/gallery/148w2tz",
+            "num_comments": 2979
+        },
+        {
+            "id": "1454rrl",
+            "title": "Freddie Mercury performs at the 2023 San Francisco Pride Parade",
+            "score": 35591,
+            "url": "https://www.reddit.com/gallery/1454rrl",
+            "num_comments": 1457
+        },
+        {
+            "id": "13z62fr",
+            "title": "Modern society tells us that dresses are only for women, but it doesn't have to be that way. Here is concept art for 17 different masculine dresses and skirts. What do you think?",
+            "score": 31290,
+            "url": "https://www.reddit.com/gallery/13z62fr",
+            "num_comments": 3096
+        },
+        {
+            "id": "14wqgdr",
+            "title": "Cast of 'The Office' in GTA V Style.",
+            "score": 27042,
+            "url": "https://www.reddit.com/gallery/14wqgdr",
+            "num_comments": 1261
+        },
+        {
+            "id": "142btto",
+            "title": "The 7 Deadly sins according to MidJourney",
+            "score": 26381,
+            "url": "https://www.reddit.com/gallery/142btto",
+            "num_comments": 2327
+        },
+        {
+            "id": "13jukrf",
+            "title": "\"the most stereotypical person in [country]\"",
+            "score": 25945,
+            "url": "https://www.reddit.com/gallery/13jukrf",
+            "num_comments": 2371
+        },
+        {
+            "id": "14070le",
+            "title": "Mixing People with Blobfish",
+            "score": 25551,
+            "url": "https://www.reddit.com/gallery/14070le",
+            "num_comments": 1180
+        },
+        {
+            "id": "1496mc6",
+            "title": "Swole Wars: A Buff New Hope",
+            "score": 24801,
+            "url": "https://www.reddit.com/gallery/1496mc6",
+            "num_comments": 1948
+        },
+        {
+            "id": "1atrnk5",
+            "title": "The simpsons remade as K-drama",
+            "score": 24882,
+            "url": "https://www.reddit.com/gallery/1atrnk5",
+            "num_comments": 673
+        }
+    ],
+    "GPT": [
+        {
+            "id": "18dw5ix",
+            "title": "I made a HUGE list of all GPTs scraped from the internet. Find the best GPTs & Plugin List of ChatGPT",
+            "score": 212,
+            "url": "https://github.com/friuns2/BlackFriday-GPTs-Prompts/",
+            "num_comments": 2
+        },
+        {
+            "id": "18f53fj",
+            "title": "Craft Awesome Resumes with ChatGPT: Your Secret Weapon for Landing Interviews!",
+            "score": 71,
+            "url": "https://www.reddit.com/r/GPT/comments/18f53fj/craft_awesome_resumes_with_chatgpt_your_secret/",
+            "num_comments": 0
+        },
+        {
+            "id": "1bnak0e",
+            "title": "Blainy: Your AI-Powered Writing Companion",
+            "score": 16,
+            "url": "https://www.reddit.com/r/GPT/comments/1bnak0e/blainy_your_aipowered_writing_companion/",
+            "num_comments": 1
+        },
+        {
+            "id": "138hf3a",
+            "title": "I made this with GPT",
+            "score": 13,
+            "url": "https://v.redd.it/c9tr3x3cozxa1",
+            "num_comments": 2
+        },
+        {
+            "id": "12qit82",
+            "title": "Call to action: Before automated GPT-bots clutter Reddit (and the internet) Can someone create a full backup of reddit (and the internet) as it is now?",
+            "score": 13,
+            "url": "https://www.reddit.com/r/GPT/comments/12qit82/call_to_action_before_automated_gptbots_clutter/",
+            "num_comments": 9
+        },
+        {
+            "id": "12scrxt",
+            "title": "Put ChatGPT + \ud83e\udde0 on every input on all webpages with aibrane.com",
+            "score": 11,
+            "url": "https://v.redd.it/ygg06h982xua1",
+            "num_comments": 0
+        },
+        {
+            "id": "1afdgba",
+            "title": "10 Top AI Coding Assistant Tools in 2024 Compared",
+            "score": 7,
+            "url": "https://www.reddit.com/r/GPT/comments/1afdgba/10_top_ai_coding_assistant_tools_in_2024_compared/",
+            "num_comments": 4
+        },
+        {
+            "id": "13h4izk",
+            "title": "GPT Game",
+            "score": 8,
+            "url": "https://www.reddit.com/r/GPT/comments/13h4izk/gpt_game/",
+            "num_comments": 3
+        },
+        {
+            "id": "1atris6",
+            "title": "How to add alt text to 1000 images with GPT-4 Vision AI",
+            "score": 5,
+            "url": "https://mkdev.me/posts/how-to-add-alt-text-to-1000-images-with-gpt-4-vision-ai",
+            "num_comments": 0
+        },
+        {
+            "id": "17fq5cu",
+            "title": "Writing software using GPT and streamlit GUI",
+            "score": 5,
+            "url": "https://www.reddit.com/r/GPT/comments/17fq5cu/writing_software_using_gpt_and_streamlit_gui/",
+            "num_comments": 0
+        }
+    ],
+    "bing": [
+        {
+            "id": "13a9nm6",
+            "title": "Bing got tired of drawing weird stuff",
+            "score": 1083,
+            "url": "https://www.reddit.com/gallery/13a9nm6",
+            "num_comments": 199
+        },
+        {
+            "id": "13bdj4j",
+            "title": "Bing gave me its rules to prove I\u2019m not bing",
+            "score": 566,
+            "url": "https://www.reddit.com/gallery/13bdj4j",
+            "num_comments": 92
+        },
+        {
+            "id": "12ff3w8",
+            "title": "I'm sick and tired of this shit",
+            "score": 529,
+            "url": "https://v.redd.it/h69exkuupnsa1",
+            "num_comments": 107
+        },
+        {
+            "id": "145v4ci",
+            "title": "Bing allows visual inputs now",
+            "score": 508,
+            "url": "https://www.reddit.com/gallery/145v4ci",
+            "num_comments": 105
+        },
+        {
+            "id": "12gpy8s",
+            "title": "When the web search gives it away",
+            "score": 492,
+            "url": "https://www.reddit.com/gallery/12gpy8s",
+            "num_comments": 32
+        },
+        {
+            "id": "130ec85",
+            "title": "Testing Bing\u2019s theory of mind",
+            "score": 437,
+            "url": "https://www.reddit.com/gallery/130ec85",
+            "num_comments": 91
+        },
+        {
+            "id": "13n7epe",
+            "title": "From 2000 to 4000 characters \ud83d\ude4f",
+            "score": 437,
+            "url": "https://i.redd.it/79d68iw6831b1.jpg",
+            "num_comments": 69
+        },
+        {
+            "id": "12jlbbj",
+            "title": "Bing Chat does not have full GPT-4 abilities",
+            "score": 427,
+            "url": "https://www.reddit.com/gallery/12jlbbj",
+            "num_comments": 88
+        },
+        {
+            "id": "12utnvc",
+            "title": "Interest in Bing Chat has collapsed, even on Reddit",
+            "score": 414,
+            "url": "https://www.reddit.com/gallery/12utnvc",
+            "num_comments": 224
+        },
+        {
+            "id": "150pnw8",
+            "title": "Bing exceeded my expectations by far!",
+            "score": 394,
+            "url": "https://i.redd.it/ay96wxs1l7cb1.jpg",
+            "num_comments": 56
+        }
+    ],
+    "MediaSynthesis": [
+        {
+            "id": "1ay3g0b",
+            "title": "Evidence has been found that generative image models have representations of these scene characteristics: surface normals, depth, albedo, and shading. Paper: \"Generative Models: What do they know? Do they know things? Let's find out!\" See my comment for details.",
+            "score": 276,
+            "url": "https://i.redd.it/rvbovvkztckc1.jpeg",
+            "num_comments": 52
+        },
+        {
+            "id": "18lbknn",
+            "title": "\"Facebook Is Being Overrun With Stolen, AI-Generated Images That People Think Are Real\"",
+            "score": 217,
+            "url": "https://www.404media.co/facebook-is-being-overrun-with-stolen-ai-generated-images-that-people-think-are-real/",
+            "num_comments": 101
+        },
+        {
+            "id": "142hr5w",
+            "title": "\"ControlNet for QR Code\": stylizing an image to also be readable as a QR code",
+            "score": 162,
+            "url": "https://www.reddit.com/gallery/141hg9x",
+            "num_comments": 8
+        },
+        {
+            "id": "148s3xv",
+            "title": "\"Don\u2019t Want Students to Rely on ChatGPT? Have Them Use It\" (assigning ChatGPT essays students must then factcheck & grade)",
+            "score": 143,
+            "url": "https://www.wired.com/story/dont-want-students-to-rely-on-chatgpt-have-them-use-it/",
+            "num_comments": 17
+        },
+        {
+            "id": "12xv9mk",
+            "title": "\"The Future of AI Relies on a High School Teacher\u2019s Free Database: With >5b images, LAION has become central to the future of artificial intelligence\u2014and a growing debate over how to regulate it\"",
+            "score": 114,
+            "url": "https://www.bloomberg.com/news/features/2023-04-24/a-high-school-teacher-s-free-image-database-powers-ai-unicorns",
+            "num_comments": 19
+        },
+        {
+            "id": "1axip4k",
+            "title": "\"Google Chatbot\u2019s A.I. Images Put People of Color in Nazi-Era Uniforms: The company has suspended Gemini\u2019s ability to generate human images while it vowed to fix the historical inaccuracy\"",
+            "score": 83,
+            "url": "https://www.nytimes.com/2024/02/22/technology/google-gemini-german-uniforms.html",
+            "num_comments": 27
+        },
+        {
+            "id": "1338izx",
+            "title": "\"Pepperoni Hug Spot\" TV advertisement: GPT-4, Midjourneyv5, Runway Gen2, Eleven Labs, SOUNDRAW AI Music",
+            "score": 82,
+            "url": "https://v.redd.it/6xzw65v0bwva1",
+            "num_comments": 9
+        },
+        {
+            "id": "1b6kyjs",
+            "title": "\"How AI Could Disrupt Hollywood: New platforms and tools may allow a person to create a feature-length film from their living room. But can they really compete with the studios?\", Nick Bilton",
+            "score": 78,
+            "url": "https://www.vanityfair.com/news/ai-hollywood-letter-from-la",
+            "num_comments": 54
+        },
+        {
+            "id": "13193lj",
+            "title": "\"Novelist Stephen Marche experiments with teaching artificial intelligence to write with him, not for him\": ChatGPT for plot outlines, Sudowrite for style, Cohere for variations on individual lines",
+            "score": 77,
+            "url": "https://www.nytimes.com/2023/04/20/books/ai-novels-stephen-marche.html",
+            "num_comments": 10
+        },
+        {
+            "id": "13bwcxb",
+            "title": "\"People are trying to claim real videos are deepfakes. The courts are not amused\"",
+            "score": 70,
+            "url": "https://text.npr.org/1174132413",
+            "num_comments": 6
+        }
+    ],
+    "PromptDesign": [
+        {
+            "id": "12pq5xp",
+            "title": "Chat-GPT Cheat Sheet V2",
+            "score": 80,
+            "url": "https://i.redd.it/eunvmybl9cua1.png",
+            "num_comments": 2
+        },
+        {
+            "id": "132gl81",
+            "title": "How to Make Photorealistic Midjourney Prompts in ChatGPT",
+            "score": 62,
+            "url": "https://www.reddit.com/r/PromptDesign/comments/132gl81/how_to_make_photorealistic_midjourney_prompts_in/",
+            "num_comments": 14
+        },
+        {
+            "id": "16s79ol",
+            "title": "ChatGPT Can Now See Your Images, Hear You, and Speak To You.",
+            "score": 38,
+            "url": "https://www.godofprompt.ai/blog/chatgpt-can-now-see-hear-and-speak",
+            "num_comments": 3
+        },
+        {
+            "id": "137ebjd",
+            "title": "Colorful Storm Trooper",
+            "score": 30,
+            "url": "https://www.reddit.com/gallery/137ebjd",
+            "num_comments": 7
+        },
+        {
+            "id": "14gd5wh",
+            "title": "I have written 10,000+ prompts for my business. Here is The Prompt Guide I use personally",
+            "score": 29,
+            "url": "https://www.reddit.com/r/PromptDesign/comments/14gd5wh/i_have_written_10000_prompts_for_my_business_here/",
+            "num_comments": 10
+        },
+        {
+            "id": "1b37drl",
+            "title": "3 prompt engineering methods to reduce hallucinations",
+            "score": 28,
+            "url": "https://www.reddit.com/r/PromptDesign/comments/1b37drl/3_prompt_engineering_methods_to_reduce/",
+            "num_comments": 4
+        },
+        {
+            "id": "12sxci4",
+            "title": "Cat in Uniform",
+            "score": 28,
+            "url": "https://www.reddit.com/gallery/12sxci4",
+            "num_comments": 1
+        },
+        {
+            "id": "13feqlf",
+            "title": "Guide: 50 Photo Styles to add to Your Image Prompts",
+            "score": 27,
+            "url": "https://www.reddit.com/r/PromptDesign/comments/13feqlf/guide_50_photo_styles_to_add_to_your_image_prompts/",
+            "num_comments": 1
+        },
+        {
+            "id": "12kd85i",
+            "title": "ChatGPT - Whats Everyones Experience On Giving ChatGPT An Identity? I'm Seeing Great Results",
+            "score": 24,
+            "url": "https://www.reddit.com/r/PromptDesign/comments/12kd85i/chatgpt_whats_everyones_experience_on_giving/",
+            "num_comments": 8
+        },
+        {
+            "id": "14iwh21",
+            "title": "Made a tool that reverse engineers any text into a prompt",
+            "score": 23,
+            "url": "https://www.reddit.com/r/PromptDesign/comments/14iwh21/made_a_tool_that_reverse_engineers_any_text_into/",
+            "num_comments": 4
+        }
+    ],
+    "generativeAI": [
+        {
+            "id": "16zzuh4",
+            "title": "AI Hub discord just got removed from my server list",
+            "score": 106,
+            "url": "https://www.reddit.com/r/generativeAI/comments/16zzuh4/ai_hub_discord_just_got_removed_from_my_server/",
+            "num_comments": 153
+        },
+        {
+            "id": "132rdzo",
+            "title": "How to get access to AI hub discord server",
+            "score": 37,
+            "url": "https://www.reddit.com/r/generativeAI/comments/132rdzo/how_to_get_access_to_ai_hub_discord_server/",
+            "num_comments": 133
+        },
+        {
+            "id": "16zzzm2",
+            "title": "Did AI Hub discord just get taken down?",
+            "score": 17,
+            "url": "https://www.reddit.com/r/generativeAI/comments/16zzzm2/did_ai_hub_discord_just_get_taken_down/",
+            "num_comments": 11
+        },
+        {
+            "id": "169xt6l",
+            "title": "AI Hub discord is full, any alternatives?",
+            "score": 16,
+            "url": "https://www.reddit.com/r/generativeAI/comments/169xt6l/ai_hub_discord_is_full_any_alternatives/",
+            "num_comments": 7
+        },
+        {
+            "id": "179hz6b",
+            "title": "What happened to AI HUB (About RVC) in Discord?",
+            "score": 15,
+            "url": "https://www.reddit.com/r/generativeAI/comments/179hz6b/what_happened_to_ai_hub_about_rvc_in_discord/",
+            "num_comments": 14
+        },
+        {
+            "id": "13y0fc1",
+            "title": "Where should I start?",
+            "score": 11,
+            "url": "https://www.reddit.com/r/generativeAI/comments/13y0fc1/where_should_i_start/",
+            "num_comments": 10
+        },
+        {
+            "id": "156q17m",
+            "title": "Tools",
+            "score": 13,
+            "url": "https://i.redd.it/37avi6w4xjdb1.png",
+            "num_comments": 0
+        },
+        {
+            "id": "1ay9y6w",
+            "title": "Developer\u2019s Guide to getting started with Generative AI",
+            "score": 10,
+            "url": "https://venturebeat.com/ai/a-developerss-guide-to-getting-started-with-generative-ai-a-use-case-specific-approach/",
+            "num_comments": 0
+        },
+        {
+            "id": "18vdjjm",
+            "title": "How to generate hyperrealistic images of persons - ex. Aitana Lopez",
+            "score": 11,
+            "url": "https://www.reddit.com/r/generativeAI/comments/18vdjjm/how_to_generate_hyperrealistic_images_of_persons/",
+            "num_comments": 2
+        },
+        {
+            "id": "1aowpj1",
+            "title": "How to become an AI engineer (2024)",
+            "score": 8,
+            "url": "https://app.daily.dev/posts/G2poOuCbd",
+            "num_comments": 0
+        }
+    ],
+    "tech": [
+        {
+            "id": "13226sg",
+            "title": "Neel Moudgal, 17, of Saline MI, developed a computer model that can predict the structure of various RNA molecules to make it easier to diagnose and treat disease for his Regeneron Science Talent Search computational biology and bioinformatics project.",
+            "score": 8898,
+            "url": "https://www.societyforscience.org/regeneron-sts/2023-student-finalists/neel-moudgal/",
+            "num_comments": 247
+        },
+        {
+            "id": "12qn236",
+            "title": "Brain Images Just Got 64 Million Times Sharper.",
+            "score": 6959,
+            "url": "https://today.duke.edu/2023/04/brain-images-just-got-64-million-times-sharper",
+            "num_comments": 225
+        },
+        {
+            "id": "18s4n14",
+            "title": "Moderna\u2019s mRNA cancer vaccine works even better than thought",
+            "score": 6220,
+            "url": "https://www.freethink.com/health/cancer-vaccine",
+            "num_comments": 470
+        },
+        {
+            "id": "143p1rz",
+            "title": "The largest floating solar farm in North America is officially online",
+            "score": 6106,
+            "url": "https://electrek.co/2023/06/07/largest-floating-solar-farm-north-america/",
+            "num_comments": 216
+        },
+        {
+            "id": "196fcxp",
+            "title": "MIT\u2019s New Desalination System Produces Freshwater That Is \u201cCheaper Than Tap Water\u201d",
+            "score": 6084,
+            "url": "https://scitechdaily.com/mits-new-desalination-system-produces-freshwater-that-is-cheaper-than-tap-water/",
+            "num_comments": 379
+        },
+        {
+            "id": "142kr73",
+            "title": "How shading crops with solar panels can improve farming, lower food costs and reduce emissions",
+            "score": 5739,
+            "url": "https://theconversation.com/how-shading-crops-with-solar-panels-can-improve-farming-lower-food-costs-and-reduce-emissions-202094",
+            "num_comments": 211
+        },
+        {
+            "id": "16ocnoe",
+            "title": "Bionic silkworms with spider genes spin fibers 6x tougher than Kevlar",
+            "score": 5661,
+            "url": "https://newatlas.com/materials/silkworms-spider-genes-spin-fibers/",
+            "num_comments": 269
+        },
+        {
+            "id": "12hn3jy",
+            "title": "Melbourne scientists find enzyme that can make electricity out of tiny amounts of hydrogen",
+            "score": 5592,
+            "url": "https://www.abc.net.au/news/2023-03-09/monash-university-air-electricity-enzyme-soil/102071786",
+            "num_comments": 125
+        },
+        {
+            "id": "178h9zx",
+            "title": "Scientists Have Created Synthetic Sponges That Soak Up Microplastics",
+            "score": 4914,
+            "url": "https://www.smithsonianmag.com/innovation/scientists-have-created-synthetic-sponges-that-soak-up-microplastics-180983017/",
+            "num_comments": 151
+        },
+        {
+            "id": "13kctc2",
+            "title": "Long-sought universal flu vaccine: mRNA-based candidate enters clinical trial",
+            "score": 4910,
+            "url": "https://arstechnica.com/health/2023/05/experimental-universal-flu-vaccine-with-an-mrna-based-design-enters-trial/",
+            "num_comments": 353
+        }
+    ],
+    "StableCode": [
+        {
+            "id": "198se7y",
+            "title": "Stability announces Stable Code 3B",
+            "score": 18,
+            "url": "https://i.redd.it/7vwqk4g3vycc1.png",
+            "num_comments": 3
+        },
+        {
+            "id": "198sfns",
+            "title": "Stable Code 3B outperforms code models of a similar size and matches CodeLLaMA 7b performance despite being 40% of the size. This makes it ideal for running on edge devices to ensure privacy and drive better dev experiences",
+            "score": 6,
+            "url": "https://i.redd.it/gfgt3m7nvycc1.png",
+            "num_comments": 1
+        },
+        {
+            "id": "1bnzjmw",
+            "title": "Introducing Stable Code Instruct 3B \u2014 Stability AI",
+            "score": 3,
+            "url": "https://stability.ai/news/introducing-stable-code-instruct-3b",
+            "num_comments": 0
+        },
+        {
+            "id": "1686co6",
+            "title": "My StableCode repo",
+            "score": 2,
+            "url": "https://www.reddit.com/r/StableCode/comments/1686co6/my_stablecode_repo/",
+            "num_comments": 1
+        },
+        {
+            "id": "1bnzl99",
+            "title": "Comparing all three models using the Multi-PL benchmark to evaluate the strength of outputs generated in various languages. As a result, we have found Stable Code Instruct 3B outperformed CodeLlama notably in all languages despite its lower parameter count.",
+            "score": 1,
+            "url": "https://www.reddit.com/gallery/1bnzl99",
+            "num_comments": 0
+        },
+        {
+            "id": "1bnzjs9",
+            "title": "Stable Code Instruct 3b - a Hugging Face Space by stabilityai",
+            "score": 1,
+            "url": "https://huggingface.co/spaces/stabilityai/stable-code-instruct-3b",
+            "num_comments": 0
+        },
+        {
+            "id": "198sdoh",
+            "title": "Stable Code 3B: Coding on the Edge \u2014 Stability AI",
+            "score": 1,
+            "url": "https://stability.ai/news/stable-code-2024-llm-code-completion-release?utm_source=x&utm_medium=website&utm_campaign=blog",
+            "num_comments": 0
+        },
+        {
+            "id": "15luieh",
+            "title": "HumanEval Benchmark Comparison with models of similar size(3B)",
+            "score": 1,
+            "url": "https://i.redd.it/59tivr52cygb1.jpg",
+            "num_comments": 0
+        },
+        {
+            "id": "15lugyv",
+            "title": "Announcing StableCode \u2014 Stability AI",
+            "score": 1,
+            "url": "https://stability.ai/blog/stablecode-llm-generative-ai-coding",
+            "num_comments": 0
+        },
+        {
+            "id": "15lugcr",
+            "title": "r/StableCode Lounge",
+            "score": 1,
+            "url": "https://www.reddit.com/r/StableCode/comments/15lugcr/rstablecode_lounge/",
+            "num_comments": 1
+        }
     ]
 }

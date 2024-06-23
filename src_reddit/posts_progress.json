@@ -262,5 +262,101 @@
     },
     "computerscience": {
         "processed": true
+    },
+    "AutoML": {
+        "processed": true
+    },
+    "LargeLanguageModels": {
+        "processed": true
+    },
+    "GPT3": {
+        "processed": true
+    },
+    "PromptEngineering": {
+        "processed": true
+    },
+    "LLM": {
+        "processed": true
+    },
+    "LocalLLM": {
+        "processed": true
+    },
+    "LLMDevs": {
+        "processed": true
+    },
+    "LangChain": {
+        "processed": true
+    },
+    "ChatGPTCoding": {
+        "processed": true
+    },
+    "AutoGPT": {
+        "processed": true
+    },
+    "aipromptprogramming": {
+        "processed": true
+    },
+    "dataengineering": {
+        "processed": true
+    },
+    "MachineLearningJobs": {
+        "processed": true
+    },
+    "chatbot": {
+        "processed": true
+    },
+    "Chatbots": {
+        "processed": true
+    },
+    "CharacterAI": {
+        "processed": true
+    },
+    "dalle2": {
+        "processed": true
+    },
+    "technews": {
+        "processed": true
+    },
+    "ControlProblem": {
+        "processed": true
+    },
+    "machinelearningnews": {
+        "processed": true
+    },
+    "AIDungeon": {
+        "processed": true
+    },
+    "ChatGPTPro": {
+        "processed": true
+    },
+    "dalle": {
+        "processed": true
+    },
+    "aiArt": {
+        "processed": true
+    },
+    "midjourney": {
+        "processed": true
+    },
+    "GPT": {
+        "processed": true
+    },
+    "bing": {
+        "processed": true
+    },
+    "MediaSynthesis": {
+        "processed": true
+    },
+    "PromptDesign": {
+        "processed": true
+    },
+    "generativeAI": {
+        "processed": true
+    },
+    "tech": {
+        "processed": true
+    },
+    "StableCode": {
+        "processed": true
     }
 }
