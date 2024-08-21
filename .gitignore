@@ -1,3 +1,6 @@
 snapshot*
 .env
 *project*
+*.gsheet
+*.csv
+*.json

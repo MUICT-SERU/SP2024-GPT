@@ -1,17 +1,15 @@
-Open Source
-License
-GitHub
 Artificial Intelligence
-LLama
 AI
-Machine Learning
-ML
-Large Language Models
+Natural Language Processing
+NLP
+Language Model
 LLM
 Chatbot
-OpenAI
 ChatGPT
-DALL-E
-GPT
-Prompt
-Generative AI
+OpenAI
+Claude
+Llama
+Gemini
+Gemma
+Mistral
+Cohere
