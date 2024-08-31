@@ -4,3 +4,6 @@ snapshot*
 *.gsheet
 *.csv
 *.json
+*.png
+*.jpg
+*.jpeg
