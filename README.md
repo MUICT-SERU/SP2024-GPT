@@ -1,1 +1,1 @@
-# What is Hype? An Investigation into Trendy GitHub Projects in the Era of AI
+# Social Media Reactions to Open Source Projects: A Study on AI projects on HackerNews
