@@ -9,6 +9,7 @@ from datetime import datetime, timezone
 from dateutil.relativedelta import relativedelta
 from tqdm import tqdm
 from typing import Dict, Any, List
+from concurrent.futures import ThreadPoolExecutor, as_completed  # Add this import
 
 # Configuration
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")  # Set your GitHub token as an environment variable
@@ -560,6 +561,48 @@ class GitHubGraphQLMetricsRetriever:
                 return json.load(f)
         return {}
 
+    def process_repository(self, repo_url: str, creation_date: datetime, all_dates: List[datetime], metrics: List[str], metric_dfs: Dict[str, pd.DataFrame]):
+        """
+        Process a single repository and update the metric DataFrames.
+
+        Args:
+            repo_url: GitHub repository URL
+            creation_date: Creation date of the repository
+            all_dates: List of dates to process
+            metrics: List of metrics to retrieve
+            metric_dfs: Dictionary of DataFrames for each metric
+        """
+        repo_owner, repo_name = self.extract_owner_repo(repo_url)
+
+        # Determine start date
+        start_date = max(datetime(2022, 5, 30), creation_date)
+        repo_dates = [d for d in all_dates if d >= start_date]
+
+        for date in repo_dates:
+            date_str = date.strftime('%Y-%m')
+
+            # Skip if data already exists in the DataFrame (from checkpoint)
+            if all(metric_dfs[metric].at[repo_url, date_str] != -1 for metric in metrics):
+                continue
+
+            # Retrieve new metrics
+            self.check_wifi_connection()
+            metrics_data = self.get_metrics_for_date(repo_url, date)
+
+            # Save to DataFrames
+            for metric, value in metrics_data.items():
+                metric_dfs[metric].at[repo_url, date_str] = value
+
+            # Save checkpoint
+            for metric, value in metrics_data.items():
+                checkpoint_data = self._load_checkpoint(metric)
+
+                if repo_url not in checkpoint_data:
+                    checkpoint_data[repo_url] = {}
+
+                checkpoint_data[repo_url][date_str] = value
+                self._save_checkpoint(checkpoint_data, metric)
+
     def process_repositories(self, csv_path: str, output_dir: str):
         """
         Process repositories and generate separate CSV files for each metric.
@@ -597,7 +640,7 @@ class GitHubGraphQLMetricsRetriever:
         if created_at_column:
             creation_dates = pd.to_datetime(df[created_at_column]).dt.tz_localize(None)
         else:
-            creation_dates = None
+            creation_dates = [datetime(2022, 5, 30)] * len(urls)
 
         # Define date range
         chatgpt_release = datetime(2022, 5, 30)
@@ -634,61 +677,15 @@ class GitHubGraphQLMetricsRetriever:
                             if date_str in metric_dfs[metric].columns:
                                 metric_dfs[metric].at[repo_url, date_str] = value
 
-        # Process each repository
-        progress_bar = tqdm(enumerate(urls), total=len(urls), desc="Processing repositories")
+        # Process each repository in parallel
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            futures = [
+                executor.submit(self.process_repository, repo_url, creation_dates[i], all_dates, metrics, metric_dfs)
+                for i, repo_url in enumerate(urls)
+            ]
 
-        for i, repo_url in progress_bar:
-            repo_owner, repo_name = self.extract_owner_repo(repo_url)
-
-            # Determine start date
-            if creation_dates is not None:
-                repo_creation = creation_dates.iloc[i]
-                start_date = max(chatgpt_release, repo_creation)
-            else:
-                start_date = chatgpt_release
-
-            repo_dates = [d for d in all_dates if d >= start_date]
-
-            for date in repo_dates:
-                date_str = date.strftime('%Y-%m')
-
-                # Only process if any metric has error status (-2)
-                # Useful if re-running the script after an error
-                # if not any(metric_dfs[metric].at[repo_url, date_str] == -2 for metric in metrics):
-                #     continue
-
-                # Skip if data already exists in the DataFrame (from checkpoint)
-                try:
-                    for metric in metrics:
-                        value = metric_dfs[metric].at[repo_url, date_str]
-                        # print(f"Checking {metric} for {repo_url} at {date_str}: {value} (type: {type(value)})")
-
-                    if all(metric_dfs[metric].at[repo_url, date_str] != -1 for metric in metrics):
-                        continue
-                except Exception as e:
-                    print(f"Error checking data for {repo_url} at {date_str}: {e}")
-                    print(f"Please check for duplicate entries in your GitHub URL csv dataset.")
-                    return
-
-                progress_bar.set_description(f"Processing {repo_owner}/{repo_name} for {date_str}")
-
-                # Retrieve new metrics
-                self.check_wifi_connection()
-                metrics_data = self.get_metrics_for_date(repo_url, date)
-
-                # Save to DataFrames
-                for metric, value in metrics_data.items():
-                    metric_dfs[metric].at[repo_url, date_str] = value
-
-                # Save checkpoint
-                for metric, value in metrics_data.items():
-                    checkpoint_data = self._load_checkpoint(metric)
-
-                    if repo_url not in checkpoint_data:
-                        checkpoint_data[repo_url] = {}
-
-                    checkpoint_data[repo_url][date_str] = value
-                    self._save_checkpoint(checkpoint_data, metric)
+            for future in tqdm(as_completed(futures), total=len(futures), desc="Processing"):
+                future.result()  # Ensure any exceptions are raised
 
         # Save results to CSV files
         for metric, df in metric_dfs.items():
