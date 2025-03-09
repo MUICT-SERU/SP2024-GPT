@@ -66,8 +66,8 @@ def filter_github_urls(input_file, output_file, url_column):
                 if is_github_repo_url(url):
                     writer.writerow(row)
 
-HN_STORIES_GH_CSV_INPUT = '/content/drive/MyDrive/datasets/data/hn_stories_dataset_gh_final.csv'
-HN_STORIES_GH_CSV_OUTPUT = '/content/drive/MyDrive/datasets/data/hn_stories_dataset_gh_final_v2.csv'
+HN_STORIES_CSV_INPUT = './hn-stories-all.csv'
+HN_STORIES_GH_CSV_OUTPUT = './hn-stories-gh.csv'
 url_column = "url"  # Change this to match your CSV column name
 
-filter_github_urls(HN_STORIES_GH_CSV_INPUT, HN_STORIES_GH_CSV_OUTPUT, url_column)
+filter_github_urls(HN_STORIES_CSV_INPUT, HN_STORIES_GH_CSV_OUTPUT, url_column)
