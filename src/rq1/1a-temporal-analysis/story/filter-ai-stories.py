@@ -20,7 +20,7 @@ for i, story in stories_df_gh.iterrows():
 
 stories_df_gh_ai = pd.DataFrame(stories)
 
-stories_df_gh_ai = stories_df_gh_ai.drop_duplicates(subset=['url'])
+# stories_df_gh_ai = stories_df_gh_ai.drop_duplicates(subset=['url'])
 
 stories_df_gh_ai.to_csv('hn-stories-gh-ai.csv', index=False)
 print(f"Number of HN GH-AI stories: {len(stories_df_gh_ai)} out of {len(stories_df_gh)}")

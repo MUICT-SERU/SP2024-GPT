@@ -14,13 +14,13 @@ keywords = load_keywords()
 
 stories = []
 for i, story in stories_df_gh.iterrows():
-    title_lower = story['title'].lower()
+    title_lower = str(story['title']).lower()
     if not any(pattern.search(title_lower) for pattern in keywords):
         stories.append(story)
 
-stories_df_gh_ai = pd.DataFrame(stories)
+stories_df_gh_nonai = pd.DataFrame(stories)
 
-stories_df_gh_ai = stories_df_gh_ai.drop_duplicates(subset=['url'])
+# stories_df_gh_nonai = stories_df_gh_nonai.drop_duplicates(subset=['url'])
 
-stories_df_gh_ai.to_csv('hn-stories-gh-nonai.csv', index=False)
-print(f"Number of HN GH-nonAI stories: {len(stories_df_gh_ai)} out of {len(stories_df_gh)}")
+stories_df_gh_nonai.to_csv('hn-stories-gh-nonai.csv', index=False)
+print(f"Number of HN GH-nonAI stories: {len(stories_df_gh_nonai)} out of {len(stories_df_gh)}")
