@@ -7,3 +7,5 @@ snapshot*
 *.png
 *.jpg
 *.jpeg
+.*
+*.pdf
