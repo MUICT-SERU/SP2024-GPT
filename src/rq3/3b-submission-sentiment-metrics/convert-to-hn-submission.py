@@ -21,12 +21,13 @@ def process_metrics(hn_data_path, metrics_path, output_path):
     # Initialize result DataFrame
     result_df = hn_data.copy()
 
-    metric_cols = ['cumulative_stars', 'commit_count', 'new_prs', 'cumulative_forks', 'active_contributors']
+    # metric_cols = ['cumulative_stars', 'commit_count', 'new_prs', 'cumulative_forks', 'active_contributors']
+    metric_cols = ['new_stars', 'commit_count', 'new_prs', 'new_forks', 'active_contributors']
     metric_rename = {
-        'cumulative_stars': 'stars',
+        'new_stars': 'stars',
         'commit_count': 'commits',
         'new_prs': 'pull_requests',
-        'cumulative_forks': 'forks',
+        'new_forks': 'forks',
         'active_contributors': 'contributors'
     }
 
@@ -60,5 +61,5 @@ def process_metrics(hn_data_path, metrics_path, output_path):
 
 hn_data_path = './hn-stories-gh-ai.csv'
 metrics_path = './hn-stories-gh-ai-metrics.csv'
-output_path = './hn-stories-gh-ai-metrics-5months.csv'
+output_path = './hn-stories-gh-ai-metrics-5months-v2-[monthly-new].csv'
 process_metrics(hn_data_path, metrics_path, output_path)
