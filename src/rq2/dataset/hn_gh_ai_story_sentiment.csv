@@ -1,4 +1,4 @@
-discussion_id,title,url,datetime,story_sentiment,story_sentiment_reason
+story_id,title,url,datetime,story_sentiment,story_sentiment_reason
 34825056,Show HN: Oxen.ai – Fast Unstructured Data Version Control,https://github.com/Oxen-AI/oxen-release,1676577900,0,The headline presents Oxen.ai as a tool for fast unstructured data version control without expressing a clear positive or negative sentiment towards AI.
 38162574,Show HN: RAG-based AI assistant in PHP,https://github.com/Krisseck/php-rag,1699278857,0,The headline presents a project announcement for an AI assistant in PHP without expressing any positive or negative sentiment towards AI itself.
 38147938,Show HN: Chrome addon to lookup selected text via ChatGPT using custom prompts,https://github.com/SMUsamaShah/LookupChatGPT,1699156001,0,"The headline describes a Chrome addon that utilizes ChatGPT for text lookup, presenting it as a functional tool without expressing a clear positive or negative sentiment towards AI."
