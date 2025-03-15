@@ -10,7 +10,7 @@ SELECT
   `type`,
   `url`
 FROM
-  `[unique-repo-urls]-public-data.hacker_news.full`
+  `bigquery-public-data.hacker_news.full`
 WHERE
   `timestamp` BETWEEN TIMESTAMP('2022-05-08') AND TIMESTAMP('2024-05-09')
   AND NOT COALESCE(`dead`, FALSE)

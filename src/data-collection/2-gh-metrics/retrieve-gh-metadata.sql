@@ -1,4 +1,4 @@
--- [unique-repo-urls] script to retrieve metadata for repositories in the hn-stories-gh-[unique-repo-urls] table
+-- Script to retrieve metadata for repositories in the hn-stories-gh-unique-repo-urls table
 -- Joining with GitHub metadata tables in the public 'githubarchive' dataset
 
 WITH repo_list AS (
@@ -7,7 +7,7 @@ WITH repo_list AS (
     repo_name,
     repo_full_name
   FROM
-    `your-project.hn-stories-gh-[unique-repo-urls]`
+    `your-project.hn-stories-gh-unique-repo-urls`
   WHERE
     repo_full_name IS NOT NULL
 )

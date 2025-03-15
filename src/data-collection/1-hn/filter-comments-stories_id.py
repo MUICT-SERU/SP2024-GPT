@@ -7,7 +7,7 @@ Filter comments that contains story IDs in the specified stories csv.
 
 def filter_comments_by_story_ids():
     # Load the story CSV to get valid story IDs
-    stories_csv_path = './hn-stories-gh-ai-[no-duplicate].csv'
+    stories_csv_path = './hn-stories-gh-ai.csv'
     stories_df = pd.read_csv(stories_csv_path, sep=',')
     valid_story_ids = set(stories_df['id'].astype(str))
 
@@ -23,7 +23,7 @@ def filter_comments_by_story_ids():
     filtered_comments_df = pd.concat(filtered_comments)
 
     # Save the filtered comments
-    filtered_comments_df.to_csv('hn-comments-ai-old-ver.csv', index=False)
+    filtered_comments_df.to_csv('hn-comments-gh-ai.csv', index=False)
 
     print(f"Filtered comments count: {len(filtered_comments_df)}")
 

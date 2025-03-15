@@ -12,7 +12,7 @@ star_events AS (
   FROM `githubarchive.day.2*`
   WHERE
     type = 'WatchEvent'
-    AND repo.name IN (SELECT repo_full_name FROM `your_dataset.hn-stories-gh-[unique-repo-urls]`)
+    AND repo.name IN (SELECT repo_full_name FROM `your_dataset.hn-stories-gh-unique-repo-urls`)
     AND _TABLE_SUFFIX BETWEEN '0220501' AND '0250131'
   GROUP BY repo_full_name, month
 ),
@@ -26,7 +26,7 @@ fork_events AS (
   FROM `githubarchive.day.2*`
   WHERE
     type = 'ForkEvent'
-    AND repo.name IN (SELECT repo_full_name FROM `your_dataset.hn-stories-gh-[unique-repo-urls]`)
+    AND repo.name IN (SELECT repo_full_name FROM `your_dataset.hn-stories-gh-unique-repo-urls`)
     AND _TABLE_SUFFIX BETWEEN '0220501' AND '0220601'
   GROUP BY repo_full_name, month
 ),
@@ -40,7 +40,7 @@ commit_events AS (
   FROM `githubarchive.day.2*`
   WHERE
     type = 'PushEvent'
-    AND repo.name IN (SELECT repo_full_name FROM `your_dataset.hn-stories-gh-[unique-repo-urls]`)
+    AND repo.name IN (SELECT repo_full_name FROM `your_dataset.hn-stories-gh-unique-repo-urls`)
     AND _TABLE_SUFFIX BETWEEN '0220501' AND '0250131'
   GROUP BY repo_full_name, month
 ),
@@ -54,7 +54,7 @@ pr_events AS (
   FROM `githubarchive.day.2*`
   WHERE
     type = 'PullRequestEvent'
-    AND repo.name IN (SELECT repo_full_name FROM `your_dataset.hn-stories-gh-[unique-repo-urls]`)
+    AND repo.name IN (SELECT repo_full_name FROM `your_dataset.hn-stories-gh-unique-repo-urls`)
     AND _TABLE_SUFFIX BETWEEN '0220501' AND '0250131'
   GROUP BY repo_full_name, month
 ),
@@ -68,7 +68,7 @@ contributor_events AS (
   FROM `githubarchive.day.2*`
   WHERE
     type IN ('PushEvent', 'PullRequestEvent')
-    AND repo.name IN (SELECT repo_full_name FROM `your_dataset.hn-stories-gh-[unique-repo-urls]`)
+    AND repo.name IN (SELECT repo_full_name FROM `your_dataset.hn-stories-gh-unique-repo-urls`)
     AND _TABLE_SUFFIX BETWEEN '0220501' AND '0250131'
   GROUP BY repo_full_name, month
 ),
@@ -89,7 +89,7 @@ all_repos AS (
     hn_submission_date,
     hn_score,
     source
-  FROM `your_dataset.hn-stories-gh-[unique-repo-urls]`
+  FROM `your_dataset.hn-stories-gh-unique-repo-urls`
 ),
 
 all_combinations AS (
