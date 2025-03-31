@@ -27,7 +27,7 @@ fork_events AS (
   WHERE
     type = 'ForkEvent'
     AND repo.name IN (SELECT repo_full_name FROM `your_dataset.hn-stories-gh-unique-repo-urls`)
-    AND _TABLE_SUFFIX BETWEEN '0220501' AND '0220601'
+    AND _TABLE_SUFFIX BETWEEN '0220501' AND '0250131'
   GROUP BY repo_full_name, month
 ),
 
