@@ -1,0 +1,145 @@
+
+===== DiD Result: new_stars =====
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:              new_stars   R-squared:                       0.022
+Model:                            OLS   Adj. R-squared:                  0.020
+Method:                 Least Squares   F-statistic:                     9.800
+Date:                Mon, 07 Apr 2025   Prob (F-statistic):           2.08e-06
+Time:                        03:39:03   Log-Likelihood:                -10131.
+No. Observations:                1640   AIC:                         2.027e+04
+Df Residuals:                    1636   BIC:                         2.029e+04
+Df Model:                           3
+Covariance Type:                  HC3
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      3.8387      0.285     13.446      0.000       3.279       4.398
+treatment      1.5780      0.477      3.309      0.001       0.643       2.513
+post          -0.2249      0.410     -0.548      0.584      -1.029       0.579
+did           38.3462     10.565      3.629      0.000      17.639      59.054
+==============================================================================
+Omnibus:                     4262.882   Durbin-Watson:                   1.818
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         64332018.149
+Skew:                          28.640   Prob(JB):                         0.00
+Kurtosis:                     971.588   Cond. No.                         7.18
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+
+===== DiD Result: new_forks =====
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:              new_forks   R-squared:                       0.022
+Model:                            OLS   Adj. R-squared:                  0.021
+Method:                 Least Squares   F-statistic:                     13.46
+Date:                Mon, 07 Apr 2025   Prob (F-statistic):           1.04e-08
+Time:                        03:39:03   Log-Likelihood:                -10990.
+No. Observations:                2394   AIC:                         2.199e+04
+Df Residuals:                    2390   BIC:                         2.201e+04
+Df Model:                           3
+Covariance Type:                  HC3
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      3.6660      0.258     14.218      0.000       3.161       4.171
+treatment      0.9536      0.392      2.430      0.015       0.185       1.723
+post          -0.6706      0.343     -1.955      0.051      -1.343       0.002
+did            7.6908      1.790      4.296      0.000       4.182      11.199
+==============================================================================
+Omnibus:                     5111.955   Durbin-Watson:                   1.198
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         18813336.095
+Skew:                          18.384   Prob(JB):                         0.00
+Kurtosis:                     435.727   Cond. No.                         7.20
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+
+===== DiD Result: new_commits =====
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:            new_commits   R-squared:                       0.013
+Model:                            OLS   Adj. R-squared:                  0.010
+Method:                 Least Squares   F-statistic:                     5.989
+Date:                Mon, 07 Apr 2025   Prob (F-statistic):           0.000479
+Time:                        03:39:03   Log-Likelihood:                -4713.4
+No. Observations:                1042   AIC:                             9435.
+Df Residuals:                    1038   BIC:                             9455.
+Df Model:                           3
+Covariance Type:                  HC3
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      2.7778      0.386      7.198      0.000       2.021       3.534
+treatment      0.7949      0.586      1.357      0.175      -0.354       1.943
+post           2.1769      1.985      1.097      0.273      -1.714       6.068
+did            3.4595      2.539      1.362      0.173      -1.518       8.437
+==============================================================================
+Omnibus:                     1907.620   Durbin-Watson:                   1.058
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):          1766700.509
+Skew:                          12.782   Prob(JB):                         0.00
+Kurtosis:                     203.095   Cond. No.                         7.21
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+
+===== DiD Result: new_prs =====
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:                new_prs   R-squared:                       0.014
+Model:                            OLS   Adj. R-squared:                  0.012
+Method:                 Least Squares   F-statistic:                     11.70
+Date:                Mon, 07 Apr 2025   Prob (F-statistic):           1.51e-07
+Time:                        03:39:03   Log-Likelihood:                -3691.3
+No. Observations:                1058   AIC:                             7391.
+Df Residuals:                    1054   BIC:                             7411.
+Df Model:                           3
+Covariance Type:                  HC3
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      1.1157      0.196      5.683      0.000       0.731       1.501
+treatment      1.7686      0.371      4.769      0.000       1.042       2.495
+post           0.7623      0.671      1.135      0.256      -0.554       2.078
+did           -0.0160      0.923     -0.017      0.986      -1.825       1.793
+==============================================================================
+Omnibus:                     1581.912   Durbin-Watson:                   0.543
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           479173.042
+Skew:                           8.752   Prob(JB):                         0.00
+Kurtosis:                     105.778   Cond. No.                         7.15
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+
+===== DiD Result: active_contributors =====
+                             OLS Regression Results
+===============================================================================
+Dep. Variable:     active_contributors   R-squared:                       0.019
+Model:                             OLS   Adj. R-squared:                  0.018
+Method:                  Least Squares   F-statistic:                     16.69
+Date:                 Mon, 07 Apr 2025   Prob (F-statistic):           9.46e-11
+Time:                         03:39:03   Log-Likelihood:                -9724.5
+No. Observations:                 2990   AIC:                         1.946e+04
+Df Residuals:                     2986   BIC:                         1.948e+04
+Df Model:                            3
+Covariance Type:                   HC3
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      3.0015      0.209     14.345      0.000       2.591       3.412
+treatment      0.9780      0.285      3.432      0.001       0.419       1.537
+post           0.0096      0.311      0.031      0.975      -0.601       0.620
+did            1.0811      0.449      2.407      0.016       0.201       1.961
+==============================================================================
+Omnibus:                     1775.696   Durbin-Watson:                   0.337
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            13715.302
+Skew:                           2.826   Prob(JB):                         0.00
+Kurtosis:                      11.839   Cond. No.                         7.15
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
