@@ -1,4 +1,94 @@
 # Social Media Reactions to Open Source Projects: A Study on AI projects on HackerNews
+## Introduction
+This README covers the following sections:
+- The data collection section consists of the core retrieval scripts and datasets to be used across multiple parts of the research as explained in the data preparation section in our paper.
+- The remaining RQ1-3 sections cover steps to preprocess the preliminary dataset for their respective analyses.
+
+## Data collection
+The following sections describe the data collection process for the raw dataset. Note that any further processing of the raw data has been included in their respective RQ sections.
+
+### Scripts
+BigQuery dataset retrieval scripts:
+- `retrieve-hn-stories.sql`: script used to retrieve Hacker News stories using the public Hacker News dataset.
+- `retrieve-hn-comments.sql`: script used to retrieve Hacker News comments based on the retrieved Hacker News stories.
+- `retrieve-gh-metrics.sql`: script used to retrieve GitHub metrics using the public GitHub Archive dataset. Requires the `retrieve-hn-stories.sql` script to be run and for the dataset to be stored for referencing repository URL first.
+- `retrieve-gh-metadata.sql`: script used to retrieve GitHub metadata based on the retrieved Hacker News stories. Metadata such as repository creation date is required certain parts such as RQ3 when identifying projects that were created at least 6 months prior to HN submission.
+
+Preliminary AI and GitHub repository filtering script:
+- `ai_keywords.txt`: list of AI keywords used in the script, with each keyword separated by newline.
+- `filter-ai-keywords.py`: script used to filter only for stories whose title contain AI keywords defined in the `ai_keywords.txt` file.
+- `filter-gh-repos.py`: script used to filter only for stories containing GitHub repositories URLs.
+
+### Schema
+
+#### `hn_story-[tag].csv` – Hacker News Stories Data
+Each tag denotes different filtering criteria on the dataset, which includes the following:
+- `gh`: All stories containing GitHub repository URL.
+- `gh-ai`: AI stories containing GitHub repository URL.
+- `gh-nonai`: Non-AI stories containing GitHub repository URL.
+
+| Attribute   | Description                                                               |
+| ----------- | ------------------------------------------------------------------------- |
+| `by`        | Username of the story's submitter.                                        |
+| `dead`      | Indicates if the story is flagged as "dead" (removed). Empty if not dead. |
+| `id`        | Unique identifier for the story.                                          |
+| `score`     | Upvote count (popularity score).                                          |
+| `text`      | Self-text content of the story (empty if URL-based).                      |
+| `time`      | Unix epoch timestamp of submission time.                                  |
+| `timestamp` | Human-readable UTC timestamp of submission.                               |
+| `title`     | Title of the story.                                                       |
+| `type`      | Post type (e.g., `story`, `poll`, etc.).                                  |
+| `url`       | External URL linked in the story (if applicable).                         |
+
+---
+
+#### `hn_comment-[tag].csv` – Hacker News Comments Data
+Same tags as the `hn_story-[tag].csv` dataset for each filtering criteria.
+
+| Attribute      | Description                                                        |
+| -------------- | ------------------------------------------------------------------ |
+| `comment_id`   | Unique identifier for the comment.                                 |
+| `commenter`    | Username of the comment's author.                                  |
+| `comment_text` | Text content of the comment.                                       |
+| `comment_time` | UTC timestamp of when the comment was posted.                      |
+| `parent_id`    | ID of the parent post (matches `story_id` for top-level comments). |
+| `story_id`     | ID of the story the comment is associated with.                    |
+| `story_title`  | Title of the linked story.                                         |
+
+---
+
+#### `metrics-[tag].csv` – Hacker News Stories with GitHub Links
+| Attribute            | Description                                          |
+| -------------------- | ---------------------------------------------------- |
+| `repo_full_name`     | GitHub repository identifier in `owner/repo` format. |
+| `owner`              | GitHub username/organization owning the repository.  |
+| `repo_name`          | Name of the GitHub repository.                       |
+| `repo_creation_date` | UTC timestamp of repository creation.                |
+| `contributor_count`  | Total contributors to the repository.                |
+| `push_count`         | Number of pushes (commits) to the repository.        |
+| `star_count`         | Number of GitHub stars.                              |
+| `fork_count`         | Number of repository forks.                          |
+
+> Note: In `metrics-[tags].csv`, Repository stats (`star_count`, `fork_count`, etc.) reflect historical snapshots at the time of data collection.
+
+## RQ1a - GitHub Repository Creation Distribution
+
+### Scripts explaination and run order
+- `analyze-gh-repo-creation-date.ipynb`: Analyze the distribution of GitHub repository creation dates.
+
+## RQ1b - GitHub Hacker News Username Analysis
+- `analyze-gh-usernames.ipynb`: Analyze the number of GitHub repository owners who self-promote their project on Hacker News.
+
+## RQ1c - Temporal Analysis
+- `analyze-hn-stories.ipynb`: Visualize the number of Hacker News stories over time and keyword distribution.
+- `analyze-hn-comments.ipynb`: Analyze Hacker News comments based on the HN GH-AI stories.
+
+## RQ1d - Topic Modeling
+- `analyze-hn-stories-lda.ipynb`: Perform topic modeling on Hacker News stories to identify dominant topics.
+
+## RQ3a - Historical Metrics
+- `analyze-historical-metrics.ipynb`: Analyze historical GitHub repository metrics over time. Initially filters outlier repositories prior to the analysis.
+- `stats-test-metrics.ipynb`: Perform statistical tests on the historical metrics data on the metric changes after HN submission.
 
 ## RQ3b - Metric growth analysis based on Hacker News sentiment
 Perform analysis and visualization on GitHub metric data base on their respective sentiment on Hacker News to find the relationship between Hacker News sentiment and GitHub metric growth
