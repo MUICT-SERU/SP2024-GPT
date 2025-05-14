@@ -2,7 +2,8 @@
 ## Introduction
 This README covers the following sections:
 - The data collection section consists of the core retrieval scripts and datasets to be used across multiple parts of the research as explained in the data preparation section in our paper.
-- The remaining RQ1-3 sections cover steps to preprocess the preliminary dataset for their respective analyses.
+- The remaining RQ1-3 sections cover steps to preprocess the preliminary dataset and perform their respective analyses.
+- See `requirements.txt` for the required Python packages. `venv` is recommended for Python package management.
 
 ## Data collection
 The following sections describe the data collection process for the raw dataset. Note that any further processing of the raw data has been included in their respective RQ sections.
