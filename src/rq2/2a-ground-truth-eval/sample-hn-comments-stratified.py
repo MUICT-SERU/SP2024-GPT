@@ -1,23 +1,17 @@
 import pandas as pd
 import numpy as np
 
-HN_COMMENTS_CSV = ''
-
+HN_COMMENTS_CSV = '../../rq1/dataset/hn-comments-gh-ai.csv'
+HN_COMMENTS_SAMPLED_CSV = '../dataset/hn-comments-gh-ai-sampled.csv'
 
 def stratified_sample_with_min_per_story(csv_file, num_samples, output_file):
     df = pd.read_csv(csv_file)
 
-    # Remove comments that are marked as "[dead]" or "[flagged]"
-    df = df[~df['comment_text'].isin(["[dead]", "[flagged]"])]
-
-    # Remove empty comments
-    df = df[df['comment_text'].notna()]
-
     # Drop duplicates based on both 'comment_id' and 'comment_text'
     df = df.drop_duplicates(subset=['comment_id', 'comment_text'])
 
-    # Group by 'discussion_id' (which represents each story)
-    grouped = df.groupby('discussion_id')
+    # Group by 'story_id' (which represents each story)
+    grouped = df.groupby('story_id')
 
     # Initialize an empty DataFrame to store the sampled data
     sampled_df = pd.DataFrame()
@@ -40,7 +34,7 @@ def stratified_sample_with_min_per_story(csv_file, num_samples, output_file):
         df_remaining = df[~df.index.isin(sampled_df.index)]
 
         # Sample remaining comments proportionally
-        remaining_sampled = df_remaining.groupby('discussion_id', group_keys=False).apply(
+        remaining_sampled = df_remaining.groupby('story_id', group_keys=False).apply(
             lambda x: x.sample(frac=proportion, random_state=42) if len(x) > 1 else pd.DataFrame()
         )
 
@@ -54,18 +48,18 @@ def stratified_sample_with_min_per_story(csv_file, num_samples, output_file):
     # Save the sampled data to a new CSV file
     sampled_df.to_csv(output_file, index=False)
 
-stratified_sample_with_min_per_story(HN_COMMENTS_CSV, 385, HN_COMMENTS_CSV)
+stratified_sample_with_min_per_story(HN_COMMENTS_CSV, 385, HN_COMMENTS_SAMPLED_CSV)
 
 
 def get_comment_statistics(csv_file):
     # Load the CSV file
     df = pd.read_csv(csv_file)
 
-    # Group by 'discussion_id' and count the number of comments in each story
-    comment_counts = df.groupby('discussion_id').size().reset_index(name='num_comments')
+    # Group by 'story_id' and count the number of comments in each story
+    comment_counts = df.groupby('story_id').size().reset_index(name='num_comments')
 
     # Calculate overall statistics
-    total_stories = comment_counts['discussion_id'].nunique()
+    total_stories = comment_counts['story_id'].nunique()
     total_comments = comment_counts['num_comments'].sum()
     max_comments = comment_counts['num_comments'].max()
     min_comments = comment_counts['num_comments'].min()
@@ -81,7 +75,5 @@ def get_comment_statistics(csv_file):
     # Return the DataFrame containing the number of comments per story
     return comment_counts
 
-comment_stats = get_comment_statistics(HN_COMMENTS_CSV)
-print(comment_stats)
 comment_stats = get_comment_statistics(HN_COMMENTS_CSV)
 print(comment_stats)
