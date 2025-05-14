@@ -19,5 +19,5 @@ def remove_duplicate_urls(input_path, output_path):
     print(f"Saved cleaned data to {output_path}")
 
 csv_input = './hn-stories-gh-ai-metrics.csv'
-csv_output = './hn-stories-gh-ai-metrics-[no-duplicate-url].csv'
+csv_output = './hn-stories-gh-ai-metrics-[no-dupes].csv'
 remove_duplicate_urls(csv_input, csv_output)

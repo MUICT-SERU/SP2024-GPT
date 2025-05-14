@@ -83,7 +83,7 @@ def process_metrics(hn_data_path, metrics_path, output_path):
     print("\nFirst few rows of the output:")
     print(result_df.head())
 
-hn_data_path = './hn-stories-gh-ai.csv'
-metrics_path = './hn-stories-gh-ai-metrics.csv'
-output_path = './hn-stories-gh-ai-metrics-5months-v2-[monthly-new].csv'
+hn_data_path = '../../rq1/dataset/hn-stories-gh-ai-[no-dupes].csv'
+metrics_path = '../dataset/metrics-hn-gh-ai.csv'
+output_path = '../dataset/metrics-hn-gh-ai-5months-[no-dupes].csv'
 process_metrics(hn_data_path, metrics_path, output_path)
