@@ -86,15 +86,37 @@ Same tags as the `hn_story-[tag].csv` dataset for each filtering criteria.
 ## RQ1d - Topic Modeling
 - `analyze-hn-stories-lda.ipynb`: Perform topic modeling on Hacker News stories to identify dominant topics.
 
----
+## RQ2a - Creating Ground Truth for Sentiment Analysis Evaluation
+- `sample-hn-gh-ai-comment-story.py`: Sample stories and comments from the HN GH-AI comment dataset.***
 
-## RQ2
+## RQ2b - Finetuning Pre-trained Transformers (Finding the Best Sentiment Analysis Method)
+- `finetuning-bert-hn-comment-[colab].ipynb`: Fine-tune BERT on the comment ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
+- `finetuning-bert-hn-story-[colab].ipynb`: Fine-tune BERT on the story ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
+- `finetuning-roberta-hn-comment-[colab].ipynb`: Fine-tune RoBERTa on the comment ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
+- `finetuning-roberta-hn-story-[colab].ipynb`: Fine-tune RoBERTa on the story ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
+- `finetuning-twitter-roberta-hn-comment-[colab].ipynb`: Fine-tune Twitter RoBERTa on the comment ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
+- `finetuning-twitter-roberta-hn-story-[colab].ipynb`: Fine-tune Twitter RoBERTa on the story ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
 
-### Dataset
+## RQ2b - Prompting GPT-4o mini (Finding the Best Sentiment Analysis Method)
+- `prompting-gpt-hn-ai-comment.ipynb`: Prompt GPT-4o mini to output sentiment and reason, and evaluate performance using weighted F1-score on the comment ground truth.
+- `prompting-gpt-hn-ai-story.ipynb`: Prompt GPT-4o mini to output sentiment and reason, and evaluate performance using weighted F1-score on the story ground truth.
 
+## RQ2c - Sentiment Analysis
+- `hn_gh_ai_story_sentiment_analysis.ipynb`: Perform sentiment analysis on the HN GH-AI story.
+- `hn_gh_ai_comment_sentiment_analysis.ipynb`: Perform sentiment analysis on the HN GH-AI comment.
+- `hn_gh_non_ai_story_sentiment_analysis.ipynb`: Perform sentiment analysis on the HN GH story with no AI keywords.
+- `hn_gh_non_ai_comment_sentiment_analysis.ipynb`: Perform sentiment analysis on all comments in the HN GH story with no AI keywords.
+
+## RQ2d - Sentiment and Reaction Trend Analysis
+- `analyze-sentiment-result.ipynb`: Visualize the story and comment sentiment results using area stacks and reaction using a heatmap.
+
+## RQ2e - Statistical Test
+- `statistical-test.ipynb`: Perform statistical tests between the HN GH-AI story and comment and the HN GH story and comment with no AI keywords.
+
+## RQ2 Dataset Schema
 - Consists of all CSV datasets used or created from scripts inside rq2
 
-#### `ground_truth_hn_ai_[data].csv` - Ground Truth Data
+### `ground_truth_hn_ai_[data].csv` - Ground Truth Data
 Data can either be:
 - `story`: Hacker News story
 - `comment`: Hacker News comment
@@ -115,7 +137,7 @@ Data can either be:
 
 ---
 
-#### `sampled_hn_ai_story_gpt_sentiment` - Output of GPT-4o mini on Story Ground Truth Data
+### `sampled_hn_ai_story_gpt_sentiment` - Output of GPT-4o mini on Story Ground Truth Data
 
 | Attribute                  | Description                                              |
 | -------------------------- | -------------------------------------------------------- |
@@ -132,7 +154,7 @@ Data can either be:
 
 ---
 
-#### `sampled_hn_ai_comment_gpt_sentiment.csv` - Output of GPT-4o mini on Comment Ground Truth Data
+### `sampled_hn_ai_comment_gpt_sentiment.csv` - Output of GPT-4o mini on Comment Ground Truth Data
 
 | Attribute                          | Description                                                |
 | ---------------------------------- | ---------------------------------------------------------- |
@@ -153,7 +175,7 @@ Data can either be:
 
 ---
 
-#### `hn_gh_ai_story_sentiment.csv` - Story Sentiment and Reason from GPT-4o mini on HN-GH AI Story Dataset
+### `hn_gh_ai_story_sentiment.csv` - Story Sentiment and Reason from GPT-4o mini on HN-GH AI Story Dataset
 
 | Attribute                | Description                                              |
 | ------------------------ | -------------------------------------------------------- |
@@ -166,7 +188,7 @@ Data can either be:
 
 ---
 
-#### `hn_gh_ai_comment_sentiment.csv` - Comment Sentiment and Reason from GPT-4o mini on HN GH-AI Comment Dataset
+### `hn_gh_ai_comment_sentiment.csv` - Comment Sentiment and Reason from GPT-4o mini on HN GH-AI Comment Dataset
 
 | Attribute                  | Description                                                |
 | -------------------------- | ---------------------------------------------------------- |
@@ -184,7 +206,7 @@ Data can either be:
 
 ---
 
-#### `hn_gh_non_ai_story_sentiment.csv` - Story Sentiment and Reason from GPT-4o mini on HN GH Story Dataset with No AI Keywords
+### `hn_gh_non_ai_story_sentiment.csv` - Story Sentiment and Reason from GPT-4o mini on HN GH Story Dataset with No AI Keywords
 
 | Attribute                | Description                                              |
 | ------------------------ | -------------------------------------------------------- |
@@ -197,7 +219,7 @@ Data can either be:
 
 ---
 
-#### `hn_gh_non_ai_comment_sentiment.csv` - Comment Sentiment and Reason from GPT-4o mini on All Comments Replied to HN GH Story Dataset with No AI Keywords
+### `hn_gh_non_ai_comment_sentiment.csv` - Comment Sentiment and Reason from GPT-4o mini on All Comments Replied to HN GH Story Dataset with No AI Keywords
 
 | Attribute                  | Description                                                |
 | -------------------------- | ---------------------------------------------------------- |
@@ -210,35 +232,6 @@ Data can either be:
 | `story_datetime`           | Unix epoch timestamp of story submission time.             |
 | `comment_sentiment`        | Comment sentiment towards technology from GPT-4o mini      |
 | `comment_sentiment_reason` | Reason for the assigned comment sentiment from GPT-4o mini |
-
-### RQ2a - Creating Ground Truth for Sentiment Analysis Evaluation
-- `sample-hn-gh-ai-comment-story.py`: Sample stories and comments from the HN GH-AI comment dataset.***
-
-### RQ2b - Finetuning Pre-trained Transformers (Finding the Best Sentiment Analysis Method)
-- `finetuning-bert-hn-comment-[colab].ipynb`: Fine-tune BERT on the comment ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
-- `finetuning-bert-hn-story-[colab].ipynb`: Fine-tune BERT on the story ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
-- `finetuning-roberta-hn-comment-[colab].ipynb`: Fine-tune RoBERTa on the comment ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
-- `finetuning-roberta-hn-story-[colab].ipynb`: Fine-tune RoBERTa on the story ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
-- `finetuning-twitter-roberta-hn-comment-[colab].ipynb`: Fine-tune Twitter RoBERTa on the comment ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
-- `finetuning-twitter-roberta-hn-story-[colab].ipynb`: Fine-tune Twitter RoBERTa on the story ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
-
-### RQ2b - Prompting GPT-4o mini (Finding the Best Sentiment Analysis Method)
-- `prompting-gpt-hn-ai-comment.ipynb`: Prompt GPT-4o mini to output sentiment and reason, and evaluate performance using weighted F1-score on the comment ground truth.
-- `prompting-gpt-hn-ai-story.ipynb`: Prompt GPT-4o mini to output sentiment and reason, and evaluate performance using weighted F1-score on the story ground truth.
-
-### RQ2c - Sentiment Analysis
-- `hn_gh_ai_story_sentiment_analysis.ipynb`: Perform sentiment analysis on the HN GH-AI story.
-- `hn_gh_ai_comment_sentiment_analysis.ipynb`: Perform sentiment analysis on the HN GH-AI comment.
-- `hn_gh_non_ai_story_sentiment_analysis.ipynb`: Perform sentiment analysis on the HN GH story with no AI keywords.
-- `hn_gh_non_ai_comment_sentiment_analysis.ipynb`: Perform sentiment analysis on all comments in the HN GH story with no AI keywords.
-
-### RQ2d - Sentiment and Reaction Trend Analysis
-- `analyze-sentiment-result.ipynb`: Visualize the story and comment sentiment results using area stacks and reaction using a heatmap.
-
-### RQ2e - Statistical Test
-- `statistical-test.ipynb`: Perform statistical tests between the HN GH-AI story and comment and the HN GH story and comment with no AI keywords.
-
----
 
 ## RQ3a - Historical Metrics
 - `analyze-historical-metrics.ipynb`: Analyze historical GitHub repository metrics over time. Initially filters outlier repositories prior to the analysis.
