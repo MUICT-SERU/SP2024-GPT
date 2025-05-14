@@ -1,6 +1,5 @@
 # Social Media Reactions to Open Source Projects: A Study on AI projects on HackerNews
 ## Introduction
-This README covers the following sections:
 - The data collection section consists of the core retrieval scripts and datasets to be used across multiple parts of the research as explained in the data preparation section in our paper.
 - The remaining RQ1-3 sections cover steps to preprocess the preliminary dataset and perform their respective analyses.
 - See `requirements.txt` for the required Python packages. `venv` is recommended for Python package management.
