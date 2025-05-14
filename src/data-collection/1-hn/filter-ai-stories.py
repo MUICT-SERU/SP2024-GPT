@@ -7,7 +7,7 @@ stories_df_gh = pd.read_csv('./hn-stories-gh.csv')
 
 def load_keywords():
     """Load keywords from file and compile regex patterns."""
-    KEYWORDS_TXT = './rq1_ai_keywords.txt'
+    KEYWORDS_TXT = './ai_keywords.txt'
     with open(KEYWORDS_TXT, 'r') as f:
         keywords = [keyword.strip().lower() for keyword in f.readlines()]
     return [re.compile(r'\b' + re.escape(kw) + r'\b') for kw in keywords]
