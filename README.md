@@ -86,6 +86,153 @@ Same tags as the `hn_story-[tag].csv` dataset for each filtering criteria.
 ## RQ1d - Topic Modeling
 - `analyze-hn-stories-lda.ipynb`: Perform topic modeling on Hacker News stories to identify dominant topics. This has been executed in Google Colab due to the heavy computational requirements from LDA.
 
+## RQ2a - Creating Ground Truth for Sentiment Analysis Evaluation
+- `sample-hn-comments-stratified.py`: Sample comments using stratified sampling from the HN AI comments.
+
+## RQ2b - Finetuning Pre-trained Transformers (Finding the Best Sentiment Analysis Method)
+- `finetuning-bert-hn-comment-[colab].ipynb`: Fine-tune BERT on the comment ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
+- `finetuning-bert-hn-story-[colab].ipynb`: Fine-tune BERT on the story ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
+- `finetuning-roberta-hn-comment-[colab].ipynb`: Fine-tune RoBERTa on the comment ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
+- `finetuning-roberta-hn-story-[colab].ipynb`: Fine-tune RoBERTa on the story ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
+- `finetuning-twitter-roberta-hn-comment-[colab].ipynb`: Fine-tune Twitter RoBERTa on the comment ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
+- `finetuning-twitter-roberta-hn-story-[colab].ipynb`: Fine-tune Twitter RoBERTa on the story ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
+
+## RQ2b - Prompting GPT-4o mini (Finding the Best Sentiment Analysis Method)
+- `prompting-gpt-hn-ai-comment.ipynb`: Prompt GPT-4o mini to output sentiment and reason, and evaluate performance using weighted F1-score on the comment ground truth.
+- `prompting-gpt-hn-ai-story.ipynb`: Prompt GPT-4o mini to output sentiment and reason, and evaluate performance using weighted F1-score on the story ground truth.
+
+## RQ2c - Sentiment Analysis
+- `hn_gh_ai_story_sentiment_analysis.ipynb`: Perform sentiment analysis on the HN GH-AI story.
+- `hn_gh_ai_comment_sentiment_analysis.ipynb`: Perform sentiment analysis on the HN GH-AI comment.
+- `hn_gh_non_ai_story_sentiment_analysis.ipynb`: Perform sentiment analysis on the HN GH story with no AI keywords.
+- `hn_gh_non_ai_comment_sentiment_analysis.ipynb`: Perform sentiment analysis on all comments in the HN GH story with no AI keywords.
+
+## RQ2d - Sentiment and Reaction Trend Analysis
+- `analyze-sentiment-result.ipynb`: Visualize the story and comment sentiment results using area stacks and reaction using a heatmap.
+
+## RQ2e - Statistical Test
+- `statistical-test.ipynb`: Perform statistical tests between the HN GH-AI story and comment and the HN GH story and comment with no AI keywords.
+
+## RQ2 Dataset Schema
+- Consists of all CSV datasets used or created from scripts inside rq2
+
+### `ground_truth_hn_ai_[data].csv` - Ground Truth Data
+Data can either be:
+- `story`: Hacker News story
+- `comment`: Hacker News comment
+
+| Attribute          | Description                                    |
+| ------------------ | ---------------------------------------------- |
+| `discussion_id`    | ID of Hacker News story                        |
+| `title`            | Title of the story                             |
+| `url`              | External URL linked in the story               |
+| `discussion_date`  | Date and time of story submission              |
+| `comment_id`       | ID of Hacker News comment                      |
+| `comment_text`     | Text content of the comment                    |
+| `comment_date`     | Date and time of when the comment was posted   |
+| `hu1_[data]_label` | Human investigator No.1 `[data]` label         |
+| `hu2_[data]_label` | Human investigator No.2 `[data]` label         |
+| `[data]_match`     | Matching of `[data]` between hu1 and hu2 label |
+| `[data]_consensus` | Final `[data]` consensus label                 |
+
+---
+
+### `sampled_hn_ai_story_gpt_sentiment` - Output of GPT-4o mini on Story Ground Truth Data
+
+| Attribute                  | Description                                              |
+| -------------------------- | -------------------------------------------------------- |
+| `discussion_id`            | ID of Hacker News story                                  |
+| `title`                    | Title of the story                                       |
+| `url`                      | External URL linked in the story                         |
+| `discussion_date`          | Date and time of story submission                        |
+| `hu1_story_label`          | Human investigator No.1 story label                      |
+| `hu2_story_label`          | Human investigator No.2 story label                      |
+| `story_match`              | Matching of the story between hu1 and hu2 label          |
+| `story_consensus`          | Final story consensus label                              |
+| `senti_prompt0_2shot_gpt`  | Story sentiment towards AI from GPT-4o mini              |
+| `reason_prompt0_2shot_gpt` | Reason for the assigned story sentiment from GPT-4o mini |
+
+---
+
+### `sampled_hn_ai_comment_gpt_sentiment.csv` - Output of GPT-4o mini on Comment Ground Truth Data
+
+| Attribute                          | Description                                                |
+| ---------------------------------- | ---------------------------------------------------------- |
+| `discussion_id`                    | ID of Hacker News story                                    |
+| `title`                            | Title of the story                                         |
+| `url`                              | External URL linked in the story                           |
+| `discussion_date`                  | Date and time of story submission                          |
+| `comment_id`                       | ID of Hacker News comment                                  |
+| `comment_text`                     | Text content of the comment                                |
+| `comment_date`                     | Date and time of when the comment was posted               |
+| `hu1_comment_label`                | Human investigator No.1 comment label                      |
+| `hu2_comment_label`                | Human investigator No.2 comment label                      |
+| `comment_match`                    | Matching of the comment between hu1 and hu2 label          |
+| `comment_consensus`                | Final comment consensus label                              |
+| `story_consensus`                  | Final story consensus label                                |
+| `senti_comment_prompt2_1shot_gpt`  | Comment sentiment towards AI from GPT-4o mini              |
+| `reason_comment_prompt2_1shot_gpt` | Reason for the assigned comment sentiment from GPT-4o mini |
+
+---
+
+### `hn_gh_ai_story_sentiment.csv` - Story Sentiment and Reason from GPT-4o mini on HN-GH AI Story Dataset
+
+| Attribute                | Description                                              |
+| ------------------------ | -------------------------------------------------------- |
+| `story_id`               | ID of Hacker News story                                  |
+| `title`                  | Title of the story                                       |
+| `url`                    | External URL linked in the story                         |
+| `datetime`               | Unix epoch timestamp of story submission time.           |
+| `story_sentiment`        | Story sentiment towards AI from GPT-4o mini              |
+| `story_sentiment_reason` | Reason for the assigned story sentiment from GPT-4o mini |
+
+---
+
+### `hn_gh_ai_comment_sentiment.csv` - Comment Sentiment and Reason from GPT-4o mini on HN GH-AI Comment Dataset
+
+| Attribute                  | Description                                                |
+| -------------------------- | ---------------------------------------------------------- |
+| `comment_id`               | ID of Hacker News comment                                  |
+| `comment_text`             | Text content of the comment                                |
+| `comment_datetime`         | Unix epoch timestamp of comment posted time.               |
+| `story_id`                 | ID of Hacker News story                                    |
+| `story_title`              | Title of the story                                         |
+| `url`                      | External URL linked in the story                           |
+| `story_datetime`           | Unix epoch timestamp of story submission time.             |
+| `comment_sentiment`        | Comment sentiment towards AI from GPT-4o mini              |
+| `comment_sentiment_reason` | Reason for the assigned comment sentiment from GPT-4o mini |
+| `story_sentiment`          | Story sentiment towards AI from GPT-4o mini                |
+| `story_sentiment_reason`   | Reason for the assigned story sentiment from GPT-4o mini   |
+
+---
+
+### `hn_gh_non_ai_story_sentiment.csv` - Story Sentiment and Reason from GPT-4o mini on HN GH Story Dataset with No AI Keywords
+
+| Attribute                | Description                                              |
+| ------------------------ | -------------------------------------------------------- |
+| `story_id`               | ID of Hacker News story                                  |
+| `title`                  | Title of the story                                       |
+| `url`                    | External URL linked in the story                         |
+| `datetime`               | Unix epoch timestamp of story submission time.           |
+| `story_sentiment`        | Story sentiment towards technology from GPT-4o mini      |
+| `story_sentiment_reason` | Reason for the assigned story sentiment from GPT-4o mini |
+
+---
+
+### `hn_gh_non_ai_comment_sentiment.csv` - Comment Sentiment and Reason from GPT-4o mini on All Comments Replied to HN GH Story Dataset with No AI Keywords
+
+| Attribute                  | Description                                                |
+| -------------------------- | ---------------------------------------------------------- |
+| `comment_id`               | ID of Hacker News comment                                  |
+| `comment_text`             | Text content of the comment                                |
+| `comment_datetime`         | Unix epoch timestamp of comment posted time.               |
+| `story_id`                 | ID of Hacker News story                                    |
+| `story_title`              | Title of the story                                         |
+| `url`                      | External URL linked in the story                           |
+| `story_datetime`           | Unix epoch timestamp of story submission time.             |
+| `comment_sentiment`        | Comment sentiment towards technology from GPT-4o mini      |
+| `comment_sentiment_reason` | Reason for the assigned comment sentiment from GPT-4o mini |
+
 ## RQ3a - Historical Metrics
 - `analyze-historical-metrics.ipynb`: Analyze historical GitHub repository metrics over time. Initially filters outlier repositories prior to the analysis.
 - `stats-test-metrics.ipynb`: Perform statistical tests on the historical metrics data on the metric changes after HN submission. Initially filters for repositories that contain metrics at minimum 6 months before and after HN submission to ensure a sufficient time frame for repository activity.
