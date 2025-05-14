@@ -82,8 +82,6 @@ Metric tags include the following:
 > Note: In `metrics-[tags].csv`, Repository stats (`star_count`, `fork_count`, etc.) reflect historical snapshots at the time of data collection.
 
 ## RQ1a - GitHub Repository Creation Distribution
-
-### Scripts explaination and run order
 - `analyze-gh-repo-creation-date.ipynb`: Analyze the distribution of GitHub repository creation dates.
 
 ## RQ1b - GitHub Hacker News Username Analysis
