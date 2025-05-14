@@ -87,7 +87,7 @@ Same tags as the `hn_story-[tag].csv` dataset for each filtering criteria.
 - `analyze-hn-stories-lda.ipynb`: Perform topic modeling on Hacker News stories to identify dominant topics.
 
 ## RQ2a - Creating Ground Truth for Sentiment Analysis Evaluation
-- `sample-hn-gh-ai-comment-story.py`: Sample stories and comments from the HN GH-AI comment dataset.***
+- `sample-hn-comments-stratified.py`: Sample comments using stratified sampling from the HN AI comments.
 
 ## RQ2b - Finetuning Pre-trained Transformers (Finding the Best Sentiment Analysis Method)
 - `finetuning-bert-hn-comment-[colab].ipynb`: Fine-tune BERT on the comment ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
