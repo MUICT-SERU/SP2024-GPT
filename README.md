@@ -9,15 +9,15 @@ The following sections describe the data collection process for the raw dataset.
 
 ### Scripts
 BigQuery dataset retrieval scripts:
-- `retrieve-hn-stories.sql`: script used to retrieve Hacker News stories using the public Hacker News dataset.
-- `retrieve-hn-comments.sql`: script used to retrieve Hacker News comments based on the retrieved Hacker News stories.
-- `retrieve-gh-metrics.sql`: script used to retrieve GitHub metrics using the public GitHub Archive dataset. Requires the `retrieve-hn-stories.sql` script to be run and for the dataset to be stored for referencing repository URL first.
-- `retrieve-gh-metadata.sql`: script used to retrieve GitHub metadata based on the retrieved Hacker News stories. Metadata such as repository creation date is required certain parts such as RQ3 when identifying projects that were created at least 6 months prior to HN submission.
+- `retrieve-hn-stories.sql`: Script used to retrieve Hacker News stories using the public Hacker News dataset.
+- `retrieve-hn-comments.sql`: Script used to retrieve Hacker News comments based on the retrieved Hacker News stories.
+- `retrieve-gh-metrics.sql`: Script used to retrieve GitHub metrics using the public GitHub Archive dataset. Requires the `retrieve-hn-stories.sql` script to be run and for the dataset to be stored for referencing repository URL first.
+- `retrieve-gh-metadata.sql`: Script used to retrieve GitHub metadata based on the retrieved Hacker News stories. Metadata such as repository creation date is required certain parts such as RQ3 when identifying projects that were created at least 6 months prior to HN submission.
 
 Preliminary AI and GitHub repository filtering script:
-- `ai_keywords.txt`: list of AI keywords used in the script, with each keyword separated by newline.
-- `filter-ai-keywords.py`: script used to filter only for stories whose title contain AI keywords defined in the `ai_keywords.txt` file.
-- `filter-gh-repos.py`: script used to filter only for stories containing GitHub repositories URLs.
+- `ai_keywords.txt`: List of AI keywords used in the script, with each keyword separated by newline.
+- `filter-ai-keywords.py`: Script used to filter only for stories whose title contain AI keywords defined in the `ai_keywords.txt` file.
+- `filter-gh-repos.py`: Script used to filter only for stories containing GitHub repositories URLs.
 
 ### Schema
 
@@ -84,11 +84,11 @@ Same tags as the `hn_story-[tag].csv` dataset for each filtering criteria.
 - `analyze-hn-comments.ipynb`: Analyze Hacker News comments based on the HN GH-AI stories.
 
 ## RQ1d - Topic Modeling
-- `analyze-hn-stories-lda.ipynb`: Perform topic modeling on Hacker News stories to identify dominant topics.
+- `analyze-hn-stories-lda.ipynb`: Perform topic modeling on Hacker News stories to identify dominant topics. This has been executed in Google Colab due to the heavy computational requirements from LDA.
 
 ## RQ3a - Historical Metrics
 - `analyze-historical-metrics.ipynb`: Analyze historical GitHub repository metrics over time. Initially filters outlier repositories prior to the analysis.
-- `stats-test-metrics.ipynb`: Perform statistical tests on the historical metrics data on the metric changes after HN submission.
+- `stats-test-metrics.ipynb`: Perform statistical tests on the historical metrics data on the metric changes after HN submission. Initially filters for repositories that contain metrics at minimum 6 months before and after HN submission to ensure a sufficient time frame for repository activity.
 
 ## RQ3b - Metric growth analysis based on Hacker News sentiment
 Perform analysis and visualization on GitHub metric data base on their respective sentiment on Hacker News to find the relationship between Hacker News sentiment and GitHub metric growth
