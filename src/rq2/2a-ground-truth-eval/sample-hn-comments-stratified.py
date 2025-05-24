@@ -1,79 +1,81 @@
 import pandas as pd
 import numpy as np
 
+HN_STORIES_CSV = '../../rq1/dataset/hn-stories-gh-ai.csv'
 HN_COMMENTS_CSV = '../../rq1/dataset/hn-comments-gh-ai.csv'
-HN_COMMENTS_SAMPLED_CSV = '../dataset/hn-comments-gh-ai-sampled.csv'
 
-def stratified_sample_with_min_per_story(csv_file, num_samples, output_file):
-    df = pd.read_csv(csv_file)
+SAMPLED_STORIES_CSV = '../dataset/hn-stories-gh-ai-sampled.csv'
+SAMPLED_COMMENTS_CSV = '../dataset/hn-comments-gh-ai-sampled.csv'
 
-    # Drop duplicates based on both 'comment_id' and 'comment_text'
-    df = df.drop_duplicates(subset=['comment_id', 'comment_text'])
+NUM_STORIES = 385
+NUM_COMMENTS = 385
 
-    # Group by 'story_id' (which represents each story)
-    grouped = df.groupby('story_id')
+def sample_uniform_stories(stories_csv, num_stories, output_file):
+    stories_df = pd.read_csv(stories_csv)
+    sampled_stories_df = stories_df.sample(n=num_stories, random_state=42)
+    sampled_stories_df.to_csv(output_file, index=False)
+    print(f"✅ Sampled {len(sampled_stories_df)} stories saved to {output_file}")
+    return sampled_stories_df
 
-    # Initialize an empty DataFrame to store the sampled data
-    sampled_df = pd.DataFrame()
 
-    # Step 1: Ensure each story gets at least one comment
-    for name, group in grouped:
-        if len(group) > 1:
-            sampled_df = pd.concat([sampled_df, group.sample(n=1, random_state=42)])
+def sample_stratified_comments_with_fallback(sampled_stories_df, comments_csv, num_comments, output_file):
+    comments_df = pd.read_csv(comments_csv)
+    sampled_story_ids = set(sampled_stories_df['id'])
+
+    # Filter comments from sampled stories
+    filtered_comments = comments_df[comments_df['story_id'].isin(sampled_story_ids)]
+
+    # Group by story_id
+    grouped = filtered_comments.groupby('story_id', group_keys=False)
+    group_sizes = grouped.size()
+
+    # Proportional allocation
+    proportions = (group_sizes / group_sizes.sum()) * num_comments
+    samples_per_group = proportions.round().astype(int)
+
+    # Adjust to exactly num_comments
+    while samples_per_group.sum() != num_comments:
+        diff = num_comments - samples_per_group.sum()
+        adjust_idx = samples_per_group.sample(n=1, random_state=42).index[0]
+        samples_per_group[adjust_idx] += np.sign(diff)
+
+    # Stratified sampling
+    def sample_group(g):
+        count = samples_per_group.get(g.name, 0)
+        return g.sample(n=min(len(g), count), random_state=42)
+
+    stratified_sample = grouped.apply(sample_group)
+
+    # Fill missing
+    if len(stratified_sample) < num_comments:
+        already_sampled_ids = set(stratified_sample['comment_id'])
+        remaining_comments = filtered_comments[~filtered_comments['comment_id'].isin(already_sampled_ids)]
+
+        num_needed = num_comments - len(stratified_sample)
+        if num_needed > len(remaining_comments):
+            print(f"⚠️ Not enough remaining comments to reach {num_comments}. Returning {len(stratified_sample) + len(remaining_comments)}.")
+            extra_sample = remaining_comments
         else:
-            sampled_df = pd.concat([sampled_df, group])
+            extra_sample = remaining_comments.sample(n=num_needed, random_state=42)
 
-    # Step 2: Calculate the remaining number of comments to sample
-    remaining_samples = num_samples - len(sampled_df)
+        final_sample = pd.concat([stratified_sample, extra_sample])
+    else:
+        final_sample = stratified_sample
 
-    if remaining_samples > 0:
-        # Step 3: Sample the remaining comments proportionally to the size of each group
-        proportion = remaining_samples / (len(df) - len(sampled_df))
+    # Merge with story metadata
+    final_sample = final_sample.merge(
+        sampled_stories_df,
+        how='left',
+        left_on='story_id',
+        right_on='id',
+        suffixes=('_comment', '_story')
+    )
 
-        # Remove the previously sampled data from the original dataframe to avoid duplicates
-        df_remaining = df[~df.index.isin(sampled_df.index)]
-
-        # Sample remaining comments proportionally
-        remaining_sampled = df_remaining.groupby('story_id', group_keys=False).apply(
-            lambda x: x.sample(frac=proportion, random_state=42) if len(x) > 1 else pd.DataFrame()
-        )
-
-        # Combine the guaranteed 1 comment samples with the remaining proportional samples
-        sampled_df = pd.concat([sampled_df, remaining_sampled])
-
-    # Ensure the final number of samples matches exactly num_samples
-    if len(sampled_df) > num_samples:
-        sampled_df = sampled_df.sample(n=num_samples, random_state=42)
-
-    # Save the sampled data to a new CSV file
-    sampled_df.to_csv(output_file, index=False)
-
-stratified_sample_with_min_per_story(HN_COMMENTS_CSV, 385, HN_COMMENTS_SAMPLED_CSV)
+    final_sample.to_csv(output_file, index=False)
+    print(f"✅ Sampled {len(final_sample)} comments saved to {output_file}")
+    return final_sample
 
 
-def get_comment_statistics(csv_file):
-    # Load the CSV file
-    df = pd.read_csv(csv_file)
-
-    # Group by 'story_id' and count the number of comments in each story
-    comment_counts = df.groupby('story_id').size().reset_index(name='num_comments')
-
-    # Calculate overall statistics
-    total_stories = comment_counts['story_id'].nunique()
-    total_comments = comment_counts['num_comments'].sum()
-    max_comments = comment_counts['num_comments'].max()
-    min_comments = comment_counts['num_comments'].min()
-    avg_comments = comment_counts['num_comments'].mean()
-
-    # Print the statistics
-    print(f"Total number of stories: {total_stories}")
-    print(f"Total number of comments: {total_comments}")
-    print(f"Average number of comments per story: {avg_comments:.2f}")
-    print(f"Max number of comments in a story: {max_comments}")
-    print(f"Min number of comments in a story: {min_comments}")
-
-    # Return the DataFrame containing the number of comments per story
-    return comment_counts
-
-comment_stats = get_comment_statistics(HN_COMMENTS_CSV)
-print(comment_stats)
+# Run sampling
+sampled_stories_df = sample_uniform_stories(HN_STORIES_CSV, NUM_STORIES, SAMPLED_STORIES_CSV)
+sampled_comments_df = sample_stratified_comments_with_fallback(sampled_stories_df, HN_COMMENTS_CSV, NUM_COMMENTS, SAMPLED_COMMENTS_CSV)
