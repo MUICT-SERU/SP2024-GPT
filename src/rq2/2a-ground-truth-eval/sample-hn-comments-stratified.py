@@ -46,21 +46,44 @@ def sample_stratified_comments_with_fallback(sampled_stories_df, comments_csv, n
 
     stratified_sample = grouped.apply(sample_group)
 
-    # Fill missing
+    # Fill missing by sampling 1 comment per new random story
     if len(stratified_sample) < num_comments:
         already_sampled_ids = set(stratified_sample['comment_id'])
+        already_sampled_story_ids = set(stratified_sample['story_id'])
+
+        # Get stories with unsampled comments
         remaining_comments = filtered_comments[~filtered_comments['comment_id'].isin(already_sampled_ids)]
+        remaining_story_groups = remaining_comments.groupby('story_id')
 
-        num_needed = num_comments - len(stratified_sample)
-        if num_needed > len(remaining_comments):
-            print(f"⚠️ Not enough remaining comments to reach {num_comments}. Returning {len(stratified_sample) + len(remaining_comments)}.")
-            extra_sample = remaining_comments
-        else:
-            extra_sample = remaining_comments.sample(n=num_needed, random_state=42)
+        # Remove stories we've already exhausted
+        candidate_stories = [story_id for story_id in remaining_story_groups.groups.keys()
+                             if story_id not in already_sampled_story_ids]
 
-        final_sample = pd.concat([stratified_sample, extra_sample])
+        np.random.seed(42)
+        np.random.shuffle(candidate_stories)
+
+        extra_samples = []
+
+        for story_id in candidate_stories:
+            group = remaining_story_groups.get_group(story_id)
+            print(f"Sampling from story_id {story_id} with {len(group)} comments")
+            if not group.empty:
+                extra_samples.append(group.sample(n=1, random_state=42))
+            if len(extra_samples) + len(stratified_sample) >= num_comments:
+                break
+
+        # If still under, allow reuse from already sampled stories
+        if len(extra_samples) + len(stratified_sample) < num_comments:
+            additional_needed = num_comments - (len(extra_samples) + len(stratified_sample))
+            reuse_comments = remaining_comments.sample(n=additional_needed, random_state=42)
+            extra_samples.append(reuse_comments)
+
+        extra_sample_df = pd.concat(extra_samples)
+
+        final_sample = pd.concat([stratified_sample, extra_sample_df])
     else:
         final_sample = stratified_sample
+
 
     # Merge with story metadata
     final_sample = final_sample.merge(
