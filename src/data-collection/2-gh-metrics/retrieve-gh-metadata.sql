@@ -19,6 +19,7 @@ SELECT
   MIN(gh.created_at) AS repo_creation_date,
   COUNT(DISTINCT gh.actor.id) AS contributor_count,
   COUNT(DISTINCT IF(gh.type = 'PushEvent', gh.id, NULL)) AS push_count,
+  COUNT(DISTINCT IF(gh.type = 'PullRequestEvent', gh.id, NULL)) AS pr_count,
   COUNT(DISTINCT IF(gh.type = 'WatchEvent', gh.id, NULL)) AS star_count,
   COUNT(DISTINCT IF(gh.type = 'ForkEvent', gh.id, NULL)) AS fork_count
 FROM
