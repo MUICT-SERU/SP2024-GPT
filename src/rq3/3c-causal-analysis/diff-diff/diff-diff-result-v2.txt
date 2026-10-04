@@ -1,0 +1,108 @@
+
+==================================================
+Analyzing cumulative metrics
+==================================================
+
+[Original DiD] cumulative_stars:
+DID coefficient: 299.6716 (p=0.0000)
+
+[Lagged Model] cumulative_stars:
+DID coefficient with lag: 30.1163 (p=0.0141)
+
+[Placebo Test] cumulative_stars:
+Placebo DID coefficient: -47566844174619.1641 (p=0.0000)
+--------------------------------------------------------------------------------
+
+[Original DiD] cumulative_forks:
+DID coefficient: 55.1177 (p=0.0000)
+
+[Lagged Model] cumulative_forks:
+DID coefficient with lag: 2.8698 (p=0.0415)
+
+[Placebo Test] cumulative_forks:
+Placebo DID coefficient: 24.3053 (p=0.0000)
+--------------------------------------------------------------------------------
+
+[Original DiD] cumulative_commits:
+DID coefficient: 35.4383 (p=0.0000)
+
+[Lagged Model] cumulative_commits:
+DID coefficient with lag: 0.7125 (p=0.6645)
+
+[Placebo Test] cumulative_commits:
+Placebo DID coefficient: 21.6388 (p=0.0000)
+--------------------------------------------------------------------------------
+
+[Original DiD] cumulative_prs:
+DID coefficient: 30.5624 (p=0.0023)
+
+[Lagged Model] cumulative_prs:
+DID coefficient with lag: 2.6483 (p=0.0002)
+
+[Placebo Test] cumulative_prs:
+Placebo DID coefficient: 46992201775829.0703 (p=0.0000)
+--------------------------------------------------------------------------------
+
+[Original DiD] cumulative_ve_contributors:
+DID coefficient: 12.8934 (p=0.0000)
+
+[Lagged Model] cumulative_ve_contributors:
+DID coefficient with lag: 0.3139 (p=0.0889)
+
+[Placebo Test] cumulative_ve_contributors:
+Placebo DID coefficient: -34635944320410.3008 (p=0.0000)
+--------------------------------------------------------------------------------
+
+==================================================
+Analyzing non_cumulative metrics
+==================================================
+
+[Original DiD] new_stars:
+DID coefficient: 38.3462 (p=0.0003)
+
+[Lagged Model] new_stars:
+DID coefficient with lag: 35.7064 (p=0.0018)
+
+[Placebo Test] new_stars:
+Placebo DID coefficient: 13.5524 (p=0.0003)
+--------------------------------------------------------------------------------
+
+[Original DiD] new_forks:
+DID coefficient: 7.6908 (p=0.0000)
+
+[Lagged Model] new_forks:
+DID coefficient with lag: 4.7324 (p=0.0009)
+
+[Placebo Test] new_forks:
+Placebo DID coefficient: -6939452095824.5244 (p=0.3165)
+--------------------------------------------------------------------------------
+
+[Original DiD] new_commits:
+DID coefficient: 3.4595 (p=0.1731)
+
+[Lagged Model] new_commits:
+DID coefficient with lag: 1.8800 (p=0.5476)
+
+[Placebo Test] new_commits:
+Placebo DID coefficient: -50037588738413.5234 (p=0.0000)
+--------------------------------------------------------------------------------
+
+[Original DiD] new_prs:
+DID coefficient: -0.0160 (p=0.9862)
+
+[Lagged Model] new_prs:
+DID coefficient with lag: -0.5757 (p=0.4057)
+
+[Placebo Test] new_prs:
+Placebo DID coefficient: 0.3537 (p=0.3134)
+--------------------------------------------------------------------------------
+
+[Original DiD] active_contributors:
+DID coefficient: 1.0811 (p=0.0161)
+
+[Lagged Model] active_contributors:
+DID coefficient with lag: -0.0315 (p=0.8571)
+
+[Placebo Test] active_contributors:
+Placebo DID coefficient: 3752351530784.9097 (p=0.0000)
+--------------------------------------------------------------------------------

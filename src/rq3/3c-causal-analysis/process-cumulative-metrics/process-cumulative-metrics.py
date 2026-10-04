@@ -1,25 +1,26 @@
 import pandas as pd
 
-# Load the dataset
-file_path = "../../dataset/nonhn-gh-ai-metrics-[2147].csv"
-df = pd.read_csv(file_path, encoding='utf-7')
+file_path = "hn-stories-gh-ai-metadata-[6months-before-after-hn]-v2.csv"
+df = pd.read_csv(file_path, encoding="utf-8")
 
-# Sort data by repo and month (assuming month format is YYYY-MM-DD)
-df['month'] = pd.to_datetime(df['month'], format='%Y-%m')
-df = df.sort_values(by=['control_repo', 'month'])
+print(df.columns.tolist())  # sanity check: do these match the names below?
 
-# List of metrics to be accumulated
-metrics = ['new_stars', 'new_forks', 'new_commits', 'new_prs', 'active_contributors']
-cumulative_metrics = {metric: f'cumulative_{metric[4:]}' for metric in metrics}
+df["month"] = pd.to_datetime(df["month"])
+df = df.sort_values(["repo_full_name", "month"])  # cumsum depends on row order
 
-# Initialize cumulative columns
-df[list(cumulative_metrics.values())] = 0
+# monthly column -> cumulative column name
+cumulative_metrics = {
+    "stars": "cumulative_stars",
+    "forks": "cumulative_forks",
+    "commits": "cumulative_commits",
+    "PRs": "cumulative_prs",
+    "contributors": "cumulative_contributors",
+}
 
-# Compute cumulative sums per repository
-df[list(cumulative_metrics.values())] = df.groupby('control_repo')[metrics].cumsum().values
+# groupby splits into one group per repo; cumsum restarts at each repo
+cum = df.groupby("repo_full_name")[list(cumulative_metrics)].cumsum()
 
-# Save the updated dataframe to a new CSV file
-output_file = "../../dataset/nonhn-gh-ai-metrics-cumulative.csv"
-df.to_csv(output_file, index=False)
+# rename the columns, then assign. Both share the same index, so pandas aligns rows
+df[list(cumulative_metrics.values())] = cum.rename(columns=cumulative_metrics)
 
-print(f"Cumulative metrics saved to {output_file}")
+df.to_csv("hn-stories-gh-ai-metrics-[6months-before-after-hn]-cumulative-v2.csv", index=False)
