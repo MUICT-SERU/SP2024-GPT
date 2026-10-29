@@ -20,4 +20,4 @@ seaborn==0.13.2
 six==1.17.0
 tqdm==4.67.1
 tzdata==2026.5
-urllib3==2.5.0
+urllib3==2.8.0
