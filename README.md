@@ -1,24 +1,49 @@
 # Social Media Reactions to Open Source Projects: A Study on AI projects on HackerNews
 ## Introduction
 - The data collection section consists of the core retrieval scripts and datasets to be used across multiple parts of the research as explained in the data preparation section in our paper.
-- The remaining RQ1-3 sections cover steps to preprocess the preliminary dataset and perform their respective analyses.
+- The remaining RQ1, RQ2, RQ3 and RQ5 sections cover steps to preprocess the preliminary dataset and perform their respective analyses.
 - See `requirements.txt` for the required Python packages. `venv` is recommended for Python package management.
+
+### Repository layout
+```
+src/
+├── data-collection/
+│   ├── 1-hn/                 # Hacker News stories and comments (BigQuery + filtering)
+│   ├── 2-gh-metrics/         # GitHub Archive metrics and metadata (BigQuery + filtering)
+│   └── metadata.py           # Current repository metrics via the GitHub API
+├── rq1/                      # Descriptive analysis (creation dates, usernames, trends, topics)
+├── rq2/                      # Sentiment analysis (ground truth, model selection, analysis, validation)
+├── rq3/                      # GitHub metric changes after HN submission
+└── rq5/                      # Causal analysis (matching + difference-in-differences)
+```
+Each `rqN/dataset/` folder holds the CSV datasets used by that RQ.
 
 ## Data collection
 The following sections describe the data collection process for the raw dataset. Note that any further processing of the raw data has been included in their respective RQ sections.
 
 ### Scripts
 BigQuery dataset retrieval scripts:
-- `retrieve-hn-stories.sql`: Script used to retrieve Hacker News stories using the public Hacker News dataset.
-- `retrieve-hn-comments.sql`: Script used to retrieve Hacker News comments based on the retrieved Hacker News stories.
-- `retrieve-gh-metrics.sql`: Script used to retrieve GitHub metrics using the public GitHub Archive dataset. Requires the `retrieve-hn-stories.sql` script to be run and for the dataset to be stored for referencing repository URL first.
-- `retrieve-gh-metadata.sql`: Script used to retrieve GitHub metadata based on the retrieved Hacker News stories. Metadata such as repository creation date is required certain parts such as RQ3 when identifying projects that were created at least 6 months prior to HN submission.
+- `1-hn/retrieve-hn-stories.sql`: Script used to retrieve Hacker News stories (2022-05-08 to 2024-05-09) using the public Hacker News dataset.
+- `1-hn/retrieve-hn-comments.sql`: Script used to retrieve Hacker News comments based on the retrieved Hacker News stories.
+- `2-gh-metrics/retrieve-gh-metrics.sql`: Script used to retrieve monthly GitHub metrics using the public GitHub Archive dataset. Requires the `retrieve-hn-stories.sql` script to be run and for the dataset to be stored for referencing repository URL first.
+- `2-gh-metrics/retrieve-gh-metadata.sql`: Script used to retrieve GitHub metadata based on the retrieved Hacker News stories. Metadata such as repository creation date is required certain parts such as RQ3 when identifying projects that were created at least 6 months prior to HN submission.
 
-Preliminary AI and GitHub repository filtering script:
-- `ai_keywords.txt`: List of AI keywords used in the script, with each keyword separated by newline.
-- `filter-ai-keywords.py`: Script used to filter only for stories whose title contain AI keywords defined in the `ai_keywords.txt` file.
-- `filter-gh-repos.py`: Script used to filter only for stories containing GitHub repositories URLs.
+Preliminary AI and GitHub repository filtering scripts (`1-hn/`):
+- `filter-gh-stories.py`: Script used to filter only for stories whose URL is a GitHub repository root URL (`github.com/owner/repo`).
+- `filter-ai-stories.py`: Script used to filter only for stories whose title contains an AI keyword (whole-word match), producing `hn-stories-gh-ai.csv`. It reads the keyword list from `ai_keywords.txt` in the working directory.
+- `filter-nonai-stories.py`: Script used to filter only for stories whose title contains no AI keyword, producing `hn-stories-gh-nonai.csv`. It reads the keyword list from `rq1_ai_keywords.txt`.
+- `filter-comments-stories_id.py`: Script used to keep only the comments that belong to the filtered stories (e.g., `hn-comments-gh-ai.csv`).
+- `combine-csvs.py`: Helper script used to concatenate two CSV files.
+
+> Note: The AI keyword list (one keyword per line) is stored at `src/rq1/1c-temporal-analysis/story/rq1_ai_keywords.txt`. Copy it next to the filtering scripts (as `ai_keywords.txt` for `filter-ai-stories.py`) before running them.
+
+GitHub repository scripts (`2-gh-metrics/`):
 - `remove-duplicate-urls.py`: Script used to remove entries containing duplicate GitHub repository URLs - selecting only the first story among the duplicates with the highest HN score. This is needed for RQ3 in order to not analyze duplicated GitHub repositories, but may find useful in general.
+- `filter-nonhn-gh-ai/filter.py`: Script used to select candidate AI control repositories (not submitted to HN) whose repository name contains an AI keyword (substring match, e.g., `-ai-`, `-llm-`).
+- `filter-nonhn-gh-ai/filter-strict.py`: Same as `filter.py` but uses strict whole-word keyword matching.
+
+Other scripts:
+- `metadata.py`: Fetch current cumulative metrics (stars, forks, contributors, commits, PRs) for a list of repositories using the GitHub REST and GraphQL APIs. Requires a `GITHUB_TOKEN` environment variable; run with `--input <csv with repo_full_name> --output <csv>`. The script is resumable.
 
 > Note: The AI and GitHub filtering were done directly within the data collection stage due to efficiency as these were used throughout our research.
 
@@ -67,7 +92,7 @@ Same tags as the `hn_story-[tag].csv` dataset for each filtering criteria.
 #### `metrics-[tag].csv` – Metrics data for projects.
 Metric tags include the following:
 - `hn-gh-ai`: Metric data for HN GH-AI stories.
-- `hn-gh-ai-[6-months-before-after-hn]`: AI stories containing GitHub repository URL which has been created at least 6 months before HN submission as well as containing metrics 6 months afterwards. This is to ensure sufficient project activities, and was used for statistical analysis and DiD. Note that this **does not contain relative months** after HN submission, only a list of raw metrics for the repositories that fit the 6 months before and after criteria in the same format as the standard metrics file. This was generated by running `rq3/3a/filter-6months-before-after-hn.py`.
+- `hn-gh-ai-[6-months-before-after-hn]`: AI stories containing GitHub repository URL which has been created at least 6 months before HN submission as well as containing metrics 6 months afterwards. This is to ensure sufficient project activities, and was used for statistical analysis and DiD. Note that this **does not contain relative months** after HN submission, only a list of raw metrics for the repositories that fit the 6 months before and after criteria in the same format as the standard metrics file. This was generated by running `rq3/3a-historical-metrics/refilter/filter-6months-before-after-hn.py`.
 
 | Attribute            | Description                                                                |
 | -------------------- | -------------------------------------------------------------------------- |
@@ -125,20 +150,26 @@ Metric tags include the following:
 > Note: In `metadata-[tags].csv`, Repository stats (`star_count`, `fork_count`, etc.) reflect historical snapshots at the time of data collection.
 
 ## RQ1a - GitHub Repository Creation Distribution
-- `analyze-gh-repo-creation-date.ipynb`: Analyze the distribution of GitHub repository creation dates.
+- `analyze-gh-creation-dist.ipynb`: Analyze the distribution of GitHub repository creation dates.
 
 ## RQ1b - GitHub Hacker News Username Analysis
-- `analyze-gh-usernames.ipynb`: Analyze the number of GitHub repository owners who self-promote their project on Hacker News.
+- `analyze-hn-gh-username.ipynb`: Analyze the number of GitHub repository owners who self-promote their project on Hacker News.
 
 ## RQ1c - Temporal Analysis
-- `analyze-hn-stories.ipynb`: Visualize the number of Hacker News stories over time and keyword distribution.
-- `analyze-hn-comments.ipynb`: Analyze Hacker News comments based on the HN GH-AI stories.
+- `story/analyze-hn-stories.ipynb`: Visualize the number of Hacker News stories over time and keyword distribution.
+- `story/rq1_ai_keywords.txt`: List of AI keywords, one per line, used for the AI story filtering and the keyword distribution.
+- `comment/analyze-hn-comments.ipynb`: Analyze Hacker News comments based on the HN GH-AI stories.
 
 ## RQ1d - Topic Modeling
-- `analyze-hn-stories-lda-[colab].ipynb`: Perform topic modeling on Hacker News stories to identify dominant topics. This has been executed in Google Colab due to the heavy computational requirements from LDA.
+- `analyze-hn-stories-lda.ipynb`: Perform topic modeling on Hacker News stories to identify dominant topics.
+- `analyze-hn-stories-lda-[colab].ipynb`: Google Colab version of the topic modeling notebook, used due to the heavy computational requirements from LDA.
+
+## RQ1 Dataset
+- `hn-stories-gh-ai-metadata.csv`: HN GH-AI stories joined with their GitHub repository metadata (see the `metadata-[tag].csv` schema).
 
 ## RQ2a - Creating Ground Truth for Sentiment Analysis Evaluation
 - `sample-hn-comments-stratified.py`: Sample comments using stratified sampling from the HN AI comments.
+- `analyze-sampled-dataset.ipynb`: Analyze the sampled ground truth dataset.
 
 ## RQ2b - Finetuning Pre-trained Transformers (Finding the Best Sentiment Analysis Method)
 - `finetuning-bert-hn-comment-[colab].ipynb`: Fine-tune BERT on the comment ground truth and evaluate performance using 5-fold cross-validation in Google Colab.
@@ -157,12 +188,18 @@ Metric tags include the following:
 - `hn_gh_ai_comment_sentiment_analysis.ipynb`: Perform sentiment analysis on the HN GH-AI comment.
 - `hn_gh_non_ai_story_sentiment_analysis.ipynb`: Perform sentiment analysis on the HN GH story with no AI keywords.
 - `hn_gh_non_ai_comment_sentiment_analysis.ipynb`: Perform sentiment analysis on all comments in the HN GH story with no AI keywords.
+- `preprocess_comment_text.ipynb`: Clean comment text in the sentiment result files (remove HTML tags, decode HTML entities, trim whitespace). Overwrites the input file in place.
 
 ## RQ2d - Sentiment and Reaction Trend Analysis
-- `analyze-sentiment-result.ipynb`: Visualize the story and comment sentiment results using area stacks and reaction using a heatmap.
+- `analyze-sentiment-result.ipynb`: Visualize the story and comment sentiment results using area stacks and reaction using a heatmap. Output figures are saved in `plots/`.
 
 ## RQ2e - Statistical Test
 - `statistical-test.ipynb`: Perform statistical tests between the HN GH-AI story and comment and the HN GH story and comment with no AI keywords.
+
+## RQ2f - Manual Validation of GPT-4o mini Sentiment Results
+- `sampling_comment.ipynb`: Sample 354 HN GH-AI comments (excluding those already in the ground truth) stratified by story and comment sentiment, for manual validation of the GPT-4o mini output.
+- `cohen_kappa_agreement.ipynb`: Compute Cohen's kappa agreement between the two human investigators and against the GPT-4o mini labels, for the sampled stories (`sampled_328_hu_gh_ai_story_2hu_labeled.csv`) and comments (`sampled_354_hn_gh_ai_comment_2hu_labeled.csv`).
+- `gwen_ac1.ipynb`: Compute Gwet's AC1 agreement between the GPT-4o mini labels and the human consensus labels on the same samples.
 
 ## RQ2 Dataset Schema
 - Consists of all CSV datasets used or created from scripts inside rq2
@@ -287,12 +324,20 @@ Data can either be:
 ## RQ3a - Historical Metrics
 - `analyze-historical-metrics.ipynb`: Analyze historical GitHub repository metrics over time. Initially filters outlier repositories prior to the analysis.
 - `stats-test-metrics.ipynb`: Perform statistical tests on the historical metrics data on the metric changes after HN submission. Initially filters for repositories that contain metrics at minimum 6 months before and after HN submission to ensure a sufficient time frame for repository activity.
+- `refilter/filter-6months-before-after-hn.py`: Filter the treatment (HN-submitted) repositories used for statistical tests and DiD. A repository must have metadata, be created a minimum number of days before HN submission, and have metric panel coverage for the full window before and after the HN submission month. Produces the `metrics-hn-gh-ai-[6-months-before-after-hn]` dataset.
+
+## RQ3 - Other Scripts
+- `check-gh-metric-month/check-gh-metric-month.py`: Query the GitHub GraphQL API for a repository's metrics in a given month, used to cross-check the GitHub Archive data. Requires a `GITHUB_TOKEN` environment variable.
 
 ## RQ3b - Metric growth analysis based on Hacker News sentiment
-Perform analysis and visualization on GitHub metric data base on their respective sentiment on Hacker News to find the relationship between Hacker News sentiment and GitHub metric growth
+Perform analysis and visualization on GitHub metric data base on their respective sentiment on Hacker News to find the relationship between Hacker News sentiment and GitHub metric growth. The scripts are in `rq3/3b-hn-effects-sentiment-growth/`.
+
+> Note: `rq3/HN-effect-GH-growth/` contains an earlier version of the same notebooks (including `Old code/rq3_part2_main.ipynb`) and is kept for reference only.
 
 ### Scripts explaination and run order
-1. `average_comment_sentiment_Calculator.ipynb`
+0. `convert-to-relative-hn-date.py`
+    - Convert the monthly GitHub metrics into metrics relative to the HN submission month (month 0 to month 5), producing `metrics-hn-gh-ai-5months-[no-dupes].csv`
+1. `average_comment_sentiments_calculator.ipynb`
     - Merge Hacker News comment dataset file into story dataset file via parent story ID
     - Filter out stories without comment or have link to the same GitHub repository leaving out only the oldest one
     - Calculate average comment sentiment of each story and classify overall sentiment from the result (positive, neutral, negative)
@@ -336,7 +381,7 @@ This contains the HN GH-AI repository metrics converted into relative 5 months f
 | story_sentiment | Sentiment of the discussion title (positive: 1, neutral: 0, negative: -1) |
 | story_sentiment_reason | Reason why the discussion title has such sentiment |
 
-#### hn_gh_ai_story_sentiment.csv
+#### hn_gh_ai_comment_sentiment.csv
 | Attribute      | Description      |
 | ------------- | ------------- |
 | comment_id | ID of Hacker News comment |
@@ -377,3 +422,34 @@ This contains the HN GH-AI repository metrics converted into relative 5 months f
 | dist\_ __[metric]__(__[time_period1]__-__[time_period2]__) | Raw change in __[metric]__ in between time of __[time_period1]__ and __[time_period2]__ after the Hacker News Discussion has been posted |
 | percent\_ __[metric]__(__[time_period1]__-__[time_period2]__) | Percentage change in __[metric]__ in between time of __[time_period1]__ and __[time_period2]__ after the Hacker News Discussion has been posted |
 | sentiment | text version of overall_comments_sentiment (Positive, Neutral, Negative) |
+## RQ3 Dataset
+- `hn_gh_ai_story_sentiment.csv`, `hn_gh_ai_comment_sentiment.csv`: Story and comment sentiment results, copied from RQ2 (see the RQ3b schema above).
+- `sentiments_df.csv`: Story sentiment with the average and overall comment sentiment (output of step 1).
+- `join_result.csv`: Sentiment data joined with the relative GitHub metrics (output of step 2).
+
+## RQ5a - Causal Analysis (Matching and Difference-in-Differences)
+Estimate the causal effect of an HN submission on GitHub repository growth. Each HN-submitted AI repository (treatment) is matched with a similar AI repository that was not submitted to HN (control), then the difference-in-differences (DiD) is estimated. The analysis is done for two groups of metrics:
+- New (monthly) metrics: `new_stars`, `new_forks`, `new_commits`, `new_prs`, `active_contributors`
+- Cumulative metrics: `cumulative_stars`, `cumulative_forks`, `cumulative_commits`, `cumulative_prs`, `cumulative_contributors`
+
+### Scripts and run order
+1. `1-process-cumulative-metrics/process-cumulative-metrics.py`
+    - Compute the cumulative value of each monthly metric per repository (running sum ordered by month).
+2. `3-match-diff-diff/match-parallel-trend-assumption-v2.ipynb`
+    - Match each treatment repository to the best control repository using cosine similarity and Euclidean distance on its metric values in the 6 months before the HN submission month (month 0).
+    - Check the parallel trend assumption (trend plots and pre-trend slope tests).
+    - Build the aligned panels from month -6 to month +6, with a `pair_id` linking each treatment-control pair, saved as `aligned_did_<metric>.csv`.
+    - Export the parallel trend figures used in the paper.
+3. `3-match-diff-diff/perform-DiD.ipynb`
+    - Run the standard and lagged DiD regressions on the aligned panels.
+4. `3-match-diff-diff/perform-DiD-eval.ipynb`
+    - Run the evaluation: two-way fixed effects DiD (`linearmodels` `PanelOLS`), dynamic (event-study) effects with a Wald test on the pre-trend, and placebo tests at earlier fake treatment dates. The event-study pre-trend test uses the new metrics only; the cumulative metrics are exploratory.
+
+### Required datasets
+The notebooks read from `src/rq5/dataset/` (not included in the repository):
+- `hn-stories-gh-ai-metrics-[6months-before-after-hn]-cumulative-v2.csv`, `hn-stories-gh-ai-metadata-[6months-before-after-hn]-v2.csv`: Treatment repository metrics and metadata.
+- `nonhn-gh-ai-metrics-[2147].csv`, `nonhn-gh-ai-metadata-[2147].csv`, `nonhn-gh-ai-metrics-cumulative.csv`: Control repository metrics and metadata (AI repositories not submitted to HN, selected with `data-collection/2-gh-metrics/filter-nonhn-gh-ai/`).
+
+## RQ5b - Validation of the Matching
+- `2-analyze_match_unmatch/match-unmatch-analysis.ipynb` (and its `.py` export): Check whether matched repositories are systematically different from the repositories that were available but not matched, separately for the treatment and control sides. Each repository's panel is reduced to one value (sum for new metrics, max for cumulative metrics). Produces box and violin plots, ECDFs, a love plot of standardized mean differences, `balance_table.csv`, and descriptive statistics. It also cross-checks the number of matched pairs per metric.
+- `4-custom-matched-control-dataset-tctc/custom-matched-control-dataset.ipynb`: For each `matched_control_<metric>.csv`, drop the snapshot metric columns and add the treatment (`t-6` to `t-1`) and control (`c-6` to `c-1`) values for the 6 months before the treatment's HN submission month. Months outside the panel are left blank rather than set to 0. Also generates summary statistics for `t-1` and `c-1`.
