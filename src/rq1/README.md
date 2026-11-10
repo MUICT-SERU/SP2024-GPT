@@ -1,4 +1,4 @@
-# RQ1 – Characteristics of AI Projects Shared on Hacker News
+# RQ1: What is the spread of GitHub AI project stories on Hacker News?
 
 Descriptive analysis of HN GH-AI stories: when the repositories were created, whether submitters promote their own projects, how stories and comments change over time, and what topics they cover.
 

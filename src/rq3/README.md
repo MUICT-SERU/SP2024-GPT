@@ -1,4 +1,4 @@
-# RQ3 – GitHub Growth After a Hacker News Submission
+# RQ3: What are the changes of activities in GitHub AI projects after being mentioned in Hacker News?
 
 Compares GitHub metrics (stars, forks, commits, PRs, contributors) before and after a repository is submitted to HN, and how growth differs by the sentiment of the HN reaction.
 

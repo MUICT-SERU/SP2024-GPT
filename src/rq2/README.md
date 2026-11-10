@@ -1,4 +1,4 @@
-# RQ2 – Sentiment of Hacker News Reactions
+# RQ2: What are the social reactions to HN GH-AI stories?
 
 Selects a sentiment classifier using a human-labelled ground truth (fine-tuned transformers vs. GPT-4o mini prompting), applies the best one (GPT-4o mini) to all AI and non-AI stories and comments, analyses the trends, compares AI with non-AI, and validates the results manually.
 

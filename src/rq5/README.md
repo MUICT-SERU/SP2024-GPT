@@ -1,4 +1,6 @@
-# RQ5 – Causal Effect of Hacker News on GitHub Growth
+# RQ5: Causal Effect of Hacker News on GitHub Growth
+
+This RQ is part of the extended version of the paper (TOSEM submission, under review) and is not in the ICSME 2025 paper.
 
 ## RQ5a - Causal Analysis (Matching and Difference-in-Differences)
 Folder: [`5a-causal-analysis/`](5a-causal-analysis/)
